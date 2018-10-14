@@ -15,12 +15,16 @@ document.addEventListener("DOMContentLoaded", (async () => {
       element("td", undefined, [
         item.japan.start,
         document.createElement("br"),
-        `(${durationJp}일간)`
+        durationKr < durationJp ?
+          element("strong", undefined, `(${durationJp}일간)`) :
+          `(${durationJp}일간)`
       ]),
       element("td", undefined, [
         item.korea.start,
         document.createElement("br"),
-        `(${durationKr}일간)`
+        durationJp < durationKr ?
+          element("strong", undefined, `(${durationKr}일간)`) :
+          `(${durationKr}일간)`
       ]),
       element("td", undefined, `${diff}일`)
     ]))
@@ -30,7 +34,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
 /**
  * @param {Duration} obj
  */
-function diffDate({start, end}) {
+function diffDate({ start, end }) {
   const ms = new Date(`${end}+09:00`).valueOf() - new Date(`${start}+09:00`).valueOf();
   return ms / (1000 * 3600 * 24)
 }
