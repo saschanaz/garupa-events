@@ -32,9 +32,17 @@ document.addEventListener("DOMContentLoaded", (async () => {
 }));
 
 /**
+ * @param {string} str
+ * @return milliseconds
+ */
+function parseDate(str) {
+  return Date.parse(`${str}T00:00+09:00`)
+}
+
+/**
  * @param {Duration} obj
  */
 function diffDate({ start, end }) {
-  const ms = new Date(`${end}+09:00`).valueOf() - new Date(`${start}+09:00`).valueOf();
+  const ms = parseDate(end) - parseDate(start);
   return ms / (1000 * 3600 * 24)
 }
