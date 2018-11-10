@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", (async () => {
     if (item.korea) {
       const result = createRowAfterKorea(item, i);
       lastDiff = result.diff;
-      table.appendChild(result.row);
+      table.tBodies[0].appendChild(result.row);
     }
     else {
-      table.appendChild(createRowBeforeKorea(item, i, lastDiff));
+      table.tBodies[0].appendChild(createRowBeforeKorea(item, i, lastDiff));
     }
   }
 }));
