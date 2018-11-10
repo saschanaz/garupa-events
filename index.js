@@ -35,7 +35,7 @@ function createRowAfterKorea(item, i) {
     element("td", undefined, [
       item.korea.title,
       document.createElement("br"),
-      element("span", { class: "original" },  item.japan.title)
+      element("span", { class: "original" }, item.japan.title)
     ]),
     element("td", undefined, [
       item.japan.start,
@@ -47,7 +47,7 @@ function createRowAfterKorea(item, i) {
       document.createElement("br"),
       `(${durationKr}일간)`
     ]),
-    element("td", undefined, item.korea ? `${diff}일`: "")
+    element("td", undefined, item.korea ? `${diff}일` : "")
   ]);
   return { row, diff };
 }
