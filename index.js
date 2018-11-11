@@ -99,7 +99,20 @@ function createRowBeforeKorea(item, i, diff) {
  */
 function addDate(date, diff) {
   const newDate = new Date(parseDate(date) + diff * 1000 * 3600 * 24 + 1000 * 3600 * 9);
-  return `${newDate.getUTCFullYear()}-${newDate.getUTCMonth() + 1}-${newDate.getUTCDate()}`;
+  const yyyy = newDate.getUTCFullYear();
+  const mm = padZero(newDate.getUTCMonth() + 1, 2);
+  const dd = padZero(newDate.getUTCDate(), 2);
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+/**
+ * 
+ * @param {number} num 
+ * @param {number} length 
+ */
+function padZero(num, length) {
+  const str = num.toString();
+  return "0".repeat(length - str.length) + str;
 }
 
 /**
