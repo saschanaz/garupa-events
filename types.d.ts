@@ -14,3 +14,9 @@ interface Schema {
   japan: Region;
   korea: Region | null;
 }
+
+interface DateDiffs {
+  durationJp: number;
+  durationKr: number;
+  diff: number;
+}

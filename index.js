@@ -1,36 +1,50 @@
 document.addEventListener("DOMContentLoaded", (async () => {
-
-  const res = await fetch("data.json")
+  const res = await fetch("data.json");
   /** @type {Schema[]} */
   const data = await res.json();
-  /** @type {number} */
-  let lastDiff = 0;
+  /** @type {DateDiffs} */
+  let lastDiff = {
+    durationJp: 0,
+    durationKr: 0,
+    diff: 0
+  };
 
   for (const [i, item] of data.entries()) {
     if (item.korea) {
-      const result = createRowAfterKorea(item, i);
-      lastDiff = result.diff;
-      table.tBodies[0].appendChild(result.row);
+      lastDiff = getDiffs(item);
+      table.tBodies[0].appendChild(createRowAfterKorea(item, i, lastDiff));
     }
     else {
-      table.tBodies[0].appendChild(createRowBeforeKorea(item, i, lastDiff));
+      const prediction = lastDiff.diff + lastDiff.durationKr - lastDiff.durationJp;
+      table.tBodies[0].appendChild(createRowBeforeKorea(item.japan, i, prediction));
     }
   }
 }));
 
 /**
+ * @param {Schema} item 
+ */
+function getDiffs(item) {
+  if (!item.korea) {
+    throw new Error("`korea` field must exist");
+  }
+  const durationJp = diffDate(item.japan) + 1;
+  const durationKr = diffDate(item.korea) + 1;
+  const diff = diffDate({ start: item.japan.start, end: item.korea.start });
+  return { durationJp, durationKr, diff };
+}
+
+/**
  * @param {Schema} item
  * @param {number} i
+ * @param {DateDiffs} diffs
  */
-function createRowAfterKorea(item, i) {
+function createRowAfterKorea(item, i, diffs) {
   if (!item.korea) {
     throw new Error("`korea` field must exist");
   }
   const { element } = DOMLiner;
-  const durationJp = diffDate(item.japan) + 1;
-  const durationKr = diffDate(item.korea) + 1;
-  const diff = diffDate({ start: item.japan.start, end: item.korea.start });
-  const row = element("tr", undefined, [
+  return element("tr", undefined, [
     element("td", undefined, `${i + 1}`),
     element("td", undefined, [
       item.korea.title,
@@ -40,53 +54,51 @@ function createRowAfterKorea(item, i) {
     element("td", undefined, [
       item.japan.start,
       document.createElement("br"),
-      `(${durationJp}일간)`
+      `(${diffs.durationJp}일간)`
     ]),
-    element("td", decorateByDuration(durationJp, durationKr), [
+    element("td", decorateByDuration(diffs), [
       item.korea.start,
       document.createElement("br"),
-      `(${durationKr}일간)`
+      `(${diffs.durationKr}일간)`
     ]),
-    element("td", undefined, item.korea ? `${diff}일` : "")
+    element("td", undefined, item.korea ? `${diffs.diff}일` : "")
   ]);
-  return { row, diff };
 }
 
 /**
  * 
- * @param {number} japan 
- * @param {number} korea 
+ * @param {DateDiffs} param
  */
-function decorateByDuration(japan, korea) {
-  if (japan === korea) {
+function decorateByDuration({ durationJp, durationKr }) {
+  if (durationJp === durationKr) {
     return;
   }
-  if (japan < korea) {
+  if (durationJp < durationKr) {
     return { class: "excess" };
   }
   return { class: "under" };
 }
 
 /**
- * @param {Schema} item
+ * @param {Region} japan
  * @param {number} i
  * @param {number} diff
  */
-function createRowBeforeKorea(item, i, diff) {
+function createRowBeforeKorea(japan, i, diff) {
   const { element } = DOMLiner;
-  const durationJp = diffDate(item.japan) + 1;
+  const durationJp = diffDate(japan) + 1;
   return element("tr", { class: "prediction" }, [
     element("td", undefined, `${i + 1}`),
     element("td", undefined, [
-      item.japan.title
+      japan.title
     ]),
     element("td", undefined, [
-      item.japan.start,
+      japan.start,
       document.createElement("br"),
       `(${durationJp}일간)`
     ]),
     element("td", undefined, [
-      addDate(item.japan.start, diff) + "?"
+      addDate(japan.start, diff) + "?"
     ]),
     element("td")
   ]);
