@@ -89,7 +89,7 @@ function createRowBeforeKorea(item, i, diff) {
       addDate(item.japan.start, diff) + "?"
     ]),
     element("td")
-  ])
+  ]);
 }
 
 /**
