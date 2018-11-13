@@ -49,7 +49,7 @@ function createRowAfterKorea(item, i, diffs) {
     element("td", undefined, [
       item.korea.title,
       document.createElement("br"),
-      element("span", { class: "original" }, item.japan.title)
+      element("span", { class: "original", lang: "ja" }, item.japan.title)
     ]),
     element("td", undefined, [
       item.japan.start,
@@ -89,7 +89,7 @@ function createRowBeforeKorea(japan, i, diff) {
   const durationJp = diffDate(japan) + 1;
   return element("tr", { class: "prediction" }, [
     element("td", undefined, `${i + 1}`),
-    element("td", undefined, [
+    element("td", { lang: "ja" }, [
       japan.title
     ]),
     element("td", undefined, [
