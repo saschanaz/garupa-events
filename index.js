@@ -61,7 +61,7 @@ function createRowAfterKorea(item, i, diffs) {
       document.createElement("br"),
       `(${diffs.durationKr}일간)`
     ]),
-    element("td", undefined, item.korea ? `${diffs.diff}일` : "")
+    element("td", undefined, `${diffs.diff}일`)
   ]);
 }
 
@@ -100,7 +100,7 @@ function createRowBeforeKorea(japan, i, diff) {
     element("td", undefined, [
       addDate(japan.start, diff) + "?"
     ]),
-    element("td")
+    element("td", undefined, `${diff}일?`)
   ]);
 }
 
