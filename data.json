@@ -9,6 +9,11 @@
       "title": "CHERRY☆BLOOMING PARTY!",
       "start": "2018-02-06",
       "end": "2018-02-12"
+    },
+    "global": {
+      "title": "Sakura Blooming Party!",
+      "start": "2018-04-05",
+      "end": "2018-04-11"
     }
   },
   {
@@ -21,6 +26,11 @@
       "title": "마음을 잇는 미완성의 노래",
       "start": "2018-02-14",
       "end": "2018-02-20"
+    },
+    "global": {
+      "title": "A Song Unfinished",
+      "start": "2018-04-13",
+      "end": "2018-04-19"
     }
   },
   {
@@ -33,6 +43,11 @@
       "title": "괴도 헬로해피와 호화 여객선",
       "start": "2018-02-22",
       "end": "2018-03-02"
+    },
+    "global": {
+      "title": "Happy Phantom Thief & The Luxury Cruise",
+      "start": "2018-04-21",
+      "end": "2018-04-27"
     }
   },
   {
@@ -45,6 +60,11 @@
       "title": "리미의 프레젠트 송",
       "start": "2018-03-04",
       "end": "2018-03-11"
+    },
+    "global": {
+      "title": "Rimi's Gift Of Song",
+      "start": "2018-04-29",
+      "end": "2018-05-05"
     }
   },
   {
@@ -57,6 +77,11 @@
       "title": "별을 찾아서",
       "start": "2018-03-13",
       "end": "2018-03-21"
+    },
+    "global": {
+      "title": "Searching For Stars",
+      "start": "2018-05-07",
+      "end": "2018-05-14"
     }
   },
   {
@@ -69,6 +94,11 @@
       "title": "석양, 선명해지고",
       "start": "2018-03-23",
       "end": "2018-03-31"
+    },
+    "global": {
+      "title": "As Evening Clears",
+      "start": "2018-05-16",
+      "end": "2018-05-23"
     }
   },
   {
@@ -81,6 +111,11 @@
       "title": "토끼는 도망 중!",
       "start": "2018-04-02",
       "end": "2018-04-09"
+    },
+    "global": {
+      "title": "Run Away Rabbits!",
+      "start": "2018-05-25",
+      "end": "2018-05-31"
     }
   },
   {
@@ -93,6 +128,11 @@
       "title": "계속 걸어온 길, 물들어가는 미래",
       "start": "2018-04-11",
       "end": "2018-04-18"
+    },
+    "global": {
+      "title": "Past Aspirations And Pastel Futures",
+      "start": "2018-06-02",
+      "end": "2018-06-10"
     }
   },
   {
@@ -105,6 +145,11 @@
       "title": "웨딩드레스는 갑자기",
       "start": "2018-04-20",
       "end": "2018-04-28"
+    },
+    "global": {
+      "title": "The Impromptu Wedding Dress",
+      "start": "2018-06-12",
+      "end": "2018-06-20"
     }
   },
   {
@@ -117,6 +162,11 @@
       "title": "Don't leave me, Lisa!!!!",
       "start": "2018-04-30",
       "end": "2018-05-07"
+    },
+    "global": {
+      "title": "Don't leave me, Lisa!!!!",
+      "start": "2018-06-22",
+      "end": "2018-06-30"
     }
   },
   {
@@ -129,6 +179,11 @@
       "title": "별에게 비는 소원",
       "start": "2018-05-09",
       "end": "2018-05-16"
+    },
+    "global": {
+      "title": "Wish Upon a Tanzaku",
+      "start": "2018-07-03",
+      "end": "2018-07-10"
     }
   },
   {
@@ -141,6 +196,11 @@
       "title": "토모에 SOS! 아코의 간호 대작전",
       "start": "2018-05-18",
       "end": "2018-05-26"
+    },
+    "global": {
+      "title": "Tomoe SOS! Ako's Grand Nursing Operation",
+      "start": "2018-07-12",
+      "end": "2018-07-20"
     }
   },
   {
@@ -153,6 +213,11 @@
       "title": "꽃봉오리가 필 때",
       "start": "2018-05-28",
       "end": "2018-06-05"
+    },
+    "global": {
+      "title": "When the Flowers Bloom",
+      "start": "2018-07-22",
+      "end": "2018-07-30"
     }
   },
   {
@@ -165,6 +230,11 @@
       "title": "해피 서머 베케이션!",
       "start": "2018-06-07",
       "end": "2018-06-15"
+    },
+    "global": {
+      "title": "Happy Summer Vacation!",
+      "start": "2018-08-01",
+      "end": "2018-08-10"
     }
   },
   {
@@ -177,6 +247,11 @@
       "title": "가슴 설레는 불꽃놀이",
       "start": "2018-06-18",
       "end": "2018-06-26"
+    },
+    "global": {
+      "title": "A Rhythmic Beat: Fireworks Festival",
+      "start": "2018-08-11",
+      "end": "2018-08-20"
     }
   },
   {
@@ -189,6 +264,11 @@
       "title": "6번째 Afterglow",
       "start": "2018-06-28",
       "end": "2018-07-06"
+    },
+    "global": {
+      "title": "The 6th Afterglow",
+      "start": "2018-08-22",
+      "end": "2018-08-30"
     }
   },
   {
@@ -201,6 +281,11 @@
       "title": "덧없는 세상에 피는 장미의 이름은",
       "start": "2018-07-09",
       "end": "2018-07-16"
+    },
+    "global": {
+      "title": "A Rose's Name in a Transient World",
+      "start": "2018-09-01",
+      "end": "2018-09-10"
     }
   },
   {
@@ -213,6 +298,11 @@
       "title": "헬로, 마이 해피월드",
       "start": "2018-07-18",
       "end": "2018-07-25"
+    },
+    "global": {
+      "title": "Hello, My Happy World",
+      "start": "2018-09-12",
+      "end": "2018-09-19"
     }
   },
   {
@@ -225,6 +315,11 @@
       "title": "파스파레 탐험대 ~무인도를 정복한 아이돌~",
       "start": "2018-07-27",
       "end": "2018-08-04"
+    },
+    "global": {
+      "title": "Pastel*Palettes! Deserted Island Idols",
+      "start": "2018-09-21",
+      "end": "2018-09-28"
     }
   },
   {
@@ -237,6 +332,11 @@
       "title": "코코로는 언제나 Halloween!",
       "start": "2018-08-06",
       "end": "2018-08-15"
+    },
+    "global": {
+      "title": "Always Halloween! For Kokoro",
+      "start": "2018-09-30",
+      "end": "2018-10-09"
     }
   },
   {
@@ -249,6 +349,11 @@
       "title": "가을비에 우산을",
       "start": "2018-08-17",
       "end": "2018-08-26"
+    },
+    "global": {
+      "title": "Umbrella For The Autumn Rain",
+      "start": "2018-10-12",
+      "end": "2018-10-19"
     }
   },
   {
@@ -261,6 +366,11 @@
       "title": "눈물의 스마일 앵커",
       "start": "2018-08-28",
       "end": "2018-09-04"
+    },
+    "global": {
+      "title": "Tearful Smile Anchor Runner",
+      "start": "2018-10-21",
+      "end": "2018-10-29"
     }
   },
   {
@@ -273,6 +383,11 @@
       "title": "뒤죽박죽!? 이상한 과자 교실",
       "start": "2018-09-06",
       "end": "2018-09-15"
+    },
+    "global": {
+      "title": "Cooking Class Craziness!",
+      "start": "2018-10-31",
+      "end": "2018-11-08"
     }
   },
   {
@@ -285,6 +400,11 @@
       "title": "이브의 홈 파티에 어서 오세요",
       "start": "2018-09-17",
       "end": "2018-09-26"
+    },
+    "global": {
+      "title": "Welcome To Eve's Home Party",
+      "start": "2018-11-10",
+      "end": "2018-11-19"
     }
   },
   {
@@ -297,6 +417,11 @@
       "title": "언젠가 닿기를, 나의 가사",
       "start": "2018-09-28",
       "end": "2018-10-06"
+    },
+    "global": {
+      "title": "Someday, A Poem For You: Lisa's Lyrics",
+      "start": "2018-11-21",
+      "end": "2018-11-28"
     }
   },
   {
@@ -309,6 +434,11 @@
       "title": "HAPPY Poppin' Xmas",
       "start": "2018-10-08",
       "end": "2018-10-17"
+    },
+    "global": {
+      "title": "HAPPY Poppin' Xmas",
+      "start": "2018-11-30",
+      "end": "2018-12-07"
     }
   },
   {
@@ -321,6 +451,11 @@
       "title": "검푸른 별 반짝이고",
       "start": "2018-10-19",
       "end": "2018-10-27"
+    },
+    "global": {
+      "title": "Azure, Shine Bright",
+      "start": "2018-12-09",
+      "end": "2018-12-18"
     }
   },
   {
@@ -333,6 +468,11 @@
       "title": "리틀 스마일 스텝",
       "start": "2018-10-29",
       "end": "2018-11-05"
+    },
+    "global": {
+      "title": "Little Smiley Steps!",
+      "start": "2018-12-20",
+      "end": "2018-12-28"
     }
   },
   {
@@ -345,6 +485,11 @@
       "title": "새해! 파란의 신년운세 NEW YEAR",
       "start": "2018-11-07",
       "end": "2018-11-16"
+    },
+    "global": {
+      "title": "New Years! Omikuji Madness",
+      "start": "2018-12-31",
+      "end": "2019-01-08"
     }
   },
   {
@@ -357,6 +502,11 @@
       "title": "FUN! FUN! CiRCLING FIVESTAR!",
       "start": "2018-11-19",
       "end": "2018-11-28"
+    },
+    "global": {
+      "title": "FUN! FUN! CiRCLING FIVESTAR!",
+      "start": "2019-01-10",
+      "end": "2019-01-18"
     }
   },
   {
@@ -369,7 +519,8 @@
       "title": "Neo Fantasy Online -모험의 시작-",
       "start": "2018-11-30",
       "end": "2018-12-08"
-    }
+    },
+    "global": null
   },
   {
     "japan": {
@@ -381,7 +532,8 @@
       "title": "우당탕탕 해피 발렌타인",
       "start": "2018-12-10",
       "end": "2018-12-19"
-    }
+    },
+    "global": null
   },
   {
     "japan": {
@@ -393,7 +545,8 @@
       "title": "처음 해보는!? 윈터 스포츠",
       "start": "2018-12-21",
       "end": "2018-12-29"
-    }
+    },
+    "global": null
   },
   {
     "japan": {
@@ -405,7 +558,8 @@
       "title": "What a Wonderful World!",
       "start": "2018-12-31",
       "end": "2019-01-07"
-    }
+    },
+    "global": null
   },
   {
     "japan": {
@@ -417,7 +571,8 @@
       "title": "덧없는 향기의 화이트데이 뮤지컬",
       "start": "2019-01-09",
       "end": "2019-01-18"
-    }
+    },
+    "global": null
   },
   {
     "japan": {
@@ -425,7 +580,8 @@
       "start": "2018-03-10",
       "end": "2018-03-19"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -433,7 +589,8 @@
       "start": "2018-03-21",
       "end": "2018-03-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -441,7 +598,8 @@
       "start": "2018-03-31",
       "end": "2018-04-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -449,7 +607,8 @@
       "start": "2018-04-10",
       "end": "2018-04-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -457,7 +616,8 @@
       "start": "2018-04-20",
       "end": "2018-04-28"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -465,7 +625,8 @@
       "start": "2018-04-30",
       "end": "2018-05-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -473,7 +634,8 @@
       "start": "2018-05-10",
       "end": "2018-05-19"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -481,7 +643,8 @@
       "start": "2018-05-21",
       "end": "2018-05-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -489,7 +652,8 @@
       "start": "2018-05-31",
       "end": "2018-06-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -497,7 +661,8 @@
       "start": "2018-06-10",
       "end": "2018-06-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -505,7 +670,8 @@
       "start": "2018-06-20",
       "end": "2018-06-28"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -513,7 +679,8 @@
       "start": "2018-06-30",
       "end": "2018-07-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -521,7 +688,8 @@
       "start": "2018-07-10",
       "end": "2018-07-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -529,7 +697,8 @@
       "start": "2018-07-20",
       "end": "2018-07-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -537,7 +706,8 @@
       "start": "2018-07-31",
       "end": "2018-08-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -545,7 +715,8 @@
       "start": "2018-08-10",
       "end": "2018-08-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -553,7 +724,8 @@
       "start": "2018-08-20",
       "end": "2018-08-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -561,7 +733,8 @@
       "start": "2018-08-31",
       "end": "2018-09-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -569,7 +742,8 @@
       "start": "2018-09-10",
       "end": "2018-09-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -577,7 +751,8 @@
       "start": "2018-09-20",
       "end": "2018-09-28"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -585,7 +760,8 @@
       "start": "2018-09-30",
       "end": "2018-10-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -593,7 +769,8 @@
       "start": "2018-10-10",
       "end": "2018-10-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -601,7 +778,8 @@
       "start": "2018-10-20",
       "end": "2018-10-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -609,7 +787,8 @@
       "start": "2018-10-31",
       "end": "2018-11-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -617,7 +796,8 @@
       "start": "2018-11-10",
       "end": "2018-11-19"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -625,7 +805,8 @@
       "start": "2018-11-21",
       "end": "2018-11-28"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -633,7 +814,8 @@
       "start": "2018-11-30",
       "end": "2018-12-08"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -641,7 +823,8 @@
       "start": "2018-12-10",
       "end": "2018-12-18"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -649,7 +832,8 @@
       "start": "2018-12-20",
       "end": "2018-12-29"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   },
   {
     "japan": {
@@ -657,6 +841,7 @@
       "start": "2018-12-31",
       "end": "2019-01-09"
     },
-    "korea": null
+    "korea": null,
+    "global": null
   }
 ]

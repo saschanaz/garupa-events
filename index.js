@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", (async () => {
+  const target = getComparisonTarget();
+
   const res = await fetch("data.json");
   /** @type {Schema[]} */
   const data = await res.json();
@@ -10,44 +12,54 @@ document.addEventListener("DOMContentLoaded", (async () => {
   };
 
   for (const [i, item] of data.entries()) {
-    if (item.korea) {
-      lastDiff = getDiffs(item);
-      table.tBodies[0].appendChild(createRowAfterKorea(item, i, lastDiff));
+    if (item[target]) {
+      lastDiff = getDiffs(item, target);
+      table.tBodies[0].appendChild(createRowAfterTargetArea(item, target, i, lastDiff));
     }
     else {
       const prediction = lastDiff.diff + lastDiff.durationKr - lastDiff.durationJp;
-      table.tBodies[0].appendChild(createRowBeforeKorea(item.japan, i, prediction));
+      table.tBodies[0].appendChild(createRowBeforeTargetArea(item.japan, i, prediction));
     }
   }
 }));
 
+function getComparisonTarget() {
+  const params = new URLSearchParams(location.search);
+  const target = params.get("target");
+  return /** @type {keyof Schema} */ (target || "korea");
+}
+
 /**
- * @param {Schema} item 
+ * @param {Schema} item
+ * @param {keyof Schema} target
  */
-function getDiffs(item) {
-  if (!item.korea) {
-    throw new Error("`korea` field must exist");
+function getDiffs(item, target) {
+  const area = item[target];
+  if (!area) {
+    throw new Error(`\`${target}\` field must exist`);
   }
   const durationJp = diffDate(item.japan) + 1;
-  const durationKr = diffDate(item.korea) + 1;
-  const diff = diffDate({ start: item.japan.start, end: item.korea.start });
+  const durationKr = diffDate(area) + 1;
+  const diff = diffDate({ start: item.japan.start, end: area.start });
   return { durationJp, durationKr, diff };
 }
 
 /**
  * @param {Schema} item
+ * @param {keyof Schema} target
  * @param {number} i
  * @param {DateDiffs} diffs
  */
-function createRowAfterKorea(item, i, diffs) {
-  if (!item.korea) {
-    throw new Error("`korea` field must exist");
+function createRowAfterTargetArea(item, target, i, diffs) {
+  const area = item[target];
+  if (!area) {
+    throw new Error(`\`${target}\` field must exist`);
   }
   const { element } = DOMLiner;
   return element("tr", undefined, [
     element("td", undefined, `${i + 1}`),
     element("td", undefined, [
-      item.korea.title,
+      area.title,
       document.createElement("br"),
       element("span", { class: "original", lang: "ja" }, item.japan.title)
     ]),
@@ -57,7 +69,7 @@ function createRowAfterKorea(item, i, diffs) {
       `(${diffs.durationJp}일간)`
     ]),
     element("td", decorateByDuration(diffs), [
-      item.korea.start,
+      area.start,
       document.createElement("br"),
       `(${diffs.durationKr}일간)`
     ]),
@@ -84,7 +96,7 @@ function decorateByDuration({ durationJp, durationKr }) {
  * @param {number} i
  * @param {number} diff
  */
-function createRowBeforeKorea(japan, i, diff) {
+function createRowBeforeTargetArea(japan, i, diff) {
   const { element } = DOMLiner;
   const durationJp = diffDate(japan) + 1;
   return element("tr", { class: "prediction" }, [

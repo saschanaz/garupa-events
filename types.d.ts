@@ -13,6 +13,7 @@ interface Duration {
 interface Schema {
   japan: Region;
   korea: Region | null;
+  global: Region | null;
 }
 
 interface DateDiffs {
