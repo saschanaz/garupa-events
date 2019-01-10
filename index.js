@@ -1,77 +1,76 @@
 document.addEventListener("DOMContentLoaded", (async () => {
-  const target = getComparisonTarget();
+  const { base, target } = getComparisonBaseTarget();
 
   const res = await fetch("data.json");
   /** @type {Schema[]} */
   const data = await res.json();
   /** @type {DateDiffs} */
   let lastDiff = {
-    durationJp: 0,
-    durationKr: 0,
+    durationBase: 0,
+    durationTarget: 0,
     diff: 0
   };
 
   for (const [i, item] of data.entries()) {
-    if (item[target]) {
-      lastDiff = getDiffs(item, target);
-      table.tBodies[0].appendChild(createRowAfterTargetArea(item, target, i, lastDiff));
+    const baseItem = item[base];
+    const targetItem = item[target];
+    if (!baseItem) {
+      break;
+    }
+    if (targetItem) {
+      lastDiff = getDiffs(baseItem, targetItem);
+      table.tBodies[0].appendChild(createRowAfterTargetArea(baseItem, targetItem, i, lastDiff));
     }
     else {
-      const prediction = lastDiff.diff + lastDiff.durationKr - lastDiff.durationJp;
-      table.tBodies[0].appendChild(createRowBeforeTargetArea(item.japan, i, prediction));
+      const prediction = lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
+      table.tBodies[0].appendChild(createRowBeforeTargetArea(baseItem, i, prediction));
     }
   }
 }));
 
-function getComparisonTarget() {
+function getComparisonBaseTarget() {
   const params = new URLSearchParams(location.search);
-  const target = params.get("target");
-  return /** @type {keyof Schema} */ (target || "korea");
+  const base = /** @type {keyof Schema} */ (params.get("base") || "japan");
+  const target = /** @type {keyof Schema} */ (params.get("target") || "korea");
+  return { base, target };
 }
 
 /**
- * @param {Schema} item
- * @param {keyof Schema} target
+ * @param {Region} base
+ * @param {Region} target
+ * @return {DateDiffs}
  */
-function getDiffs(item, target) {
-  const area = item[target];
-  if (!area) {
-    throw new Error(`\`${target}\` field must exist`);
-  }
-  const durationJp = diffDate(item.japan) + 1;
-  const durationKr = diffDate(area) + 1;
-  const diff = diffDate({ start: item.japan.start, end: area.start });
-  return { durationJp, durationKr, diff };
+function getDiffs(base, target) {
+  const durationBase = diffDate(base) + 1;
+  const durationTarget = diffDate(target) + 1;
+  const diff = diffDate({ start: base.start, end: target.start });
+  return { durationBase, durationTarget, diff };
 }
 
 /**
- * @param {Schema} item
- * @param {keyof Schema} target
+ * @param {Region} base
+ * @param {Region} target
  * @param {number} i
  * @param {DateDiffs} diffs
  */
-function createRowAfterTargetArea(item, target, i, diffs) {
-  const area = item[target];
-  if (!area) {
-    throw new Error(`\`${target}\` field must exist`);
-  }
+function createRowAfterTargetArea(base, target, i, diffs) {
   const { element } = DOMLiner;
   return element("tr", undefined, [
     element("td", undefined, `${i + 1}`),
     element("td", undefined, [
-      area.title,
+      target.title,
       document.createElement("br"),
-      element("span", { class: "original", lang: "ja" }, item.japan.title)
+      element("span", { class: "original", lang: "ja" }, base.title)
     ]),
     element("td", undefined, [
-      item.japan.start,
+      base.start,
       document.createElement("br"),
-      `(${diffs.durationJp}일간)`
+      `(${diffs.durationBase}일간)`
     ]),
     element("td", decorateByDuration(diffs), [
-      area.start,
+      target.start,
       document.createElement("br"),
-      `(${diffs.durationKr}일간)`
+      `(${diffs.durationTarget}일간)`
     ]),
     element("td", undefined, `${diffs.diff}일`)
   ]);
@@ -81,7 +80,7 @@ function createRowAfterTargetArea(item, target, i, diffs) {
  * 
  * @param {DateDiffs} param
  */
-function decorateByDuration({ durationJp, durationKr }) {
+function decorateByDuration({ durationBase: durationJp, durationTarget: durationKr }) {
   if (durationJp === durationKr) {
     return;
   }
@@ -92,25 +91,25 @@ function decorateByDuration({ durationJp, durationKr }) {
 }
 
 /**
- * @param {Region} japan
+ * @param {Region} base
  * @param {number} i
  * @param {number} diff
  */
-function createRowBeforeTargetArea(japan, i, diff) {
+function createRowBeforeTargetArea(base, i, diff) {
   const { element } = DOMLiner;
-  const durationJp = diffDate(japan) + 1;
+  const durationJp = diffDate(base) + 1;
   return element("tr", { class: "prediction" }, [
     element("td", undefined, `${i + 1}`),
     element("td", { lang: "ja" }, [
-      japan.title
+      base.title
     ]),
     element("td", undefined, [
-      japan.start,
+      base.start,
       document.createElement("br"),
       `(${durationJp}일간)`
     ]),
     element("td", undefined, [
-      addDate(japan.start, diff) + "?"
+      addDate(base.start, diff) + "?"
     ]),
     element("td", undefined, `${diff}일?`)
   ]);

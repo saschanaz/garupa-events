@@ -17,7 +17,7 @@ interface Schema {
 }
 
 interface DateDiffs {
-  durationJp: number;
-  durationKr: number;
+  durationBase: number;
+  durationTarget: number;
   diff: number;
 }
