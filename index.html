@@ -15,12 +15,27 @@
 <body>
   <article class="markdown-body">
     <h1><a href="https://github.com/saschanaz/garupa-events-kr">BanG Dream! 걸즈 밴드 파티! 이벤트 기간 일람</a></h1>
+    <p>
+      비교 기준: <select id="baseSelect">
+        <option value="japan">일본</option>
+        <option value="taiwan">대만</option>
+        <option value="korea">한국</option>
+        <option value="global">글로벌</option>
+      </select>
+      비교 대상: <select id="targetSelect">
+        <option value="japan">일본</option>
+        <option value="taiwan">대만</option>
+        <option value="korea" selected>한국</option>
+        <option value="global">글로벌</option>
+      </select>
+      <button id="startButton">시작</button>
+    </p>
     <table id="table">
       <tr>
         <th>순번</th>
         <th>제목</th>
-        <th>일본</th>
-        <th>한국</th>
+        <th id="baseHead">일본</th>
+        <th id="targetHead">한국</th>
         <th>격차</th>
       </tr>
     </table>

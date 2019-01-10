@@ -21,3 +21,7 @@ interface DateDiffs {
   durationTarget: number;
   diff: number;
 }
+
+interface Document {
+  getElementById<T extends Node>(name: string): T;
+}

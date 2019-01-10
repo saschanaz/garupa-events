@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", (async () => {
+  attachClickListener();
   const { base, target } = getComparisonBaseTarget();
+  nameHeads(base, target);
 
   const res = await fetch("data.json");
   /** @type {Schema[]} */
@@ -27,6 +29,44 @@ document.addEventListener("DOMContentLoaded", (async () => {
     }
   }
 }));
+
+function attachClickListener() {
+  const startButton = document.getElementById("startButton");
+  startButton.addEventListener("click", () => {
+    /** @type {HTMLSelectElement} */
+    const baseSelect = document.getElementById("baseSelect");
+    /** @type {HTMLSelectElement} */
+    const targetSelect = document.getElementById("targetSelect");
+
+    const base = baseSelect.selectedOptions[0];
+    const target = targetSelect.selectedOptions[0];
+    location.href = `./?base=${base.value}&target=${target.value}`;
+  })
+}
+
+/**
+ * @param {string} base
+ * @param {string} target
+ */
+function nameHeads(base, target) {
+  const baseHead = document.getElementById("baseHead");
+  const targetHead = document.getElementById("targetHead");
+  baseHead.textContent = nameHead(base);
+  targetHead.textContent = nameHead(target);
+}
+
+/**
+ * @param {string} name
+ */
+function nameHead(name) {
+  /** @type {HTMLSelectElement} */
+  const baseSelect = document.getElementById("baseSelect");
+  const option = [...baseSelect.options].find(o => o.value === name);
+  if (!option) {
+    throw new Error("Unknown value");
+  }
+  return option.value;
+}
 
 function getComparisonBaseTarget() {
   const params = new URLSearchParams(location.search);
