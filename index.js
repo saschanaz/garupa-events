@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", (async () => {
   attachClickListener();
   const { base, target } = getComparisonBaseTarget();
+  showSelection(base, target);
   nameHeads(base, target);
 
   const res = await fetch("data.json");
@@ -48,6 +49,19 @@ function attachClickListener() {
  * @param {string} base
  * @param {string} target
  */
+function showSelection(base, target) {
+  /** @type {HTMLSelectElement} */
+  const baseSelect = document.getElementById("baseSelect");
+  /** @type {HTMLSelectElement} */
+  const targetSelect = document.getElementById("targetSelect");
+  baseSelect.value = base;
+  targetSelect.value = target;
+}
+
+/**
+ * @param {string} base
+ * @param {string} target
+ */
 function nameHeads(base, target) {
   const baseHead = document.getElementById("baseHead");
   const targetHead = document.getElementById("targetHead");
@@ -65,7 +79,7 @@ function nameHead(name) {
   if (!option) {
     throw new Error("Unknown value");
   }
-  return option.value;
+  return option.textContent;
 }
 
 function getComparisonBaseTarget() {
