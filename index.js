@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", (async () => {
-  attachClickListener();
   const { base, target } = getComparisonBaseTarget();
   showSelection(base, target);
   nameHeads(base, target);
+  attachChangeListener();
 
   const res = await fetch("data.json");
   /** @type {Schema[]} */
@@ -31,18 +31,23 @@ document.addEventListener("DOMContentLoaded", (async () => {
   }
 }));
 
-function attachClickListener() {
-  const startButton = document.getElementById("startButton");
-  startButton.addEventListener("click", () => {
-    /** @type {HTMLSelectElement} */
-    const baseSelect = document.getElementById("baseSelect");
-    /** @type {HTMLSelectElement} */
-    const targetSelect = document.getElementById("targetSelect");
+function attachChangeListener() {
+  const baseSelect = document.getElementById("baseSelect");
+  const targetSelect = document.getElementById("targetSelect");
 
-    const base = baseSelect.selectedOptions[0];
-    const target = targetSelect.selectedOptions[0];
-    location.href = `./?base=${base.value}&target=${target.value}`;
-  })
+  baseSelect.addEventListener("change", reloadWithSelection);
+  targetSelect.addEventListener("change", reloadWithSelection);
+}
+
+function reloadWithSelection() {
+  /** @type {HTMLSelectElement} */
+  const baseSelect = document.getElementById("baseSelect");
+  /** @type {HTMLSelectElement} */
+  const targetSelect = document.getElementById("targetSelect");
+
+  const base = baseSelect.selectedOptions[0];
+  const target = targetSelect.selectedOptions[0];
+  location.href = `./?base=${base.value}&target=${target.value}`;
 }
 
 /**
