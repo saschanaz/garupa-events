@@ -139,11 +139,11 @@ function createRowAfterTargetArea(base, target, i, diffs) {
  * 
  * @param {DateDiffs} param
  */
-function decorateByDuration({ durationBase: durationJp, durationTarget: durationKr }) {
-  if (durationJp === durationKr) {
+function decorateByDuration({ durationBase, durationTarget }) {
+  if (durationBase === durationTarget) {
     return;
   }
-  if (durationJp < durationKr) {
+  if (durationBase < durationTarget) {
     return { class: "excess" };
   }
   return { class: "under" };
