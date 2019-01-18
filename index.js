@@ -7,12 +7,11 @@ document.addEventListener("DOMContentLoaded", (async () => {
   const res = await fetch("data.json");
   /** @type {Schema[]} */
   const data = await res.json();
-  /** @type {DateDiffs} */
-  let lastDiff = {
-    durationBase: 0,
-    durationTarget: 0,
-    diff: 0
-  };
+  /** @type {Region | null} */
+  let lastTargetItem = null;
+
+  /** @type {HTMLTableRowElement[]} */
+  const rows = [];
 
   for (const [i, item] of data.entries()) {
     const baseItem = item[base];
@@ -21,14 +20,41 @@ document.addEventListener("DOMContentLoaded", (async () => {
       break;
     }
     if (targetItem) {
-      lastDiff = getDiffs(baseItem, targetItem);
-      table.tBodies[0].appendChild(createRowAfterTargetArea(baseItem, targetItem, i, lastDiff));
-    }
-    else {
-      const prediction = lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
-      table.tBodies[0].appendChild(createRowBeforeTargetArea(baseItem, i, prediction));
+      lastTargetItem = targetItem;
+      const diffs = getDiffs(baseItem, targetItem);
+      rows[i] = createRowAfterTargetArea(baseItem, targetItem, i, diffs);
     }
   }
+
+  if (!lastTargetItem) {
+    throw new Error("No last event");
+  }
+
+  for (const [i, item] of data.entries()) {
+    const baseItem = item[base];
+    if (!baseItem) {
+      break;
+    }
+    const previousBaseItem = data[i - 1] && data[i - 1][base];
+    if (!item[target] && previousBaseItem && lastTargetItem) {
+      const blank = diffDate({ start: previousBaseItem.end, end: baseItem.start });
+      const duration = diffDate(baseItem);
+      /** @type {Region} */
+      const newTargetItem = {
+        title: baseItem.title,
+        start: addDate(lastTargetItem.end, blank),
+        end: addDate(lastTargetItem.end, blank + duration)
+      };
+
+      const lastDiff = getDiffs(baseItem, newTargetItem);
+      const prediction = lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
+      rows[i] = createRowBeforeTargetArea(baseItem, i, prediction);
+
+      lastTargetItem = newTargetItem;
+    }
+  }
+
+  table.tBodies[0].append(...rows);
 }));
 
 function attachChangeListener() {
