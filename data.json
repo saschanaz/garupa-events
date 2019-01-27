@@ -1015,7 +1015,11 @@
       "start": "2018-09-10",
       "end": "2018-09-18"
     },
-    "taiwan": null,
+    "taiwan": {
+      "title": "這片晚霞緊繫你我",
+      "start": "2019-01-26",
+      "end": "2019-02-03"
+    },
     "korea": null,
     "global": null
   },
