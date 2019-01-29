@@ -764,7 +764,11 @@
       "start": "2018-09-18",
       "end": "2018-09-25"
     },
-    "korea": null,
+    "korea": {
+      "title": "Backstage Pass",
+      "start": "2019-01-30",
+      "end": "2019-02-08"
+    },
     "global": null
   },
   {
