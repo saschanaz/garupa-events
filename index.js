@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", (async () => {
       break;
     }
     if (targetItem) {
-      lastTargetItem = targetItem;
+      if (!lastTargetItem || diffDate({ start: lastTargetItem.start, end: targetItem.start }) > 0) {
+        lastTargetItem = targetItem;
+      }
       const diffs = getDiffs(baseItem, targetItem);
       rows[i] = createRowAfterTargetArea(baseItem, targetItem, i, diffs);
     }
