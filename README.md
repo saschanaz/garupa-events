@@ -14,9 +14,10 @@
 
 ### Global
 
+* https://twitter.com/bangdreamgbp_EN
 * http://bandori.wikia.com/wiki/Girls_Band_Party!_Event_Timeline
 
 ### Taiwan
 
-* http://www.mobimon.com.tw/bang-dream/news.aspx
 * https://www.facebook.com/BanGDreamTW
+* http://www.mobimon.com.tw/bang-dream/news.aspx
