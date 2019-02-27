@@ -9,7 +9,7 @@
 
 ### Korea
 
-* https://twitter.com/twitter.com/bangdreamparty_
+* https://twitter.com/bangdreamparty_
 * https://playgame.kakao.com/bangdream/boards/0Fb5xxIpq
 
 ### Global
