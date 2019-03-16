@@ -1125,7 +1125,11 @@
       "start": "2018-10-31",
       "end": "2018-11-08"
     },
-    "taiwan": null,
+    "taiwan": {
+      "title": "舞台後的練習方式",
+      "start": "2019-03-14",
+      "end": "2019-03-21"
+    },
     "korea": null,
     "global": null
   },
