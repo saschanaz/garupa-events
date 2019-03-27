@@ -1143,7 +1143,11 @@
       "start": "2018-11-10",
       "end": "2018-11-19"
     },
-    "taiwan": null,
+    "taiwan": {
+      "title": "自豪且不退色的餘暉",
+      "start": "2019-03-23",
+      "end": "2019-03-30"
+    },
     "korea": null,
     "global": null
   },
