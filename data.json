@@ -918,7 +918,11 @@
       "start": "2018-10-16",
       "end": "2018-10-24"
     },
-    "korea": null,
+    "korea": {
+      "title": "Neo-Aspect",
+      "start": "2019-04-10",
+      "end": "2019-04-17"
+    },
     "global": null
   },
   {
