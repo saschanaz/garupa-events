@@ -940,7 +940,11 @@
       "start": "2018-10-26",
       "end": "2018-11-02"
     },
-    "korea": null,
+    "korea": {
+      "title": "Beatin' in the Rain",
+      "start": "2019-04-19",
+      "end": "2019-04-26"
+    },
     "global": null
   },
   {
