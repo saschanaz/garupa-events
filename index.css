@@ -32,9 +32,9 @@ table a {
 
 .hitbox:hover {
   border-radius: 5px;
-  background-color: #eee;
+  background-color: #ebf0f3aa;
 }
 .hitbox:active {
   border-radius: 5px;
-  background-color: #ddd;
+  background-color: #d4d8daaa;
 }
