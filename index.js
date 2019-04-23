@@ -271,7 +271,7 @@ function parseDate(str) {
  */
 function diffDate({ start, end }) {
   const ms = parseDate(end) - parseDate(start);
-  return ms / (1000 * 3600 * 24)
+  return ms / (1000 * 3600 * 24);
 }
 
 /**
@@ -284,7 +284,7 @@ function wrapAnchor(externalLink, children) {
     wrapper.append(...children);
     return wrapper;
   }
-  const hitbox = element("div", { class: "hitbox" }, children)
-  const anchor = element("a", { href: externalLink }, [hitbox]);
+  const hitbox = element("div", { class: "hitbox" }, children);
+  const anchor = element("a", { href: externalLink, target: "_blank" }, [hitbox]);
   return anchor;
 }
