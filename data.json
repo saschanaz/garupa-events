@@ -1401,7 +1401,11 @@
         "start": "2018-12-10",
         "end": "2018-12-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "冬季裡的創意市集",
+        "start": "2019-04-21",
+        "end": "2019-04-29"
+      },
       "korea": null,
       "global": null
     }
@@ -1556,6 +1560,19 @@
         "title": "めぐる季節、はじまりの空",
         "start": "2019-04-10",
         "end": "2019-04-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "花咲く学び舎、その片隅で",
+        "start": "2019-04-20",
+        "end": "2019-04-28"
       },
       "taiwan": null,
       "korea": null,
