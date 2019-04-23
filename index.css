@@ -30,6 +30,12 @@ table a {
   text-decoration: inherit !important;
 }
 
+.hitbox {
+  min-height: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .hitbox:hover {
   border-radius: 5px;
   background-color: #ebf0f3aa;
