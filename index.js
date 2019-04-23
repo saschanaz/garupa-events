@@ -1,3 +1,14 @@
+const { element } = DOMLiner;
+
+const lang = {
+  "japan": "ja",
+  "taiwan": "zh",
+  "korea": "ko",
+  "global": "en"
+}
+
+const baseLinkUrl = "https://bandori.fandom.com/wiki/";
+
 document.addEventListener("DOMContentLoaded", (async () => {
   const { base, target } = getComparisonBaseTarget();
   showSelection(base, target);
@@ -13,18 +24,13 @@ document.addEventListener("DOMContentLoaded", (async () => {
   /** @type {HTMLTableRowElement[]} */
   const rows = [];
 
-  for (const [i, item] of data.entries()) {
-    const baseItem = item.region[base];
-    const targetItem = item.region[target];
-    if (!baseItem) {
-      break;
-    }
-    if (targetItem) {
-      if (!lastTargetItem || diffDate({ start: lastTargetItem.start, end: targetItem.start }) > 0) {
-        lastTargetItem = targetItem;
+  for (const event of yieldEventData(data, base, target)) {
+    const { index, targetRegion } = event;
+    if (targetRegion) {
+      if (!lastTargetItem || diffDate({ start: lastTargetItem.start, end: targetRegion.start }) > 0) {
+        lastTargetItem = targetRegion;
       }
-      const diffs = getDiffs(baseItem, targetItem);
-      rows[i] = createRowAfterTargetArea(baseItem, targetItem, i, diffs);
+      rows[index] = createRowAfterTargetArea(event);
     }
   }
 
@@ -32,25 +38,22 @@ document.addEventListener("DOMContentLoaded", (async () => {
     throw new Error("No last event");
   }
 
-  for (const [i, item] of data.entries()) {
-    const baseItem = item.region[base];
-    if (!baseItem) {
-      break;
-    }
-    const previousBaseItem = data[i - 1] && data[i - 1].region[base];
-    if (!item.region[target] && previousBaseItem && lastTargetItem) {
-      const blank = diffDate({ start: previousBaseItem.end, end: baseItem.start });
-      const duration = diffDate(baseItem);
+  for (const event of yieldEventData(data, base, target)) {
+    const { index, targetRegion, baseRegion } = event;
+    const previousBaseItem = data[index - 1] && data[index - 1].region[base];
+    if (!targetRegion && previousBaseItem && lastTargetItem) {
+      const blank = diffDate({ start: previousBaseItem.end, end: baseRegion.start });
+      const duration = diffDate(baseRegion);
       /** @type {Region} */
       const newTargetItem = {
-        title: baseItem.title,
+        title: baseRegion.title,
         start: addDate(lastTargetItem.end, blank),
         end: addDate(lastTargetItem.end, blank + duration)
       };
 
-      const lastDiff = getDiffs(baseItem, newTargetItem);
+      const lastDiff = getDiffs(baseRegion, newTargetItem);
       const prediction = lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
-      rows[i] = createRowBeforeTargetArea(baseItem, i, prediction);
+      rows[index] = createRowBeforeTargetArea(event, prediction);
 
       lastTargetItem = newTargetItem;
     }
@@ -135,27 +138,31 @@ function getDiffs(base, target) {
 }
 
 /**
- * @param {Region} base
- * @param {Region} target
- * @param {number} i
- * @param {DateDiffs} diffs
+ * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
-function createRowAfterTargetArea(base, target, i, diffs) {
-  const { element } = DOMLiner;
+function createRowAfterTargetArea({ baseRegion, targetRegion, baseLang, targetLang, index, diffs, externalLink }) {
+  if (!targetRegion) {
+    throw new Error("Target region data is required");
+  }
+  if (!diffs) {
+    throw new Error("Diff data is required");
+  }
   return element("tr", undefined, [
-    element("td", undefined, `${i + 1}`),
+    element("td", undefined, `${index + 1}`),
     element("td", undefined, [
-      target.title,
-      document.createElement("br"),
-      element("span", { class: "original", lang: "ja" }, base.title)
-    ]),
+      wrapAnchor(externalLink, [
+        element("span", { lang: targetLang }, targetRegion.title),
+        document.createElement("br"),
+        element("span", { class: "original", lang: baseLang }, baseRegion.title)
+      ])]
+    ),
     element("td", undefined, [
-      base.start,
+      baseRegion.start,
       document.createElement("br"),
       `(${diffs.durationBase}일간)`
     ]),
     element("td", decorateByDuration(diffs), [
-      target.start,
+      targetRegion.start,
       document.createElement("br"),
       `(${diffs.durationTarget}일간)`
     ]),
@@ -178,28 +185,54 @@ function decorateByDuration({ durationBase, durationTarget }) {
 }
 
 /**
- * @param {Region} base
- * @param {number} i
+ * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  * @param {number} diff
  */
-function createRowBeforeTargetArea(base, i, diff) {
-  const { element } = DOMLiner;
-  const durationJp = diffDate(base) + 1;
+function createRowBeforeTargetArea({ baseRegion, baseLang, index, externalLink }, diff) {
+  const durationJp = diffDate(baseRegion) + 1;
   return element("tr", { class: "prediction" }, [
-    element("td", undefined, `${i + 1}`),
-    element("td", { lang: "ja" }, [
-      base.title
+    element("td", undefined, `${index + 1}`),
+    element("td", { lang: baseLang }, [
+      wrapAnchor(externalLink, [
+        baseRegion.title
+      ])
     ]),
     element("td", undefined, [
-      base.start,
+      baseRegion.start,
       document.createElement("br"),
       `(${durationJp}일간)`
     ]),
     element("td", undefined, [
-      addDate(base.start, diff) + "?"
+      addDate(baseRegion.start, diff) + "?"
     ]),
     element("td", undefined, `${diff}일?`)
   ]);
+}
+
+/**
+ * @param {Schema[]} data
+ * @param {keyof Schema["region"]} base
+ * @param {keyof Schema["region"]} target
+ */
+function* yieldEventData(data, base, target) {
+  for (const [index, schema] of data.entries()) {
+    const baseRegion = schema.region[base];
+    const targetRegion = schema.region[target];
+    if (!baseRegion) {
+      break;
+    }
+    const diffs = targetRegion && getDiffs(baseRegion, targetRegion);
+
+    yield {
+      index,
+      externalLink: schema.linkId && `${baseLinkUrl}${schema.linkId}`,
+      baseLang: lang[base],
+      targetLang: lang[target],
+      baseRegion,
+      targetRegion,
+      diffs
+    };
+  }
 }
 
 /**
@@ -239,4 +272,19 @@ function parseDate(str) {
 function diffDate({ start, end }) {
   const ms = parseDate(end) - parseDate(start);
   return ms / (1000 * 3600 * 24)
+}
+
+/**
+ * @param {string?} externalLink
+ * @param {(string | Node)[]} children
+ */
+function wrapAnchor(externalLink, children) {
+  if (!externalLink) {
+    const wrapper = document.createDocumentFragment();
+    wrapper.append(...children);
+    return wrapper;
+  }
+  const hitbox = element("div", { class: "hitbox" }, children)
+  const anchor = element("a", { href: externalLink }, [hitbox]);
+  return anchor;
 }

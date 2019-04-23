@@ -11,7 +11,7 @@ interface Duration {
 }
 
 interface Schema {
-  linkId: string;
+  linkId: string | null;
   region: {
     japan: Region;
     taiwan: Region | null;
@@ -29,3 +29,5 @@ interface DateDiffs {
 interface Document {
   getElementById<T extends Node>(name: string): T;
 }
+
+type IteratorParameter<T> = T extends Iterable<infer X> ? X : null
