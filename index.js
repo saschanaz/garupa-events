@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", (async () => {
   const rows = [];
 
   for (const [i, item] of data.entries()) {
-    const baseItem = item[base];
-    const targetItem = item[target];
+    const baseItem = item.region[base];
+    const targetItem = item.region[target];
     if (!baseItem) {
       break;
     }
@@ -33,12 +33,12 @@ document.addEventListener("DOMContentLoaded", (async () => {
   }
 
   for (const [i, item] of data.entries()) {
-    const baseItem = item[base];
+    const baseItem = item.region[base];
     if (!baseItem) {
       break;
     }
-    const previousBaseItem = data[i - 1] && data[i - 1][base];
-    if (!item[target] && previousBaseItem && lastTargetItem) {
+    const previousBaseItem = data[i - 1] && data[i - 1].region[base];
+    if (!item.region[target] && previousBaseItem && lastTargetItem) {
       const blank = diffDate({ start: previousBaseItem.end, end: baseItem.start });
       const duration = diffDate(baseItem);
       /** @type {Region} */
@@ -117,8 +117,8 @@ function nameHead(name) {
 
 function getComparisonBaseTarget() {
   const params = new URLSearchParams(location.search);
-  const base = /** @type {keyof Schema} */ (params.get("base") || "japan");
-  const target = /** @type {keyof Schema} */ (params.get("target") || "korea");
+  const base = /** @type {keyof Schema["region"]} */ (params.get("base") || "japan");
+  const target = /** @type {keyof Schema["region"]} */ (params.get("target") || "korea");
   return { base, target };
 }
 

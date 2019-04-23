@@ -11,9 +11,13 @@ interface Duration {
 }
 
 interface Schema {
-  japan: Region;
-  korea: Region | null;
-  global: Region | null;
+  linkId: string;
+  region: {
+    japan: Region;
+    taiwan: Region | null;
+    korea: Region | null;
+    global: Region | null;
+  }
 }
 
 interface DateDiffs {
