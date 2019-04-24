@@ -35,12 +35,12 @@ table a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.hitbox:hover {
   border-radius: 5px;
   background-color: #ebf0f3aa;
 }
+.hitbox:hover {
+  background-color: #dde1e4aa;
+}
 .hitbox:active {
-  border-radius: 5px;
-  background-color: #d4d8daaa;
+  background-color: #c7ccceaa;
 }
