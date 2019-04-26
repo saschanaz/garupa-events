@@ -9,6 +9,10 @@ body > * {
   max-width: 100%;
 }
 
+select {
+  height: 2em;
+}
+
 .excess {
   color: #d44;
 }
