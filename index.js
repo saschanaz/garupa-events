@@ -152,7 +152,6 @@ function createRowAfterTargetArea({ baseRegion, targetRegion, baseLang, targetLa
     element("td", undefined, [
       wrapAnchor(externalLink, [
         element("span", { lang: targetLang }, targetRegion.title),
-        document.createElement("br"),
         element("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
