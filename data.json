@@ -1586,5 +1586,18 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "地底人☆お届け大作戦！",
+        "start": "2019-04-30",
+        "end": "2019-05-08"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
