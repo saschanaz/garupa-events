@@ -34,6 +34,10 @@ table a {
   text-decoration: inherit !important;
 }
 
+th, td {
+  border: none !important;
+}
+
 .hitbox {
   min-height: 3em;
   display: flex;

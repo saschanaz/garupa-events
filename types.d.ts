@@ -30,4 +30,4 @@ interface Document {
   getElementById<T extends Node>(name: string): T;
 }
 
-type IteratorParameter<T> = T extends Iterable<infer X> ? X : null
+type IteratorParameter<T> = T extends Iterable<infer X> ? X : null;
