@@ -1611,5 +1611,18 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "貫く闇、青薔薇の誇り",
+        "start": "2019-05-10",
+        "end": "2019-05-19"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
