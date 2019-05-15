@@ -1451,7 +1451,11 @@
         "start": "2018-12-31",
         "end": "2019-01-09"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "全員集合！New Year Party！！",
+        "start": "2019-05-11",
+        "end": "2019-05-19"
+      },
       "korea": null,
       "global": null
     }
@@ -1613,7 +1617,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Piercing_the_Darkness,_A_Blue_Rose's_Pride",
     "region": {
       "japan": {
         "title": "貫く闇、青薔薇の誇り",
