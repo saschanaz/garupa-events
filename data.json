@@ -1632,5 +1632,18 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "出動！　笑顔パトロール隊！！",
+        "start": "2019-05-21",
+        "end": "2019-05-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
