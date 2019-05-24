@@ -1163,7 +1163,11 @@
         "start": "2018-12-02",
         "end": "2018-12-09"
       },
-      "korea": null,
+      "korea": {
+        "title": "헬로해피 대모험! ~웃는 얼굴이 잠든 보물섬~",
+        "start": "2019-05-27",
+        "end": "2019-06-03"
+      },
       "global": null
     }
   },
@@ -1634,7 +1638,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Move_Out!_Smile_Patrol_Squad!",
     "region": {
       "japan": {
         "title": "出動！　笑顔パトロール隊！！",
