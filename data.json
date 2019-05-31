@@ -1649,5 +1649,18 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "フラワリー・ジューン・ブライド",
+        "start": "2019-05-31",
+        "end": "2019-06-09"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
