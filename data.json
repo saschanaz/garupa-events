@@ -1655,12 +1655,25 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Flowery_June_Bride",
     "region": {
       "japan": {
         "title": "フラワリー・ジューン・ブライド",
         "start": "2019-05-31",
         "end": "2019-06-09"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "ノーブル・ローズ -花々を連れて-",
+        "start": "2019-06-11",
+        "end": "2019-06-18"
       },
       "taiwan": null,
       "korea": null,
