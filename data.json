@@ -1683,5 +1683,18 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "region": {
+      "japan": {
+        "title": "バンドガールズ・オブ・ザ・デッド",
+        "start": "2019-06-20",
+        "end": "2019-06-28"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
