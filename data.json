@@ -1500,7 +1500,11 @@
         "start": "2019-01-11",
         "end": "2019-01-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "讓自己，成為理想",
+        "start": "2019-05-21",
+        "end": "2019-05-29"
+      },
       "korea": null,
       "global": null
     }
@@ -1513,7 +1517,11 @@
         "start": "2019-01-21",
         "end": "2019-01-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "虛幻之夜裡的夢",
+        "start": "2019-05-31",
+        "end": "2019-06-08"
+      },
       "korea": null,
       "global": null
     }
@@ -1526,7 +1534,11 @@
         "start": "2019-01-31",
         "end": "2019-02-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "這個巧克力是為誰準備？",
+        "start": "2019-06-10",
+        "end": "2019-06-18"
+      },
       "korea": null,
       "global": null
     }
