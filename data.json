@@ -1042,7 +1042,11 @@
         "start": "2019-04-01",
         "end": "2019-04-08"
       },
-      "global": null
+      "global": {
+        "title": "Girls Anthology",
+        "start": "2019-05-19",
+        "end": "2019-05-27"
+      },
     }
   },
   {
@@ -1063,7 +1067,11 @@
         "start": "2019-04-10",
         "end": "2019-04-17"
       },
-      "global": null
+      "global": {
+        "title": "Neo-Aspect",
+        "start": "2019-05-29",
+        "end": "2019-06-07"
+      }
     }
   },
   {
@@ -1084,7 +1092,11 @@
         "start": "2019-04-19",
         "end": "2019-04-26"
       },
-      "global": null
+      "global": {
+        "title": "The Cursed Well and the School Spirit",
+        "start": "2019-06-09",
+        "end": "2019-06-18"
+      }
     }
   },
   {
@@ -1105,7 +1117,11 @@
         "start": "2019-04-29",
         "end": "2019-05-06"
       },
-      "global": null
+      "global": {
+        "title": "The Cursed Well and the School Spirit",
+        "start": "2019-06-20",
+        "end": "2019-06-28"
+      }
     }
   },
   {
@@ -1672,7 +1688,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Noble_Rose_-Take_the_Flower-",
     "region": {
       "japan": {
         "title": "ノーブル・ローズ -花々を連れて-",
