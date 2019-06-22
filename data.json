@@ -1,6 +1,8 @@
 [
   {
     "linkId": "Sakura_Blooming_Party!",
+    "attribute": "pure",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "SAKURA＊BLOOMING PARTY!",
@@ -26,6 +28,8 @@
   },
   {
     "linkId": "A_Song_Unfinished",
+    "attribute": "cool",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "思い繋ぐ、未完成な歌",
@@ -51,6 +55,8 @@
   },
   {
     "linkId": "Happy_Phantom_Thief_%26_The_Luxury_Cruise",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "怪盗ハロハッピーと豪華客船",
@@ -76,6 +82,8 @@
   },
   {
     "linkId": "Rimi%27s_Gift_Of_Song",
+    "attribute": "powerful",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "りみのプレゼントソング",
@@ -101,6 +109,8 @@
   },
   {
     "linkId": "Searching_For_Stars",
+    "attribute": "pure",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "星を探しに",
@@ -126,6 +136,8 @@
   },
   {
     "linkId": "As_Evening_Clears",
+    "attribute": "cool",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "夕影、鮮明になって",
@@ -151,6 +163,8 @@
   },
   {
     "linkId": "Run_Away_Rabbits!",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "うさぎ逃走中",
@@ -176,6 +190,8 @@
   },
   {
     "linkId": "Past_Aspirations_And_Pastel_Futures",
+    "attribute": "powerful",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "あゆみ続けた道、彩られる未来",
@@ -201,6 +217,8 @@
   },
   {
     "linkId": "The_Impromptu_Wedding_Dress",
+    "attribute": "pure",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "ウェディングドレスは突然に",
@@ -226,6 +244,8 @@
   },
   {
     "linkId": "Don%27t_leave_me,_Lisa!!!!",
+    "attribute": "cool",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "Don't leave me, Lisa!!!!",
@@ -251,6 +271,8 @@
   },
   {
     "linkId": "Wish_Upon_a_Tanzaku",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "星に願う短冊",
@@ -276,6 +298,8 @@
   },
   {
     "linkId": "Tomoe_SOS!_Ako%27s_Grand_Nursing_Operation",
+    "attribute": "powerful",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "巴SOS！あこの看病大作戦",
@@ -301,6 +325,8 @@
   },
   {
     "linkId": "When_the_Flowers_Bloom",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "つぼみ開く時",
@@ -326,6 +352,8 @@
   },
   {
     "linkId": "Happy_Summer_Vacation!",
+    "attribute": "cool",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "ハッピーサマーバケーション",
@@ -351,6 +379,8 @@
   },
   {
     "linkId": "A_Rhythmic_Beat:_Fireworks_Festival",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "鼓動重なる花火大会",
@@ -376,6 +406,8 @@
   },
   {
     "linkId": "The_6th_Afterglow",
+    "attribute": "powerful",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "６番目のAfterglow",
@@ -401,6 +433,8 @@
   },
   {
     "linkId": "A_Rose%27s_Name_in_a_Transient_World",
+    "attribute": "pure",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "儚世に咲く薔薇の名は",
@@ -426,6 +460,8 @@
   },
   {
     "linkId": "Hello,_My_Happy_World",
+    "attribute": "cool",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "ハロー、マイハッピーワールド",
@@ -451,6 +487,8 @@
   },
   {
     "linkId": "Pastel*Palettes!_Deserted_Island_Idols",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "パスパレ探検隊~無人島を征くアイドル~",
@@ -476,6 +514,8 @@
   },
   {
     "linkId": "Always_Halloween!_For_Kokoro",
+    "attribute": "powerful",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "こころはいつもHalloween！",
@@ -501,6 +541,8 @@
   },
   {
     "linkId": "Umbrella_For_The_Autumn_Rain",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "秋時雨に傘を",
@@ -526,6 +568,8 @@
   },
   {
     "linkId": "Tearful_Smile_Anchor_Runner",
+    "attribute": "cool",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "涙のスマイルアンカー",
@@ -551,6 +595,8 @@
   },
   {
     "linkId": "Cooking_Class_Craziness!",
+    "attribute": "happy",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "ちぐはぐ！？おかしなお菓子教室",
@@ -576,6 +622,8 @@
   },
   {
     "linkId": "Welcome_To_Eve%27s_Home_Party",
+    "attribute": "powerful",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "イヴのホームパーティへようこそ",
@@ -601,6 +649,8 @@
   },
   {
     "linkId": "Someday,_A_Poem_For_You:_Lisa%27s_Lyrics",
+    "attribute": "pure",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "いつか、届け、アタシの詩",
@@ -626,6 +676,8 @@
   },
   {
     "linkId": "HAPPY_Poppin%27_Xmas",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "HAPPY Poppin' Xmas",
@@ -651,6 +703,8 @@
   },
   {
     "linkId": "Azure,_Shine_Bright",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "紺碧、星煌めいて",
@@ -676,6 +730,8 @@
   },
   {
     "linkId": "Little_Smiley_Steps!",
+    "attribute": "powerful",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "リトルスマイルステップ！",
@@ -701,6 +757,8 @@
   },
   {
     "linkId": "New_Years!_Omikuji_Madness",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "新春！　波乱のおみくじニューイヤー",
@@ -726,6 +784,8 @@
   },
   {
     "linkId": "FUN!_FUN!_CiRCLING_FIVESTAR!",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "FUN! FUN! CiRCLING FIVESTAR!",
@@ -751,6 +811,8 @@
   },
   {
     "linkId": "Neo_Fantasy_Online_-Journey-",
+    "attribute": "happy",
+    "type": "try",
     "region": {
       "japan": {
         "title": "Neo Fantasy Online -旅立ち-",
@@ -776,6 +838,8 @@
   },
   {
     "linkId": "Hectic_Happy_Valentine%27s",
+    "attribute": "powerful",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "ドタバタハッピーバレンタイン",
@@ -801,6 +865,8 @@
   },
   {
     "linkId": "First_Time!%3F_Winter_Sports",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "はじめての！？ウィンタースポーツ",
@@ -826,6 +892,8 @@
   },
   {
     "linkId": "What_a_Wonderful_World!",
+    "attribute": "cool",
+    "type": "try",
     "region": {
       "japan": {
         "title": "What a Wonderful World!",
@@ -851,6 +919,8 @@
   },
   {
     "linkId": "Kaoru%27s_Fleeting_White_Day_Musical",
+    "attribute": "happy",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "儚さ薫るホワイトデーミュージカル",
@@ -876,6 +946,8 @@
   },
   {
     "linkId": "Backstage_Pass",
+    "attribute": "powerful",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "Backstage Pass",
@@ -901,6 +973,8 @@
   },
   {
     "linkId": "Let%27s_Go!_Sunset_Adventure",
+    "attribute": "happy",
+    "type": "try",
     "region": {
       "japan": {
         "title": "奔走！夕影をめぐる旅",
@@ -926,6 +1000,8 @@
   },
   {
     "linkId": "Blossoming_in_Largo",
+    "attribute": "pure",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "新緑のラルゴ",
@@ -951,6 +1027,8 @@
   },
   {
     "linkId": "Unwavering_Will,_Blazing_Bushido",
+    "attribute": "cool",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "譲れない想い、燃えるブシドー",
@@ -976,6 +1054,8 @@
   },
   {
     "linkId": "A_Fair_and_Fluffy_Competition",
+    "attribute": "powerful",
+    "type": "try",
     "region": {
       "japan": {
         "title": "正々堂々！ふわキャラ選手権",
@@ -1001,6 +1081,8 @@
   },
   {
     "linkId": "Double_Rainbow_(Event)",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "二重の虹（ダブル レインボウ）",
@@ -1026,6 +1108,8 @@
   },
   {
     "linkId": "Girls_Anthology",
+    "attribute": "pure",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "ガールズ・アンソロジー",
@@ -1051,6 +1135,8 @@
   },
   {
     "linkId": "Neo-Aspect_(Event)",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "Neo-Aspect",
@@ -1076,6 +1162,8 @@
   },
   {
     "linkId": "Beatin%27_in_the_Rain",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "Beatin' in the Rain",
@@ -1100,7 +1188,9 @@
     }
   },
   {
-    "linkId": "The_Cursed_Well_and_the_School%27s_Ghost",
+    "linkId": "The_Cursed_Well_and_the_School_Spirit",
+    "attribute": "powerful",
+    "type": "try",
     "region": {
       "japan": {
         "title": "呪われた井戸と学園の幽霊",
@@ -1125,7 +1215,9 @@
     }
   },
   {
-    "linkId": "Luminous_Once_Again",
+    "linkId": "Luminous_Once_More",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "もう一度ルミナス",
@@ -1146,7 +1238,9 @@
     }
   },
   {
-    "linkId": "On_Sunday,_We_Got_Separated_At_The_Park",
+    "linkId": "Sundays at a Distant Park",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "日曜日、少し離れた公園で",
@@ -1167,7 +1261,9 @@
     }
   },
   {
-    "linkId": "Hello_Happy_Adventure!_%7ESmiling_Sleeping_Treasure_Island%7E",
+    "linkId": "Happy_Adventure!_~Treasure_Island_Smiles~",
+    "attribute": "pure",
+    "type": "try",
     "region": {
       "japan": {
         "title": "ハロハピ大冒険！〜笑顔の眠る宝島〜",
@@ -1189,6 +1285,8 @@
   },
   {
     "linkId": "Go!_Phantom_Thieves_of_Twilight",
+    "attribute": "cool",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "参上！夕影の怪盗団",
@@ -1213,7 +1311,9 @@
     }
   },
   {
-    "linkId": "Flash!_SUMMER_DIVE",
+    "linkId": "SPARKLE!_SUMMER_DIVE",
+    "attribute": "happy",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "一閃！SUMMER DIVE",
@@ -1235,6 +1335,8 @@
   },
   {
     "linkId": "Growing_Up_Sisters!",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "Growing Up Sisters!",
@@ -1256,6 +1358,8 @@
   },
   {
     "linkId": "Shimmering_Summer_Water_Paradise",
+    "attribute": "cool",
+    "type": "try",
     "region": {
       "japan": {
         "title": "夏にゆらめく水の国",
@@ -1273,6 +1377,8 @@
   },
   {
     "linkId": "Before_The_New_Season",
+    "attribute": "powerful",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "新しい季節、その前に",
@@ -1290,6 +1396,8 @@
   },
   {
     "linkId": "The_Look_Of_The_Sky,_Connected",
+    "attribute": "happy",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "ツナグ、ソラモヨウ",
@@ -1307,6 +1415,8 @@
   },
   {
     "linkId": "A_Promenade_of_Dreams",
+    "attribute": "powerful",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "夢に続くプロムナード",
@@ -1324,6 +1434,8 @@
   },
   {
     "linkId": "Trick_or_Escape!",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "Trick or Escape!",
@@ -1341,6 +1453,8 @@
   },
   {
     "linkId": "It%27s_Got_To_Be_You!",
+    "attribute": "powerful",
+    "type": "normal",
     "region": {
       "japan": {
         "title": "キミがいなくちゃっ！",
@@ -1358,6 +1472,8 @@
   },
   {
     "linkId": "Arisa%27s_Satisfactory_Holiday",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "有咲の\"悪くない\"休日",
@@ -1375,6 +1491,8 @@
   },
   {
     "linkId": "Backstage_Method",
+    "attribute": "powerful",
+    "type": "try",
     "region": {
       "japan": {
         "title": "舞台裏のメソッド",
@@ -1392,6 +1510,8 @@
   },
   {
     "linkId": "The_Afterglow_of_Our_Fading_Pride",
+    "attribute": "happy",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "褪せぬ誇りに差す残光",
@@ -1409,6 +1529,8 @@
   },
   {
     "linkId": "An_Earnest_Song_for_Me",
+    "attribute": "pure",
+    "type": "mission",
     "region": {
       "japan": {
         "title": "ひたむきSong for me",
@@ -1426,6 +1548,8 @@
   },
   {
     "linkId": "A_Nostalgic_Christmas",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "追想、いつかのクリスマス",
@@ -1443,6 +1567,8 @@
   },
   {
     "linkId": "Winter_Sky_Marching",
+    "attribute": "happy",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "ふゆぞらマルシェ",
@@ -1460,6 +1586,8 @@
   },
   {
     "linkId": "Twin_Star_Ensemble",
+    "attribute": "pure",
+    "type": "try",
     "region": {
       "japan": {
         "title": "ふたつ星のアンサンブル",
@@ -1477,6 +1605,8 @@
   },
   {
     "linkId": "Everyone_Assemble!_New_Year_Party!!",
+    "attribute": "powerful",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "全員集合！　ニューイヤーパーティ！！",
@@ -1494,6 +1624,8 @@
   },
   {
     "linkId": "My_Ideal_Self",
+    "attribute": "pure",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "ジブン、アイディアル",
@@ -1511,6 +1643,8 @@
   },
   {
     "linkId": "A_Fleeting_Night%27s_Dream",
+    "attribute": "cool",
+    "type": "mission",
     "region": {
       "japan": {
         "title": "儚き夜の夢",
@@ -1528,6 +1662,8 @@
   },
   {
     "linkId": "For_Whom_Are_These_Chocolates%3F",
+    "attribute": "pure",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "チョコレートは誰のため？",
@@ -1545,6 +1681,8 @@
   },
   {
     "linkId": "A_Day_Off_in_the_Shopping_District",
+    "attribute": "happy",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "お休みの日は商店街へ",
@@ -1558,6 +1696,8 @@
   },
   {
     "linkId": "Prelude%27s_Replay",
+    "attribute": "pure",
+    "type": "try",
     "region": {
       "japan": {
         "title": "再演のプレリュード",
@@ -1571,6 +1711,8 @@
   },
   {
     "linkId": "The_Whitest_Day",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "The Whitest Day",
@@ -1584,6 +1726,8 @@
   },
   {
     "linkId": "A_Message_for_You",
+    "attribute": "happy",
+    "type": "try",
     "region": {
       "japan": {
         "title": "君に伝うメッセージ",
@@ -1597,6 +1741,8 @@
   },
   {
     "linkId": "Backstage_Pass_2",
+    "attribute": "powerful",
+    "type": "mission",
     "region": {
       "japan": {
         "title": "Backstage Pass 2",
@@ -1610,6 +1756,8 @@
   },
   {
     "linkId": "FULL_BLOOMING_Shower!",
+    "attribute": "cool",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "降るFULL BLOOMING！",
@@ -1623,6 +1771,8 @@
   },
   {
     "linkId": "Turning_Seasons,_the_Sky_of_Beginnings",
+    "attribute": "powerful",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "めぐる季節、はじまりの空",
@@ -1636,6 +1786,8 @@
   },
   {
     "linkId": "At_That_Corner_of_The_Blooming_Schoolhouse",
+    "attribute": "happy",
+    "type": "try",
     "region": {
       "japan": {
         "title": "花咲く学び舎、その片隅で",
@@ -1649,6 +1801,8 @@
   },
   {
     "linkId": "Mole_Man☆Delivery_Strategy",
+    "attribute": "pure",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "地底人☆お届け大作戦！",
@@ -1662,6 +1816,8 @@
   },
   {
     "linkId": "Piercing_the_Darkness,_A_Blue_Rose's_Pride",
+    "attribute": "cool",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "貫く闇、青薔薇の誇り",
@@ -1675,6 +1831,8 @@
   },
   {
     "linkId": "Move_Out!_Smile_Patrol_Squad!",
+    "attribute": "happy",
+    "type": "mission",
     "region": {
       "japan": {
         "title": "出動！　笑顔パトロール隊！！",
@@ -1688,6 +1846,8 @@
   },
   {
     "linkId": "Flowery_June_Bride",
+    "attribute": "powerful",
+    "type": "versus",
     "region": {
       "japan": {
         "title": "フラワリー・ジューン・ブライド",
@@ -1701,6 +1861,8 @@
   },
   {
     "linkId": "Noble_Rose_-Take_the_Flower-",
+    "attribute": "cool",
+    "type": "challenge",
     "region": {
       "japan": {
         "title": "ノーブル・ローズ -花々を連れて-",
@@ -1713,7 +1875,9 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Band_Girls_Of_The_Dead",
+    "attribute": "pure",
+    "type": "try",
     "region": {
       "japan": {
         "title": "バンドガールズ・オブ・ザ・デッド",

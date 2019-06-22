@@ -1,0 +1,111 @@
+{
+  "definitions": {
+    "region": {
+      "type": ["object", "null"],
+      "title": "The Region Schema",
+      "required": [
+        "title",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "title": {
+          "$id": "#/items/properties/region/properties/japan/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "examples": [
+            "SAKURA＊BLOOMING PARTY!"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "start": {
+          "$id": "#/items/properties/region/properties/japan/properties/start",
+          "type": "string",
+          "title": "The Start Schema",
+          "examples": [
+            "2017-03-24"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "end": {
+          "$id": "#/items/properties/region/properties/japan/properties/end",
+          "type": "string",
+          "title": "The End Schema",
+          "examples": [
+            "2017-03-30"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "linkId",
+      "attribute",
+      "type",
+      "region"
+    ],
+    "properties": {
+      "linkId": {
+        "$id": "#/items/properties/linkId",
+        "type": ["string", "null"],
+        "title": "The Linkid Schema",
+        "examples": [
+          "Sakura_Blooming_Party!"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "attribute": {
+        "$id": "#/items/properties/attribute",
+        "type": "string",
+        "title": "The Attribute Schema",
+        "examples": [
+          "pure"
+        ],
+        "enum": ["pure", "cool", "happy", "powerful"]
+      },
+      "type": {
+        "$id": "#/items/properties/type",
+        "type": "string",
+        "title": "The Type Schema",
+        "examples": [
+          "normal"
+        ],
+        "enum": ["normal", "challenge", "versus", "try", "mission"]
+      },
+      "region": {
+        "$id": "#/items/properties/region",
+        "type": "object",
+        "title": "The Region Schema",
+        "required": [
+          "japan",
+          "taiwan",
+          "korea",
+          "global"
+        ],
+        "properties": {
+          "japan": {
+            "$ref": "#/definitions/region"
+          },
+          "taiwan": {
+            "$ref": "#/definitions/region"
+          },
+          "korea": {
+            "$ref": "#/definitions/region"
+          },
+          "global": {
+            "$ref": "#/definitions/region"
+          }
+        }
+      }
+    }
+  }
+}

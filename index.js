@@ -7,6 +7,25 @@ const lang = {
   "global": "en"
 }
 
+const attributeIcon = {
+  "pure": "✨",
+  "cool": "🌙",
+  "happy": "😀",
+  "powerful": "🔥"
+};
+
+const l10n = {
+  ko: {
+    type: {
+      normal: "일반",
+      challenge: "챌린지",
+      versus: "합동",
+      try: "트라이",
+      mission: "미션"
+    }
+  }
+};
+
 const baseLinkUrl = "https://bandori.fandom.com/wiki/";
 
 document.addEventListener("DOMContentLoaded", (async () => {
@@ -140,7 +159,8 @@ function getDiffs(base, target) {
 /**
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
-function createRowAfterTargetArea({ baseRegion, targetRegion, baseLang, targetLang, index, diffs, externalLink }) {
+function createRowAfterTargetArea(event) {
+  const { baseRegion, targetRegion, baseLang, targetLang, index, diffs } = event;
   if (!targetRegion) {
     throw new Error("Target region data is required");
   }
@@ -150,11 +170,13 @@ function createRowAfterTargetArea({ baseRegion, targetRegion, baseLang, targetLa
   return element("tr", undefined, [
     element("td", undefined, `${index + 1}`),
     element("td", undefined, [
-      wrapAnchor(externalLink, [
+      wrapAnchor(event.externalLink, [
         element("span", { lang: targetLang }, targetRegion.title),
         element("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
+    element("td", undefined, attributeIcon[event.attribute]),
+    element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -187,15 +209,16 @@ function decorateByDuration({ durationBase, durationTarget }) {
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  * @param {number} diff
  */
-function createRowBeforeTargetArea({ baseRegion, baseLang, index, externalLink }, diff) {
+function createRowBeforeTargetArea(event, diff) {
+  const { baseRegion, baseLang, index, externalLink } = event;
   const durationJp = diffDate(baseRegion) + 1;
   return element("tr", { class: "prediction" }, [
     element("td", undefined, `${index + 1}`),
     element("td", { lang: baseLang }, [
-      wrapAnchor(externalLink, [
-        baseRegion.title
-      ])
+      wrapAnchor(externalLink, [baseRegion.title])
     ]),
+    element("td", undefined, attributeIcon[event.attribute]),
+    element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -225,6 +248,8 @@ function* yieldEventData(data, base, target) {
     yield {
       index,
       externalLink: schema.linkId && `${baseLinkUrl}${schema.linkId}`,
+      attribute: schema.attribute,
+      type: schema.type,
       baseLang: lang[base],
       targetLang: lang[target],
       baseRegion,
