@@ -14,8 +14,8 @@ interface Schema {
   linkId: string | null;
   meta: {
     attribute: "pure" | "cool" | "happy" | "powerful",
-    type: "normal" | "challenge" | "versus" | "try" | "mission",
   } | null;
+  type: "normal" | "challenge" | "versus" | "try" | "mission",
   region: {
     japan: Region;
     taiwan: Region | null;

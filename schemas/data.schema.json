@@ -39,8 +39,7 @@
       "type": ["object", "null"],
       "title": "The Meta Schema",
       "required": [
-        "attribute",
-        "type"
+        "attribute"
       ],
       "properties": {
         "attribute": {
@@ -50,14 +49,6 @@
             "pure"
           ],
           "enum": ["pure", "cool", "happy", "powerful"]
-        },
-        "type": {
-          "type": "string",
-          "title": "The Type Schema",
-          "examples": [
-            "normal"
-          ],
-          "enum": ["normal", "challenge", "versus", "try", "mission"]
         }
       }
     }
@@ -73,6 +64,7 @@
     "required": [
       "linkId",
       "meta",
+      "type",
       "region"
     ],
     "properties": {
@@ -87,6 +79,14 @@
       },
       "meta": {
         "$ref": "#/definitions/meta"
+      },
+      "type": {
+        "type": "string",
+        "title": "The Type Schema",
+        "examples": [
+          "normal"
+        ],
+        "enum": ["normal", "challenge", "versus", "try", "mission"]
       },
       "region": {
         "$id": "#/items/properties/region",

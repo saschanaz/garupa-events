@@ -176,7 +176,7 @@ function createRowAfterTargetArea(event) {
       ])]
     ),
     element("td", undefined, meta && attributeIcon[meta.attribute]),
-    element("td", undefined, meta && l10n.ko.type[meta.type]),
+    element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -192,7 +192,6 @@ function createRowAfterTargetArea(event) {
 }
 
 /**
- * 
  * @param {DateDiffs} param
  */
 function decorateByDuration({ durationBase, durationTarget }) {
@@ -218,7 +217,7 @@ function createRowBeforeTargetArea(event, diff) {
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
     element("td", undefined, meta && attributeIcon[meta.attribute]),
-    element("td", undefined, meta && l10n.ko.type[meta.type]),
+    element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -249,6 +248,7 @@ function* yieldEventData(data, base, target) {
       index,
       externalLink: schema.linkId && `${baseLinkUrl}${schema.linkId}`,
       meta: schema.meta,
+      type: schema.type,
       baseLang: lang[base],
       targetLang: lang[target],
       baseRegion,
