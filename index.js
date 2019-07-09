@@ -160,7 +160,7 @@ function getDiffs(base, target) {
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
 function createRowAfterTargetArea(event) {
-  const { baseRegion, targetRegion, baseLang, targetLang, index, diffs } = event;
+  const { baseRegion, targetRegion, baseLang, targetLang, index, diffs, meta } = event;
   if (!targetRegion) {
     throw new Error("Target region data is required");
   }
@@ -175,8 +175,8 @@ function createRowAfterTargetArea(event) {
         element("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
-    element("td", undefined, attributeIcon[event.attribute]),
-    element("td", undefined, l10n.ko.type[event.type]),
+    element("td", undefined, meta && attributeIcon[meta.attribute]),
+    element("td", undefined, meta && l10n.ko.type[meta.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -210,15 +210,15 @@ function decorateByDuration({ durationBase, durationTarget }) {
  * @param {number} diff
  */
 function createRowBeforeTargetArea(event, diff) {
-  const { baseRegion, baseLang, index, externalLink } = event;
+  const { baseRegion, baseLang, index, externalLink, meta } = event;
   const durationJp = diffDate(baseRegion) + 1;
   return element("tr", { class: "prediction" }, [
     element("td", undefined, `${index + 1}`),
     element("td", { lang: baseLang }, [
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
-    element("td", undefined, attributeIcon[event.attribute]),
-    element("td", undefined, l10n.ko.type[event.type]),
+    element("td", undefined, meta && attributeIcon[meta.attribute]),
+    element("td", undefined, meta && l10n.ko.type[meta.type]),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -248,8 +248,7 @@ function* yieldEventData(data, base, target) {
     yield {
       index,
       externalLink: schema.linkId && `${baseLinkUrl}${schema.linkId}`,
-      attribute: schema.attribute,
-      type: schema.type,
+      meta: schema.meta,
       baseLang: lang[base],
       targetLang: lang[target],
       baseRegion,

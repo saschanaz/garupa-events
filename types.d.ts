@@ -12,8 +12,10 @@ interface Duration {
 
 interface Schema {
   linkId: string | null;
-  attribute: "pure" | "cool" | "happy" | "powerful",
-  type: "normal" | "challenge" | "versus" | "try" | "mission",
+  meta: {
+    attribute: "pure" | "cool" | "happy" | "powerful",
+    type: "normal" | "challenge" | "versus" | "try" | "mission",
+  } | null;
   region: {
     japan: Region;
     taiwan: Region | null;

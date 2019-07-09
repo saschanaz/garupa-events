@@ -10,7 +10,6 @@
       ],
       "properties": {
         "title": {
-          "$id": "#/items/properties/region/properties/japan/properties/title",
           "type": "string",
           "title": "The Title Schema",
           "examples": [
@@ -19,7 +18,6 @@
           "pattern": "^(.*)$"
         },
         "start": {
-          "$id": "#/items/properties/region/properties/japan/properties/start",
           "type": "string",
           "title": "The Start Schema",
           "examples": [
@@ -28,13 +26,38 @@
           "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
         },
         "end": {
-          "$id": "#/items/properties/region/properties/japan/properties/end",
           "type": "string",
           "title": "The End Schema",
           "examples": [
             "2017-03-30"
           ],
           "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      }
+    },
+    "meta": {
+      "type": ["object", "null"],
+      "title": "The Meta Schema",
+      "required": [
+        "attribute",
+        "type"
+      ],
+      "properties": {
+        "attribute": {
+          "type": "string",
+          "title": "The Attribute Schema",
+          "examples": [
+            "pure"
+          ],
+          "enum": ["pure", "cool", "happy", "powerful"]
+        },
+        "type": {
+          "type": "string",
+          "title": "The Type Schema",
+          "examples": [
+            "normal"
+          ],
+          "enum": ["normal", "challenge", "versus", "try", "mission"]
         }
       }
     }
@@ -49,8 +72,7 @@
     "title": "The Items Schema",
     "required": [
       "linkId",
-      "attribute",
-      "type",
+      "meta",
       "region"
     ],
     "properties": {
@@ -63,23 +85,8 @@
         ],
         "pattern": "^(.*)$"
       },
-      "attribute": {
-        "$id": "#/items/properties/attribute",
-        "type": "string",
-        "title": "The Attribute Schema",
-        "examples": [
-          "pure"
-        ],
-        "enum": ["pure", "cool", "happy", "powerful"]
-      },
-      "type": {
-        "$id": "#/items/properties/type",
-        "type": "string",
-        "title": "The Type Schema",
-        "examples": [
-          "normal"
-        ],
-        "enum": ["normal", "challenge", "versus", "try", "mission"]
+      "meta": {
+        "$ref": "#/definitions/meta"
       },
       "region": {
         "$id": "#/items/properties/region",
