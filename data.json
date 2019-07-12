@@ -2116,8 +2116,10 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Hopeful_Session",
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "challenge",
     "region": {
       "japan": {
