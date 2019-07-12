@@ -2099,23 +2099,6 @@
     }
   },
   {
-    "linkId": "How_To_Spend_a_Precious_Day",
-    "meta": {
-      "attribute": "cool"
-    },
-    "type": "versus",
-    "region": {
-      "japan": {
-        "title": "大切な日の過ごし方",
-        "start": "2019-06-30",
-        "end": "2019-07-08"
-      },
-      "taiwan": null,
-      "korea": null,
-      "global": null
-    }
-  },
-  {
     "linkId": "Hopeful_Session",
     "meta": {
       "attribute": "powerful"
