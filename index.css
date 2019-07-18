@@ -33,6 +33,18 @@ select {
   color: #77a;
 }
 
+table {
+  white-space: nowrap;
+}
+
+table tr {
+  border-top: none !important;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f0f2f6 !important;
+}
+
 table a {
   color: inherit !important;
   text-decoration: inherit !important;
@@ -48,11 +60,52 @@ th, td {
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background-color: #ebf0f3aa;
+  background-color: #dde1e4aa;
+  padding: 0 10px;
 }
 .hitbox:hover {
-  background-color: #dde1e4aa;
+  background-color: #c7ccceaa;
 }
 .hitbox:active {
-  background-color: #c7ccceaa;
+  background-color: #b7bcbeaa;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgba(42, 42, 46, 1);
+    color: rgba(249, 249, 250, 0.8);
+  }
+
+  .markdown-body {
+    color: revert !important;
+  }
+
+  @supports not (color: revert) {
+    .markdown-body {
+      color: rgba(249, 249, 250, 0.8) !important;
+    }
+  }
+
+  table {
+    background: transparent !important;
+  }
+
+  table tr {
+    background-color: transparent !important;
+  }
+
+  table tr:nth-child(2n) {
+    background-color: rgb(29, 29, 29) !important;
+  }
+
+  .hitbox {
+    background-color: #233138aa;
+  }
+  .hitbox:hover {
+    background-color: #151f27aa;
+  }
+  .hitbox:active {
+    background-color: #0f181baa;
+  }
+
 }
