@@ -9,6 +9,10 @@ body > * {
   max-width: 100%;
 }
 
+img {
+  background-color: transparent !important;
+}
+
 select {
   height: 2em;
 }

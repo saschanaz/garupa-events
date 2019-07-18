@@ -157,6 +157,13 @@ function getDiffs(base, target) {
 }
 
 /**
+ * @param {Meta["attribute"]} attr
+ */
+function createAttributeIcon(attr) {
+  return element("img", { src: `./assets/${attr}.svg` })
+}
+
+/**
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
 function createRowAfterTargetArea(event) {
@@ -175,7 +182,7 @@ function createRowAfterTargetArea(event) {
         element("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
-    element("td", undefined, meta && attributeIcon[meta.attribute]),
+    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
     element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
@@ -216,7 +223,7 @@ function createRowBeforeTargetArea(event, diff) {
     element("td", { lang: baseLang }, [
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
-    element("td", undefined, meta && attributeIcon[meta.attribute]),
+    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
     element("td", undefined, l10n.ko.type[event.type]),
     element("td", undefined, [
       baseRegion.start,
