@@ -2118,5 +2118,20 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "STAND BY YOU！",
+        "start": "2019-07-21",
+        "end": "2019-07-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
