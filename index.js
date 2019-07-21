@@ -164,6 +164,20 @@ function createAttributeIcon(attr) {
 }
 
 /**
+ * @param {Meta} eventMeta
+ */
+function createGachaIcons({ dreamFestival }) {
+  if (!dreamFestival) {
+    return;
+  }
+  const img = element("img", { src: "./assets/dream-festival.svg" });
+  if (dreamFestival.linkId) {
+    return [element("a", { href: `${baseLinkUrl}${dreamFestival.linkId}` }, [img])];
+  }
+  return [img];
+}
+
+/**
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
 function createRowAfterTargetArea(event) {
@@ -182,8 +196,9 @@ function createRowAfterTargetArea(event) {
         element("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
-    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
     element("td", undefined, l10n.ko.type[event.type]),
+    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
+    element("td", undefined, meta && createGachaIcons(meta)),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
@@ -223,8 +238,9 @@ function createRowBeforeTargetArea(event, diff) {
     element("td", { lang: baseLang }, [
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
-    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
     element("td", undefined, l10n.ko.type[event.type]),
+    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
+    element("td", undefined, meta && createGachaIcons(meta)),
     element("td", undefined, [
       baseRegion.start,
       document.createElement("br"),

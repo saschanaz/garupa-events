@@ -44,11 +44,18 @@
       "properties": {
         "attribute": {
           "type": "string",
-          "title": "The Attribute Schema",
           "examples": [
             "pure"
           ],
           "enum": ["pure", "cool", "happy", "powerful"]
+        },
+        "dreamFestival": {
+          "type": "object",
+          "properties": {
+            "linkId": {
+              "type": "string"
+            }
+          }
         }
       }
     }
@@ -74,8 +81,7 @@
         "title": "The Linkid Schema",
         "examples": [
           "Sakura_Blooming_Party!"
-        ],
-        "pattern": "^(.*)$"
+        ]
       },
       "meta": {
         "$ref": "#/definitions/meta"

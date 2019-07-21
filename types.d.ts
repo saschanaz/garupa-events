@@ -11,7 +11,10 @@ interface Duration {
 }
 
 interface Meta {
-  attribute: "pure" | "cool" | "happy" | "powerful"
+  attribute: "pure" | "cool" | "happy" | "powerful",
+  dreamFestival?: {
+    linkId?: string
+  }
 }
 
 interface Schema {

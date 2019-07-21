@@ -437,7 +437,10 @@
   {
     "linkId": "The_6th_Afterglow",
     "meta": {
-      "attribute": "powerful"
+      "attribute": "powerful",
+      "dreamFestival": {
+        "linkId": "3.5_Million_Players_Dream_Festival"
+      }
     },
     "type": "challenge",
     "region": {
@@ -611,7 +614,10 @@
   {
     "linkId": "Tearful_Smile_Anchor_Runner",
     "meta": {
-      "attribute": "cool"
+      "attribute": "cool",
+      "dreamFestival": {
+        "linkId": "Garupa_in_Osaka_Dream_Festival"
+      }
     },
     "type": "normal",
     "region": {
@@ -814,7 +820,10 @@
   {
     "linkId": "New_Years!_Omikuji_Madness",
     "meta": {
-      "attribute": "pure"
+      "attribute": "pure",
+      "dreamFestival": {
+        "linkId": "New_Years_Dream_Festival"
+      }
     },
     "type": "challenge",
     "region": {
@@ -1017,7 +1026,10 @@
   {
     "linkId": "Backstage_Pass",
     "meta": {
-      "attribute": "powerful"
+      "attribute": "powerful",
+      "dreamFestival": {
+        "linkId": "1st_Anniversary_Dream_Festival"
+      }
     },
     "type": "challenge",
     "region": {
@@ -1162,7 +1174,10 @@
   {
     "linkId": "Double_Rainbow_(Event)",
     "meta": {
-      "attribute": "happy"
+      "attribute": "happy",
+      "dreamFestival": {
+        "linkId": "6_Million_Players_Dream_Festival"
+      }
     },
     "type": "normal",
     "region": {
@@ -1423,7 +1438,10 @@
   {
     "linkId": "SPARKLE!_SUMMER_DIVE",
     "meta": {
-      "attribute": "happy"
+      "attribute": "happy",
+      "dreamFestival": {
+        "linkId": "10_Million_Downloads_Worldwide_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
@@ -1569,7 +1587,10 @@
   {
     "linkId": "Trick_or_Escape!",
     "meta": {
-      "attribute": "cool"
+      "attribute": "cool",
+      "dreamFestival": {
+        "linkId": "7.77_Million_Players_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
@@ -1758,7 +1779,10 @@
   {
     "linkId": "Everyone_Assemble!_New_Year_Party!!",
     "meta": {
-      "attribute": "powerful"
+      "attribute": "powerful",
+      "dreamFestival": {
+        "linkId": "2019_New_Years_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
@@ -1922,7 +1946,10 @@
   {
     "linkId": "Backstage_Pass_2",
     "meta": {
-      "attribute": "powerful"
+      "attribute": "powerful",
+      "dreamFestival": {
+        "linkId": "2nd_Anniversary_Dream_Festival"
+      }
     },
     "type": "mission",
     "region": {
@@ -1990,7 +2017,10 @@
   {
     "linkId": "Mole_Man☆Delivery_Strategy",
     "meta": {
-      "attribute": "pure"
+      "attribute": "pure",
+      "dreamFestival": {
+        "linkId": "9.5_Million_Players_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
