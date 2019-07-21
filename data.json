@@ -1384,7 +1384,11 @@
         "start": "2019-05-27",
         "end": "2019-06-03"
       },
-      "global": null
+      "global": {
+        "title": "Happy Adventure ~Treasure Island Smiles~",
+        "start": "2019-07-20",
+        "end": "2019-07-29"
+      }
     }
   },
   {
@@ -1517,7 +1521,7 @@
     }
   },
   {
-    "linkId": "The_Look_Of_The_Sky,_Connected",
+    "linkId": "Tied_to_the_Skies",
     "meta": {
       "attribute": "happy"
     },
