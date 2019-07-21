@@ -22,6 +22,9 @@ const l10n = {
       versus: "합동",
       try: "트라이",
       mission: "미션"
+    },
+    gacha: {
+      dreamFestival: "드림 페스티벌"
     }
   }
 };
@@ -172,7 +175,10 @@ function createGachaIcons({ dreamFestival }) {
   }
   const img = element("img", { src: "./assets/dream-festival.svg" });
   if (dreamFestival.linkId) {
-    return [element("a", { href: `${baseLinkUrl}${dreamFestival.linkId}` }, [img])];
+    return [element("a", {
+      title: l10n.ko.gacha.dreamFestival,
+      href: `${baseLinkUrl}${dreamFestival.linkId}`
+    }, [img])];
   }
   return [img];
 }
