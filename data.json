@@ -2154,8 +2154,10 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "STAND_BY_YOU!",
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "mission",
     "region": {
       "japan": {
