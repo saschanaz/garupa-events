@@ -1945,7 +1945,7 @@
       "taiwan": {
         "title": "傳給你的一段留言",
         "start": "2019-07-16",
-        "end": "2019-07-21"
+        "end": "2019-07-22"
       },
       "korea": null,
       "global": null
@@ -1966,7 +1966,11 @@
         "start": "2019-03-16",
         "end": "2019-03-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Backstage Pass 2",
+        "start": "2019-07-25",
+        "end": "2019-08-06"
+      },
       "korea": null,
       "global": null
     }
