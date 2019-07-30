@@ -163,7 +163,9 @@ function getDiffs(base, target) {
  * @param {Meta["attribute"]} attr
  */
 function createAttributeIcon(attr) {
-  return element("img", { src: `./assets/${attr}.svg` })
+  if (attr) {
+    return [element("img", { src: `./assets/${attr}.svg` })]
+  }
 }
 
 /**
@@ -203,7 +205,7 @@ function createRowAfterTargetArea(event) {
       ])]
     ),
     element("td", undefined, l10n.ko.type[event.type]),
-    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
+    element("td", undefined, meta && createAttributeIcon(meta.attribute)),
     element("td", undefined, meta && createGachaIcons(meta)),
     element("td", undefined, [
       baseRegion.start,
@@ -245,7 +247,7 @@ function createRowBeforeTargetArea(event, diff) {
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
     element("td", undefined, l10n.ko.type[event.type]),
-    element("td", undefined, meta && [createAttributeIcon(meta.attribute)]),
+    element("td", undefined, meta && createAttributeIcon(meta.attribute)),
     element("td", undefined, meta && createGachaIcons(meta)),
     element("td", undefined, [
       baseRegion.start,

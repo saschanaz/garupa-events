@@ -38,9 +38,6 @@
     "meta": {
       "type": ["object", "null"],
       "title": "The Meta Schema",
-      "required": [
-        "attribute"
-      ],
       "properties": {
         "attribute": {
           "type": "string",

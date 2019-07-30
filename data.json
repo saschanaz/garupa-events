@@ -2177,5 +2177,22 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "dreamFestival": {}
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "私達だけのサマーバケーション",
+        "start": "2019-07-31",
+        "end": "2019-08-08"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
