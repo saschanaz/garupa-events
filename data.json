@@ -2189,6 +2189,7 @@
   {
     "linkId": "Our_Own_Summer_Vacation",
     "meta": {
+      "attribute": "happy",
       "dreamFestival": {
         "linkId": "10_Million_Players_Dream_Festival"
       }
