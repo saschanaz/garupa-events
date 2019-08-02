@@ -2187,9 +2187,11 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Our_Own_Summer_Vacation",
     "meta": {
-      "dreamFestival": {}
+      "dreamFestival": {
+        "linkId": "10_Million_Players_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
