@@ -2209,5 +2209,20 @@
       "korea": null,
       "global": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "サマー・スローサマー",
+        "start": "2019-08-10",
+        "end": "2019-08-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null
+    }
   }
 ]
