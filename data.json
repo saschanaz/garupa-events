@@ -2212,7 +2212,9 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "challenge",
     "region": {
       "japan": {
