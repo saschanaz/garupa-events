@@ -21,3 +21,7 @@
 
 * https://www.facebook.com/BanGDreamTW
 * http://www.mobimon.com.tw/bang-dream/news.aspx
+
+### China
+
+* https://game.bilibili.com/bangdream/ (Add ztNN to the URL, like [zt09](https://game.bilibili.com/bangdream/zt09))
