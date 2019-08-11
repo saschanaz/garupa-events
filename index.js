@@ -2,9 +2,10 @@ const { element } = DOMLiner;
 
 const lang = {
   "japan": "ja",
-  "taiwan": "zh",
+  "taiwan": "zh-tw",
   "korea": "ko",
-  "global": "en"
+  "global": "en",
+  "china": "zh-cn"
 }
 
 const attributeIcon = {

@@ -26,6 +26,7 @@ interface Schema {
     taiwan: Region | null;
     korea: Region | null;
     global: Region | null;
+    china: Region | null;
   }
 }
 

@@ -99,7 +99,8 @@
           "japan",
           "taiwan",
           "korea",
-          "global"
+          "global",
+          "china"
         ],
         "properties": {
           "japan": {
@@ -112,6 +113,9 @@
             "$ref": "#/definitions/region"
           },
           "global": {
+            "$ref": "#/definitions/region"
+          },
+          "china": {
             "$ref": "#/definitions/region"
           }
         }
