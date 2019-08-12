@@ -298,7 +298,11 @@
         "start": "2018-06-12",
         "end": "2018-06-20"
       },
-      "china": null
+      "china": {
+        "title": "突然而至的婚纱",
+        "start": "2019-08-13",
+        "end": "2019-08-18"
+      }
     }
   },
   {
@@ -1575,7 +1579,11 @@
         "start": "2019-06-17",
         "end": "2019-06-26"
       },
-      "global": null,
+      "global": {
+        "title": "Growing Up Sisters!",
+        "start": "2019-08-10",
+        "end": "2019-08-19"
+      },
       "china": null
     }
   },
@@ -2104,7 +2112,11 @@
         "start": "2019-03-31",
         "end": "2019-04-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "賞花FULL BLOOMING！",
+        "start": "2019-08-08",
+        "end": "2019-08-16"
+      },
       "korea": null,
       "global": null,
       "china": null
