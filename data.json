@@ -1775,7 +1775,11 @@
         "start": "2019-03-05",
         "end": "2019-03-12"
       },
-      "korea": null,
+      "korea": {
+        "title": "아리사의 \"나쁘지 않은\" 휴일",
+        "start": "2019-08-30",
+        "end": "2019-09-08"
+      },
       "global": null,
       "china": null
     }
@@ -2172,7 +2176,11 @@
         "start": "2019-04-20",
         "end": "2019-04-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "花綻放校舍裡，其中的小角落",
+        "start": "2019-08-28",
+        "end": "2019-09-05"
+      },
       "korea": null,
       "global": null,
       "china": null
