@@ -434,7 +434,11 @@
         "start": "2018-07-22",
         "end": "2018-07-30"
       },
-      "china": null
+      "china": {
+        "title": "花蕾绽放之时",
+        "start": "2019-09-03",
+        "end": "2019-09-08"
+      }
     }
   },
   {
@@ -464,7 +468,11 @@
         "start": "2018-08-01",
         "end": "2018-08-10"
       },
-      "china": null
+      "china": {
+        "title": "Happy Summer Vacation!",
+        "start": "2019-09-10",
+        "end": "2019-09-15"
+      }
     }
   },
   {
@@ -1626,7 +1634,7 @@
     }
   },
   {
-    "linkId": "Before_The_New_Season",
+    "linkId": "Before_the_Start_of_a_New_Season",
     "meta": {
       "attribute": "powerful"
     },
@@ -1647,7 +1655,11 @@
         "start": "2019-07-09",
         "end": "2019-07-17"
       },
-      "global": null,
+      "global": {
+        "title": "Before the Start of a New Season",
+        "start": "2019-08-31",
+        "end": "2019-09-09"
+      },
       "china": null
     }
   },
@@ -1673,7 +1685,11 @@
         "start": "2019-07-19",
         "end": "2019-07-27"
       },
-      "global": null,
+      "global": {
+        "title": "Tied to the Skies",
+        "start": "2019-09-11",
+        "end": "2019-09-18"
+      },
       "china": null
     }
   },
@@ -1801,7 +1817,11 @@
         "start": "2019-03-14",
         "end": "2019-03-21"
       },
-      "korea": null,
+      "korea": {
+        "title": "무대 뒤의 메소드",
+        "start": "2019-09-10",
+        "end": "2019-09-18"
+      },
       "global": null,
       "china": null
     }
@@ -2401,6 +2421,40 @@
         "title": "夏の宵、水面たゆたう詩と花",
         "start": "2019-08-20",
         "end": "2019-08-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Noble_Rose_-The_Guide_of_Darkness-",
+    "meta": {
+      "attribute": "powerful"
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "ノーブル・ローズ -晦冥の導き手-",
+        "start": "2019-08-31",
+        "end": "2019-09-08"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "Runっ♪ in the hallway",
+        "start": "2019-09-10",
+        "end": "2019-09-18"
       },
       "taiwan": null,
       "korea": null,
