@@ -502,7 +502,11 @@
         "start": "2018-08-11",
         "end": "2018-08-20"
       },
-      "china": null
+      "china": {
+        "title": "重叠的悸动 烟花大会",
+        "start": "2019-09-17",
+        "end": "2019-09-22"
+      }
     }
   },
   {
@@ -535,7 +539,11 @@
         "start": "2018-08-22",
         "end": "2018-08-30"
       },
-      "china": null
+      "china": {
+        "title": "第6人现身Afterglow",
+        "start": "2019-09-24",
+        "end": "2019-09-29"
+      }
     }
   },
   {
@@ -1694,7 +1702,7 @@
     }
   },
   {
-    "linkId": "A_Promenade_of_Dreams",
+    "linkId": "A_Dreamy_Promenade",
     "meta": {
       "attribute": "powerful"
     },
@@ -1715,7 +1723,11 @@
         "start": "2019-07-29",
         "end": "2019-08-07"
       },
-      "global": null,
+      "global": {
+        "title": "A Dreamy Promenade",
+        "start": "2019-09-20",
+        "end": "2019-09-27"
+      },
       "china": null
     }
   },
@@ -1843,7 +1855,11 @@
         "start": "2019-03-23",
         "end": "2019-03-30"
       },
-      "korea": null,
+      "korea": {
+        "title": "바래지 않는 긍지를 비추는 잔광",
+        "start": "2019-09-20",
+        "end": "2019-09-29"
+      },
       "global": null,
       "china": null
     }
@@ -2221,7 +2237,11 @@
         "start": "2019-04-30",
         "end": "2019-05-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "地底人☆護送大作戰！",
+        "start": "2019-09-07",
+        "end": "2019-09-15"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2239,7 +2259,11 @@
         "start": "2019-05-10",
         "end": "2019-05-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "貫穿黑闇，藍薔薇的驕傲",
+        "start": "2019-09-17",
+        "end": "2019-09-26"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2447,14 +2471,34 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Run♪'_in_the_hallway",
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "challenge",
     "region": {
       "japan": {
         "title": "Runっ♪ in the hallway",
         "start": "2019-09-10",
         "end": "2019-09-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Dreams,_Reality,_and_Hundred_Songs",
+    "meta": {
+      "attribute": "pure"
+    },
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "夢と現と百の歌",
+        "start": "2019-09-20",
+        "end": "2019-09-28"
       },
       "taiwan": null,
       "korea": null,
