@@ -2505,5 +2505,23 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "dreamFestival": {}
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "Poppin'ハロウィンパレード♪",
+        "start": "2019-09-30",
+        "end": "2019-10-09"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
