@@ -573,7 +573,11 @@
         "start": "2018-09-01",
         "end": "2018-09-10"
       },
-      "china": null
+      "china": {
+        "title": "浮世间绽放 蔷薇其名为",
+        "start": "2019-10-01",
+        "end": "2019-10-06"
+      }
     }
   },
   {
@@ -1756,7 +1760,11 @@
         "start": "2019-08-09",
         "end": "2019-08-18"
       },
-      "global": null,
+      "global": {
+        "title": "Trick or Escape!",
+        "start": "2019-09-29",
+        "end": "2019-10-08"
+      },
       "china": null
     }
   },
@@ -1881,7 +1889,11 @@
         "start": "2019-04-02",
         "end": "2019-04-09"
       },
-      "korea": null,
+      "korea": {
+        "title": "한결같은 Song for me",
+        "start": "2019-10-01",
+        "end": "2019-10-09"
+      },
       "global": null,
       "china": null
     }
@@ -2281,7 +2293,11 @@
         "start": "2019-05-21",
         "end": "2019-05-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "出動！笑容的巡邏小隊！！",
+        "start": "2019-09-28",
+        "end": "2019-10-06"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2507,9 +2523,12 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Poppin'_Halloween_Parade♪",
     "meta": {
-      "dreamFestival": {}
+      "attribute": "powerful",
+      "dreamFestival": {
+        "linkId": "Happy_Halloween_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
