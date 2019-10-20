@@ -86,8 +86,14 @@ th, td {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgba(42, 42, 46, 1);
+  }
+  html {
+    scrollbar-color: black var(--background-color) ;
+  }
   body {
-    background-color: rgba(42, 42, 46, 1);
+    background-color: var(--background-color);
     color: rgba(249, 249, 250, 0.8);
   }
 
