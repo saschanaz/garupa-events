@@ -54,14 +54,17 @@ th, td {
   border: none !important;
 }
 
-.hitbox {
+.titlebox {
   min-height: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background-color: #dde1e4aa;
   padding: 0 10px;
+}
+
+.hitbox {
+  background-color: #dde1e4aa;
 }
 .hitbox:hover {
   background-color: #c7ccceaa;
