@@ -8,13 +8,6 @@ const lang = {
   "china": "zh-cn"
 }
 
-const attributeIcon = {
-  "pure": "✨",
-  "cool": "🌙",
-  "happy": "😀",
-  "powerful": "🔥"
-};
-
 const l10n = {
   ko: {
     type: {
@@ -25,7 +18,8 @@ const l10n = {
       mission: "미션"
     },
     gacha: {
-      dreamFestival: "드림 페스티벌"
+      dreamFestival: "드림 페스티벌",
+      dreamFestivalShort: "드페"
     }
   }
 };
@@ -176,14 +170,15 @@ function createGachaIcons({ dreamFestival }) {
   if (!dreamFestival) {
     return;
   }
-  const img = element("img", { src: "./assets/dream-festival.svg" });
-  if (dreamFestival.linkId) {
-    return [element("a", {
-      title: l10n.ko.gacha.dreamFestival,
+
+  return [element("a", {
+    title: l10n.ko.gacha.dreamFestival,
+    ...dreamFestival.linkId ? {
       href: `${baseLinkUrl}${dreamFestival.linkId}`
-    }, [img])];
-  }
-  return [img];
+    } : undefined,
+    class: "gacha dream-festival",
+    target: "_blank"
+  }, l10n.ko.gacha.dreamFestivalShort)];
 }
 
 /**

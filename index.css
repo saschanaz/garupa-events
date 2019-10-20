@@ -73,6 +73,18 @@ th, td {
   background-color: #b7bcbeaa;
 }
 
+.gacha {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.dream-festival {
+  background-image: linear-gradient(to right, #1AADA8,  #A8A11F,  #A06A99);
+  color: transparent !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: rgba(42, 42, 46, 1);
