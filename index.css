@@ -123,4 +123,7 @@ th, td {
     background-color: #0f181baa;
   }
 
+  .dream-festival {
+    filter: brightness(1.4)
+  }
 }
