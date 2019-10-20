@@ -609,8 +609,8 @@
       },
       "china": {
         "title": "Hello, My Happy World",
-        "start": "2018-10-08",
-        "end": "2018-10-13"
+        "start": "2019-10-08",
+        "end": "2019-10-13"
       }
     }
   },
@@ -641,7 +641,11 @@
         "start": "2018-09-21",
         "end": "2018-09-28"
       },
-      "china": null
+      "china": {
+        "title": "PasPale探险队~征服无人岛的偶像~",
+        "start": "2019-10-15",
+        "end": "2019-10-20"
+      }
     }
   },
   {
@@ -1803,7 +1807,7 @@
     }
   },
   {
-    "linkId": "Arisa%27s_Satisfactory_Holiday",
+    "linkId": "Arisa's_\"Not_Bad\"_Day_Off",
     "meta": {
       "attribute": "pure"
     },
@@ -1824,7 +1828,11 @@
         "start": "2019-08-30",
         "end": "2019-09-08"
       },
-      "global": null,
+      "global": {
+        "title": "Arisa's \"Not Bad\" Day Off",
+        "start": "2019-10-20",
+        "end": "2019-10-29"
+      },
       "china": null
     }
   },
@@ -2349,7 +2357,11 @@
         "start": "2019-06-11",
         "end": "2019-06-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "崇高的薔薇-與花同行-",
+        "start": "2019-10-19",
+        "end": "2019-10-26"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2560,14 +2572,32 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Do_It_Ourselves!!",
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "challenge",
     "region": {
       "japan": {
         "title": "Do It Ourselves!!",
         "start": "2019-10-11",
         "end": "2019-10-19"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "それぞれの道、結ぶ茜空",
+        "start": "2019-10-21",
+        "end": "2019-10-29"
       },
       "taiwan": null,
       "korea": null,

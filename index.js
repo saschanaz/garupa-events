@@ -335,11 +335,9 @@ function diffDate({ start, end }) {
  */
 function wrapAnchor(externalLink, children) {
   if (!externalLink) {
-    const wrapper = document.createDocumentFragment();
-    wrapper.append(...children);
-    return wrapper;
+    return element("div", { class: "titlebox" }, children);
   }
-  const hitbox = element("div", { class: "hitbox" }, children);
+  const hitbox = element("div", { class: "titlebox hitbox" }, children);
   const anchor = element("a", { href: externalLink, target: "_blank" }, [hitbox]);
   return anchor;
 }
