@@ -5,6 +5,7 @@
 ### Japan
 
 * https://twitter.com/bang_dream_gbp
+* https://web.star.craftegg.jp/information/
 * https://gameo.jp/bang-dream/category/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88
 
 ### Korea
