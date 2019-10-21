@@ -649,7 +649,7 @@
     }
   },
   {
-    "linkId": "Always_Halloween!_For_Kokoro",
+    "linkId": "Always_Halloween_For_Kokoro!",
     "meta": {
       "attribute": "powerful"
     },
@@ -671,11 +671,15 @@
         "end": "2018-08-15"
       },
       "global": {
-        "title": "Always Halloween! For Kokoro",
+        "title": "Always Halloween For Kokoro!",
         "start": "2018-09-30",
         "end": "2018-10-09"
       },
-      "china": null
+      "china": {
+        "title": "心心每天都是Halloween！",
+        "start": "2019-10-22",
+        "end": "2019-10-27"
+      }
     }
   },
   {
@@ -1957,7 +1961,11 @@
         "start": "2019-04-21",
         "end": "2019-04-29"
       },
-      "korea": null,
+      "korea": {
+        "title": "겨울 하늘 마르셰",
+        "start": "2019-10-22",
+        "end": "2019-10-30"
+      },
       "global": null,
       "china": null
     }
@@ -2591,7 +2599,9 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "try",
     "region": {
       "japan": {
