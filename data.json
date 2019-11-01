@@ -709,7 +709,11 @@
         "start": "2018-10-12",
         "end": "2018-10-19"
       },
-      "china": null
+      "china": {
+        "title": "秋时骤雨伞层叠",
+        "start": "2019-10-29",
+        "end": "2019-11-03"
+      }
     }
   },
   {
@@ -1862,7 +1866,11 @@
         "start": "2019-09-10",
         "end": "2019-09-18"
       },
-      "global": null,
+      "global": {
+        "title": "Backstage Methods",
+        "start": "2019-10-31",
+        "end": "2019-11-08"
+      },
       "china": null
     }
   },
@@ -1987,7 +1995,11 @@
         "start": "2019-05-01",
         "end": "2019-05-09"
       },
-      "korea": null,
+      "korea": {
+        "title": "쌍둥이 별의 앙상블",
+        "start": "2019-11-01",
+        "end": "2019-11-10"
+      },
       "global": null,
       "china": null
     }
@@ -2387,7 +2399,11 @@
         "start": "2019-06-20",
         "end": "2019-06-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "BAND GIRLS・OF・THE・DEAD",
+        "start": "2019-10-30",
+        "end": "2019-11-06"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2598,7 +2614,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Separating_Paths,_Connecting_Sky",
     "meta": {
       "attribute": "powerful"
     },
@@ -2608,6 +2624,24 @@
         "title": "それぞれの道、結ぶ茜空",
         "start": "2019-10-21",
         "end": "2019-10-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Heartful_Letter_In_Autumn",
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "秋色ハートフルレター",
+        "start": "2019-10-31",
+        "end": "2019-11-09"
       },
       "taiwan": null,
       "korea": null,
