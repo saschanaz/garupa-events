@@ -746,7 +746,11 @@
         "start": "2018-10-21",
         "end": "2018-10-29"
       },
-      "china": null
+      "china": {
+        "title": "泪光闪闪 笑容全开最后一棒",
+        "start": "2019-11-05",
+        "end": "2019-11-10"
+      }
     }
   },
   {
@@ -1896,7 +1900,11 @@
         "start": "2019-09-20",
         "end": "2019-09-29"
       },
-      "global": null,
+      "global": {
+        "title": "Steadfast Pride, Piercing Sunset",
+        "start": "2019-11-10",
+        "end": "2019-11-19"
+      },
       "china": null
     }
   },
@@ -2046,7 +2054,11 @@
         "start": "2019-05-21",
         "end": "2019-05-29"
       },
-      "korea": null,
+      "korea": {
+        "title": "이상적인, 나",
+        "start": "2019-11-12",
+        "end": "2019-11-22"
+      },
       "global": null,
       "china": null
     }
@@ -2421,7 +2433,11 @@
         "start": "2019-06-30",
         "end": "2019-07-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "珍貴的每日度過方法",
+        "start": "2019-11-08",
+        "end": "2019-11-06"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2642,6 +2658,24 @@
         "title": "秋色ハートフルレター",
         "start": "2019-10-31",
         "end": "2019-11-09"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Straight_Toward_Your_Dream",
+    "meta": {
+      "attribute": "happy"
+    },
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "夢に一途にまっすぐに",
+        "start": "2019-11-11",
+        "end": "2019-11-18"
       },
       "taiwan": null,
       "korea": null,
