@@ -780,7 +780,11 @@
         "start": "2018-10-31",
         "end": "2018-11-08"
       },
-      "china": null
+      "china": {
+        "title": "理解出入！？有点微妙的点心课堂",
+        "start": "2019-11-12",
+        "end": "2019-11-17"
+      }
     }
   },
   {
@@ -810,7 +814,11 @@
         "start": "2018-11-10",
         "end": "2018-11-19"
       },
-      "china": null
+      "china": {
+        "title": "伊芙的家庭聚会Welcome",
+        "start": "2019-11-19",
+        "end": "2019-11-24"
+      }
     }
   },
   {
@@ -1879,7 +1887,7 @@
     }
   },
   {
-    "linkId": "The_Afterglow_of_Our_Fading_Pride",
+    "linkId": "Steadfast_Pride,_Piercing_Sunset",
     "meta": {
       "attribute": "happy"
     },
@@ -1909,7 +1917,7 @@
     }
   },
   {
-    "linkId": "An_Earnest_Song_for_Me",
+    "linkId": "Wholehearted_Song_for_Me",
     "meta": {
       "attribute": "pure"
     },
@@ -1930,7 +1938,11 @@
         "start": "2019-10-01",
         "end": "2019-10-09"
       },
-      "global": null,
+      "global": {
+        "title": "Wholehearted Song for me",
+        "start": "2019-11-21",
+        "end": "2019-11-28"
+      },
       "china": null
     }
   },
@@ -2080,7 +2092,11 @@
         "start": "2019-05-31",
         "end": "2019-06-08"
       },
-      "korea": null,
+      "korea": {
+        "title": "덧없는 밤의 꿈",
+        "start": "2019-11-25",
+        "end": "2019-12-02"
+      },
       "global": null,
       "china": null
     }
@@ -2436,7 +2452,7 @@
       "taiwan": {
         "title": "珍貴的每日度過方法",
         "start": "2019-11-08",
-        "end": "2019-11-06"
+        "end": "2019-11-16"
       },
       "korea": null,
       "global": null,
@@ -2455,7 +2471,11 @@
         "start": "2019-07-10",
         "end": "2019-07-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "充滿希望的演奏會",
+        "start": "2019-11-18",
+        "end": "2019-11-27"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2676,6 +2696,24 @@
         "title": "夢に一途にまっすぐに",
         "start": "2019-11-11",
         "end": "2019-11-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Blooming_Flowers_in_Zero",
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "ゼロに咲く花",
+        "start": "2019-11-20",
+        "end": "2019-11-28"
       },
       "taiwan": null,
       "korea": null,
