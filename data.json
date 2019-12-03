@@ -848,7 +848,11 @@
         "start": "2018-11-21",
         "end": "2018-11-28"
       },
-      "china": null
+      "china": {
+        "title": "至君处，会有时，我谱写的诗篇",
+        "start": "2019-11-26",
+        "end": "2019-12-01"
+      }
     }
   },
   {
@@ -878,7 +882,11 @@
         "start": "2018-11-30",
         "end": "2018-12-07"
       },
-      "china": null
+      "china": {
+        "title": "HAPPY Poppin' Xmas",
+        "start": "2019-12-03",
+        "end": "2019-12-08"
+      }
     }
   },
   {
@@ -1947,7 +1955,7 @@
     }
   },
   {
-    "linkId": "A_Nostalgic_Christmas",
+    "linkId": "Memories_of_Christmas",
     "meta": {
       "attribute": "cool"
     },
@@ -1968,7 +1976,11 @@
         "start": "2019-10-11",
         "end": "2019-10-20"
       },
-      "global": null,
+      "global": {
+        "title": "Memories of Christmas",
+        "start": "2019-11-30",
+        "end": "2019-12-09"
+      },
       "china": null
     }
   },
@@ -2044,7 +2056,11 @@
         "start": "2019-05-11",
         "end": "2019-05-19"
       },
-      "korea": null,
+      "korea": {
+        "title": "전원 집합! 뉴 이어 파티!!",
+        "start": "2019-12-04",
+        "end": "2019-12-14"
+      },
       "global": null,
       "china": null
     }
@@ -2493,7 +2509,11 @@
         "start": "2019-07-21",
         "end": "2019-07-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "STAND BY YOU！",
+        "start": "2019-11-29",
+        "end": "2019-12-07"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2714,6 +2734,24 @@
         "title": "ゼロに咲く花",
         "start": "2019-11-20",
         "end": "2019-11-28"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Here_Comes_Santa",
+    "meta": {
+      "attribute": "pure"
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "サンタがうちにやってくる",
+        "start": "2019-11-30",
+        "end": "2019-12-08"
       },
       "taiwan": null,
       "korea": null,
