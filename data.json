@@ -2534,7 +2534,11 @@
         "start": "2019-07-31",
         "end": "2019-08-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "只屬於我們的SUMMER VACATION",
+        "start": "2019-12-09",
+        "end": "2019-12-17"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2752,6 +2756,22 @@
         "title": "サンタがうちにやってくる",
         "start": "2019-11-30",
         "end": "2019-12-08"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "幼き日の面影は今もそばに",
+        "start": "2019-12-10",
+        "end": "2019-12-18"
       },
       "taiwan": null,
       "korea": null,
