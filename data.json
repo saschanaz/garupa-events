@@ -2764,8 +2764,10 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Nostalgic_Childhood_Memories",
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "try",
     "region": {
       "japan": {
