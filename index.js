@@ -27,9 +27,9 @@ const l10n = {
 const baseLinkUrl = "https://bandori.fandom.com/wiki/";
 
 document.addEventListener("DOMContentLoaded", (async () => {
-  const { base, target } = getComparisonBaseTarget();
-  showSelection(base, target);
-  nameHeads(base, target);
+  const { baseArea, targetArea } = getComparisonAreas();
+  showSelection(baseArea, targetArea);
+  nameHeads(baseArea, targetArea);
   attachChangeListener();
 
   const res = await fetch("data.json");
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
   /** @type {HTMLTableRowElement[]} */
   const rows = [];
 
-  for (const event of yieldEventData(data, base, target)) {
+  for (const event of yieldEventData(data, baseArea, targetArea)) {
     const { index, targetRegion } = event;
     if (targetRegion) {
       if (!lastTargetItem || diffDate({ start: lastTargetItem.start, end: targetRegion.start }) > 0) {
@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", (async () => {
     throw new Error("No last event");
   }
 
-  for (const event of yieldEventData(data, base, target)) {
+  for (const event of yieldEventData(data, baseArea, targetArea)) {
     const { index, targetRegion, baseRegion } = event;
-    const previousBaseItem = data[index - 1] && data[index - 1].region[base];
+    const previousBaseItem = data[index - 1] && data[index - 1].region[baseArea];
     if (!targetRegion && previousBaseItem && lastTargetItem) {
       const blank = diffDate({ start: previousBaseItem.end, end: baseRegion.start });
       const duration = diffDate(baseRegion);
@@ -135,11 +135,11 @@ function nameHead(name) {
   return option.textContent;
 }
 
-function getComparisonBaseTarget() {
+function getComparisonAreas() {
   const params = new URLSearchParams(location.search);
-  const base = /** @type {keyof Schema["region"]} */ (params.get("base") || "japan");
-  const target = /** @type {keyof Schema["region"]} */ (params.get("target") || "korea");
-  return { base, target };
+  const baseArea = /** @type {keyof Schema["region"]} */ (params.get("base") || "japan");
+  const targetArea = /** @type {keyof Schema["region"]} */ (params.get("target") || "korea");
+  return { baseArea, targetArea };
 }
 
 /**
