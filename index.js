@@ -1,4 +1,4 @@
-const { element } = DOMLiner;
+const { element: el } = DOMLiner;
 
 const lang = {
   "japan": "ja",
@@ -159,7 +159,7 @@ function getDiffs(base, target) {
  */
 function createAttributeIcon(attr) {
   if (attr) {
-    return [element("img", { src: `./assets/${attr}.svg` })]
+    return [el("img", { src: `./assets/${attr}.svg` })]
   }
 }
 
@@ -171,7 +171,7 @@ function createGachaIcons({ dreamFestival }) {
     return;
   }
 
-  return [element("a", {
+  return [el("a", {
     title: l10n.ko.gacha.dreamFestival,
     ...dreamFestival.linkId ? {
       href: `${baseLinkUrl}${dreamFestival.linkId}`
@@ -192,28 +192,28 @@ function createRowAfterTargetArea(event) {
   if (!diffs) {
     throw new Error("Diff data is required");
   }
-  return element("tr", undefined, [
-    element("td", undefined, `${index + 1}`),
-    element("td", undefined, [
+  return el("tr", undefined, [
+    el("td", undefined, `${index + 1}`),
+    el("td", undefined, [
       wrapAnchor(event.externalLink, [
-        element("span", { lang: targetLang }, targetRegion.title),
-        element("span", { class: "original", lang: baseLang }, baseRegion.title)
+        el("span", { lang: targetLang }, targetRegion.title),
+        el("span", { class: "original", lang: baseLang }, baseRegion.title)
       ])]
     ),
-    element("td", undefined, l10n.ko.type[event.type]),
-    element("td", undefined, meta && createAttributeIcon(meta.attribute)),
-    element("td", undefined, meta && createGachaIcons(meta)),
-    element("td", undefined, [
+    el("td", undefined, l10n.ko.type[event.type]),
+    el("td", undefined, meta && createAttributeIcon(meta.attribute)),
+    el("td", undefined, meta && createGachaIcons(meta)),
+    el("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
       `(${diffs.durationBase}일간)`
     ]),
-    element("td", decorateByDuration(diffs), [
+    el("td", decorateByDuration(diffs), [
       targetRegion.start,
       document.createElement("br"),
       `(${diffs.durationTarget}일간)`
     ]),
-    element("td", undefined, `${diffs.diff}일`)
+    el("td", undefined, `${diffs.diff}일`)
   ]);
 }
 
@@ -237,23 +237,23 @@ function decorateByDuration({ durationBase, durationTarget }) {
 function createRowBeforeTargetArea(event, diff) {
   const { baseRegion, baseLang, index, externalLink, meta } = event;
   const durationJp = diffDate(baseRegion) + 1;
-  return element("tr", { class: "prediction" }, [
-    element("td", undefined, `${index + 1}`),
-    element("td", { lang: baseLang }, [
+  return el("tr", { class: "prediction" }, [
+    el("td", undefined, `${index + 1}`),
+    el("td", { lang: baseLang }, [
       wrapAnchor(externalLink, [baseRegion.title])
     ]),
-    element("td", undefined, l10n.ko.type[event.type]),
-    element("td", undefined, meta && createAttributeIcon(meta.attribute)),
-    element("td", undefined, meta && createGachaIcons(meta)),
-    element("td", undefined, [
+    el("td", undefined, l10n.ko.type[event.type]),
+    el("td", undefined, meta && createAttributeIcon(meta.attribute)),
+    el("td", undefined, meta && createGachaIcons(meta)),
+    el("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
       `(${durationJp}일간)`
     ]),
-    element("td", undefined, [
+    el("td", undefined, [
       addDate(baseRegion.start, diff) + "?"
     ]),
-    element("td", undefined, `${diff}일?`)
+    el("td", undefined, `${diff}일?`)
   ]);
 }
 
@@ -330,9 +330,9 @@ function diffDate({ start, end }) {
  */
 function wrapAnchor(externalLink, children) {
   if (!externalLink) {
-    return element("div", { class: "titlebox" }, children);
+    return el("div", { class: "titlebox" }, children);
   }
-  const hitbox = element("div", { class: "titlebox hitbox" }, children);
-  const anchor = element("a", { href: externalLink, target: "_blank" }, [hitbox]);
+  const hitbox = el("div", { class: "titlebox hitbox" }, children);
+  const anchor = el("a", { href: externalLink, target: "_blank" }, [hitbox]);
   return anchor;
 }
