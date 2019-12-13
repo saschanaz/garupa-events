@@ -1989,7 +1989,7 @@
     }
   },
   {
-    "linkId": "Winter_Sky_Marching",
+    "linkId": "Winter_Sky_Marché",
     "meta": {
       "attribute": "happy"
     },
@@ -2010,7 +2010,11 @@
         "start": "2019-10-22",
         "end": "2019-10-30"
       },
-      "global": null,
+      "global": {
+        "title": "Winter Sky Marché",
+        "start": "2019-12-11",
+        "end": "2019-12-18"
+      },
       "china": null
     }
   },
@@ -2138,7 +2142,11 @@
         "start": "2019-06-10",
         "end": "2019-06-18"
       },
-      "korea": null,
+      "korea": {
+        "title": "초콜릿은 누구를 위해?",
+        "start": "2019-12-16",
+        "end": "2019-12-25"
+      },
       "global": null,
       "china": null
     }
