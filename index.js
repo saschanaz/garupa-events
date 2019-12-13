@@ -35,9 +35,26 @@ document.addEventListener("DOMContentLoaded", (async () => {
   const res = await fetch("data.json");
   /** @type {Schema[]} */
   const data = await res.json();
+
+  let { lastTargetItem, rows } = createRowsAfterTargetArea(data, baseArea, targetArea);
+
+  if (!lastTargetItem) {
+    throw new Error("No last event");
+  }
+
+  lastTargetItem = createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows);
+
+  table.tBodies[0].append(...rows);
+}));
+
+/**
+ * @param {Schema[]} data
+ * @param {keyof Schema["region"]} baseArea
+ * @param {keyof Schema["region"]} targetArea
+ */
+function createRowsAfterTargetArea(data, baseArea, targetArea) {
   /** @type {Region | null} */
   let lastTargetItem = null;
-
   /** @type {HTMLTableRowElement[]} */
   const rows = [];
 
@@ -50,11 +67,17 @@ document.addEventListener("DOMContentLoaded", (async () => {
       rows[index] = createRowAfterTargetArea(event);
     }
   }
+  return { lastTargetItem, rows };
+}
 
-  if (!lastTargetItem) {
-    throw new Error("No last event");
-  }
-
+/**
+ * @param {Schema[]} data
+ * @param {keyof Schema["region"]} baseArea
+ * @param {keyof Schema["region"]} targetArea
+ * @param {Region} lastTargetItem
+ * @param {HTMLTableRowElement[]} rows
+ */
+function createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows) {
   for (const event of yieldEventData(data, baseArea, targetArea)) {
     const { index, targetRegion, baseRegion } = event;
     const previousBaseItem = data[index - 1] && data[index - 1].region[baseArea];
@@ -75,9 +98,8 @@ document.addEventListener("DOMContentLoaded", (async () => {
       lastTargetItem = newTargetItem;
     }
   }
-
-  table.tBodies[0].append(...rows);
-}));
+  return lastTargetItem;
+}
 
 function attachChangeListener() {
   const baseSelect = document.getElementById("baseSelect");
