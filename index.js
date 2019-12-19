@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
     throw new Error("No last event");
   }
 
-  lastTargetItem = createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows);
+  createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows);
 
   table.tBodies[0].append(...rows);
 }));
@@ -98,7 +98,6 @@ function createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, 
       lastTargetItem = newTargetItem;
     }
   }
-  return lastTargetItem;
 }
 
 function attachChangeListener() {

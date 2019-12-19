@@ -950,7 +950,11 @@
         "start": "2018-12-20",
         "end": "2018-12-28"
       },
-      "china": null
+      "china": {
+        "title": "踏出微笑的一小步！",
+        "start": "2019-12-17",
+        "end": "2019-12-22"
+      }
     }
   },
   {
@@ -2040,7 +2044,11 @@
         "start": "2019-11-01",
         "end": "2019-11-10"
       },
-      "global": null,
+      "global": {
+        "title": "Twin Star Ensemble",
+        "start": "2019-12-20",
+        "end": "2019-12-29"
+      },
       "china": null
     }
   },
@@ -2568,7 +2576,11 @@
         "start": "2019-08-10",
         "end": "2019-08-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "夏季・慢活夏日",
+        "start": "2019-12-19",
+        "end": "2019-12-27"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2786,6 +2798,22 @@
         "title": "幼き日の面影は今もそばに",
         "start": "2019-12-10",
         "end": "2019-12-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "ワクワク☆トッピングデイズ",
+        "start": "2019-12-20",
+        "end": "2019-12-29"
       },
       "taiwan": null,
       "korea": null,
