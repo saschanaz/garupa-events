@@ -1017,7 +1017,11 @@
         "start": "2019-01-10",
         "end": "2019-01-18"
       },
-      "china": null
+      "china": {
+        "title": "FUN! FUN! CiRCLING FIVESTAR!",
+        "start": "2019-12-24",
+        "end": "2019-12-29"
+      }
     }
   },
   {
@@ -2053,7 +2057,7 @@
     }
   },
   {
-    "linkId": "Everyone_Assemble!_New_Year_Party!!",
+    "linkId": "We're_All_Here!_New_Year's_Party!!",
     "meta": {
       "attribute": "powerful",
       "dreamFestival": {
@@ -2077,7 +2081,11 @@
         "start": "2019-12-04",
         "end": "2019-12-14"
       },
-      "global": null,
+      "global": {
+        "title": "We're All Here! New Year's Party!!",
+        "start": "2019-12-31",
+        "end": "2020-01-09"
+      },
       "china": null
     }
   },
@@ -2176,7 +2184,11 @@
         "start": "2019-06-20",
         "end": "2019-06-27"
       },
-      "korea": null,
+      "korea": {
+        "title": "휴일에는 상점가에",
+        "start": "2019-12-27",
+        "end": "2020-01-04"
+      },
       "global": null,
       "china": null
     }
@@ -2598,7 +2610,11 @@
         "start": "2019-08-20",
         "end": "2019-08-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "夏日夜，漂浮於水面的詩與花",
+        "start": "2019-12-29",
+        "end": "2020-01-07"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2772,7 +2788,10 @@
   {
     "linkId": "Here_Comes_Santa",
     "meta": {
-      "attribute": "pure"
+      "attribute": "pure",
+      "dreamFestival": {
+        "linkId": "11_Million_Players_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
@@ -2806,12 +2825,31 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Exciting☆Topping_Days",
     "meta": null,
     "type": "challenge",
     "region": {
       "japan": {
         "title": "ワクワク☆トッピングデイズ",
+        "start": "2019-12-20",
+        "end": "2019-12-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "powerful",
+      "dreamFestival": {}
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "新年寿ぐ夢語り",
         "start": "2019-12-20",
         "end": "2019-12-29"
       },
