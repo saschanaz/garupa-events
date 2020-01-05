@@ -987,7 +987,11 @@
         "start": "2018-12-31",
         "end": "2019-01-08"
       },
-      "china": null
+      "china": {
+        "title": "新春！波澜不断的抽签",
+        "start": "2019-12-31",
+        "end": "2020-01-05"
+      }
     }
   },
   {
@@ -2210,7 +2214,11 @@
         "start": "2019-06-29",
         "end": "2019-07-06"
       },
-      "korea": null,
+      "korea": {
+        "title": "재연의 프렐류드",
+        "start": "2020-01-06",
+        "end": "2020-01-14"
+      },
       "global": null,
       "china": null
     }
@@ -2826,7 +2834,9 @@
   },
   {
     "linkId": "Exciting☆Topping_Days",
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "challenge",
     "region": {
       "japan": {
@@ -2843,15 +2853,17 @@
   {
     "linkId": null,
     "meta": {
-      "attribute": "powerful",
-      "dreamFestival": {}
+      "attribute": "pure",
+      "dreamFestival": {
+        "linkId": "11_Million_Players_Dream_Festival"
+      }
     },
     "type": "versus",
     "region": {
       "japan": {
         "title": "新年寿ぐ夢語り",
-        "start": "2019-12-20",
-        "end": "2019-12-29"
+        "start": "2019-12-31",
+        "end": "2020-01-08"
       },
       "taiwan": null,
       "korea": null,
