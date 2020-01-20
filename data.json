@@ -2678,7 +2678,11 @@
         "start": "2019-09-10",
         "end": "2019-09-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Run(嚕)♪ in the hallway",
+        "start": "2020-01-20",
+        "end": "2020-01-29"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2902,6 +2906,22 @@
         "title": "迷子のおもちゃの見る夢は",
         "start": "2020-01-10",
         "end": "2020-01-19"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "ニイハオ♪回遊スマイルマップ",
+        "start": "2020-01-21",
+        "end": "2020-01-29"
       },
       "taiwan": null,
       "korea": null,
