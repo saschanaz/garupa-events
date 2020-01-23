@@ -1089,7 +1089,11 @@
         "start": "2019-01-31",
         "end": "2019-02-07"
       },
-      "china": null
+      "china": {
+        "title": "慌慌张张 快乐的情人节",
+        "start": "2020-01-21",
+        "end": "2020-01-26"
+      }
     }
   },
   {
@@ -2153,7 +2157,11 @@
         "start": "2019-11-25",
         "end": "2019-12-02"
       },
-      "global": null,
+      "global": {
+        "title": "A Fleeting Night's Dream",
+        "start": "2020-01-22",
+        "end": "2020-01-29"
+      },
       "china": null
     }
   },
@@ -2278,7 +2286,11 @@
         "start": "2019-07-16",
         "end": "2019-07-22"
       },
-      "korea": null,
+      "korea": {
+        "title": "너에게 전하는 메시지",
+        "start": "2020-01-28",
+        "end": "2020-02-04"
+      },
       "global": null,
       "china": null
     }
@@ -2914,8 +2926,10 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Ni_Hao♪_Smile-Mapped_Excursion",
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "challenge",
     "region": {
       "japan": {
