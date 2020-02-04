@@ -1123,7 +1123,11 @@
         "start": "2019-02-09",
         "end": "2019-02-15"
       },
-      "china": null
+      "china": {
+        "title": "初次挑战！？冬季运动",
+        "start": "2020-01-28",
+        "end": "2020-02-02"
+      }
     }
   },
   {
@@ -1153,7 +1157,11 @@
         "start": "2019-03-10",
         "end": "2019-03-18"
       },
-      "china": null
+      "china": {
+        "title": "What a Wonderful World!",
+        "start": "2020-02-04",
+        "end": "2020-02-09"
+      }
     }
   },
   {
@@ -2166,7 +2174,7 @@
     }
   },
   {
-    "linkId": "For_Whom_Are_These_Chocolates%3F",
+    "linkId": "Whom_Are_the_Chocolates_for%3F",
     "meta": {
       "attribute": "pure"
     },
@@ -2187,7 +2195,11 @@
         "start": "2019-12-16",
         "end": "2019-12-25"
       },
-      "global": null,
+      "global": {
+        "title": "Whom Are the Chocolates for?",
+        "start": "2020-01-31",
+        "end": "2020-02-07"
+      },
       "china": null
     }
   },
@@ -2712,7 +2724,11 @@
         "start": "2019-09-20",
         "end": "2019-09-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "夢與現實百人一首",
+        "start": "2020-01-31",
+        "end": "2020-02-09"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2936,6 +2952,24 @@
         "title": "ニイハオ♪回遊スマイルマップ",
         "start": "2020-01-21",
         "end": "2020-01-29"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Ni_Hao♪_Smile-Mapped_Excursion",
+    "meta": {
+      "attribute": "happy"
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "君に届け、スウィートハートバレンタイン♪",
+        "start": "2020-01-31",
+        "end": "2020-02-08"
       },
       "taiwan": null,
       "korea": null,
