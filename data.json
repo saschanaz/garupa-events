@@ -2204,7 +2204,7 @@
     }
   },
   {
-    "linkId": "A_Day_Off_in_the_Shopping_District",
+    "linkId": "A_Day_Off_Downtown",
     "meta": {
       "attribute": "happy"
     },
@@ -2225,7 +2225,11 @@
         "start": "2019-12-27",
         "end": "2020-01-04"
       },
-      "global": null,
+      "global": {
+        "title": "A Day Off Downtown",
+        "start": "2020-01-31",
+        "end": "2020-02-07"
+      },
       "china": null
     }
   },
@@ -2327,7 +2331,11 @@
         "start": "2019-07-25",
         "end": "2019-08-06"
       },
-      "korea": null,
+      "korea": {
+        "title": "Backstage Pass 2",
+        "start": "2020-02-06",
+        "end": "2020-02-20"
+      },
       "global": null,
       "china": null
     }
@@ -2970,6 +2978,22 @@
         "title": "君に届け、スウィートハートバレンタイン♪",
         "start": "2020-01-31",
         "end": "2020-02-08"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "ノーブル・ローズ -歌、至りて-",
+        "start": "2020-02-10",
+        "end": "2020-02-18"
       },
       "taiwan": null,
       "korea": null,
