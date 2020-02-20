@@ -1191,7 +1191,11 @@
         "start": "2019-02-28",
         "end": "2019-03-08"
       },
-      "china": null
+      "china": {
+        "title": "梦幻薰香 白色情人节音乐剧",
+        "start": "2020-02-11",
+        "end": "2020-02-16"
+      }
     }
   },
   {
@@ -1224,7 +1228,11 @@
         "start": "2019-03-29",
         "end": "2019-04-05"
       },
-      "china": null
+      "china": {
+        "title": "Backstage Pass",
+        "start": "2020-02-18",
+        "end": "2020-02-23"
+      }
     }
   },
   {
@@ -2227,8 +2235,8 @@
       },
       "global": {
         "title": "A Day Off Downtown",
-        "start": "2020-01-31",
-        "end": "2020-02-07"
+        "start": "2020-02-09",
+        "end": "2020-02-17"
       },
       "china": null
     }
@@ -2255,7 +2263,11 @@
         "start": "2020-01-06",
         "end": "2020-01-14"
       },
-      "global": null,
+      "global": {
+        "title": "Prelude Replay",
+        "start": "2020-02-19",
+        "end": "2020-02-27"
+      },
       "china": null
     }
   },
@@ -2757,7 +2769,11 @@
         "start": "2019-09-30",
         "end": "2019-10-09"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Poppin’萬聖節大遊行♪",
+        "start": "2020-02-11",
+        "end": "2020-02-20"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -2968,7 +2984,7 @@
     }
   },
   {
-    "linkId": "Ni_Hao♪_Smile-Mapped_Excursion",
+    "linkId": "Sweetheart Valentine For You♪",
     "meta": {
       "attribute": "happy"
     },
@@ -2986,14 +3002,34 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Noble_Rose_-A_Song_To_Reach-",
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "ノーブル・ローズ -歌、至りて-",
         "start": "2020-02-10",
         "end": "2020-02-18"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Sunny-side_Live_~A_Day_In_Front_Of_The_Station~",
+    "meta": {
+      "attribute": "happy"
+    },
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "サニーサイドライブ～ある日の駅前～",
+        "start": "2020-02-20",
+        "end": "2020-02-27"
       },
       "taiwan": null,
       "korea": null,
