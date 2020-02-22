@@ -2369,7 +2369,11 @@
         "start": "2019-08-08",
         "end": "2019-08-16"
       },
-      "korea": null,
+      "korea": {
+        "title": "흩날리는 FULL BLOOMING!",
+        "start": "2020-02-22",
+        "end": "2020-02-29"
+      },
       "global": null,
       "china": null
     }
@@ -2791,7 +2795,11 @@
         "start": "2019-10-11",
         "end": "2019-10-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Do It Ourselves!!",
+        "start": "2020-02-22",
+        "end": "2020-03-02"
+      },
       "korea": null,
       "global": null,
       "china": null
