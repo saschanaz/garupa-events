@@ -1262,7 +1262,11 @@
         "start": "2019-03-20",
         "end": "2019-03-27"
       },
-      "china": null
+      "china": {
+        "title": "奔跑! 夕阳下的巡游之旅",
+        "start": "2020-02-25",
+        "end": "2020-03-01"
+      }
     }
   },
   {
@@ -1292,7 +1296,11 @@
         "start": "2019-04-07",
         "end": "2019-04-16"
       },
-      "china": null
+      "china": {
+        "title": "新绿的缓慢曲",
+        "start": "2020-03-03",
+        "end": "2020-03-08"
+      }
     }
   },
   {
@@ -2293,7 +2301,11 @@
         "start": "2020-01-16",
         "end": "2020-01-25"
       },
-      "global": null,
+      "global": {
+        "title": "The Whitest Day",
+        "start": "2020-02-29",
+        "end": "2020-03-09"
+      },
       "china": null
     }
   },
@@ -2395,7 +2407,11 @@
         "start": "2019-08-18",
         "end": "2019-08-26"
       },
-      "korea": null,
+      "korea": {
+        "title": "돌고 도는 계절, 시작의 하늘",
+        "start": "2020-03-02",
+        "end": "2020-03-08"
+      },
       "global": null,
       "china": null
     }
@@ -2817,7 +2833,11 @@
         "start": "2019-10-21",
         "end": "2019-10-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "各自的道路，相繫的茜空",
+        "start": "2020-03-04",
+        "end": "2020-03-13"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3038,6 +3058,40 @@
         "title": "サニーサイドライブ～ある日の駅前～",
         "start": "2020-02-20",
         "end": "2020-02-27"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Non-stop!_Favor_Returning_Mission!",
+    "meta": {
+      "attribute": "pure"
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "ノンストップ！　お返しミッション！",
+        "start": "2020-02-29",
+        "end": "2020-03-06"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "私模様テクスチャー",
+        "start": "2020-03-08",
+        "end": "2020-03-14"
       },
       "taiwan": null,
       "korea": null,
