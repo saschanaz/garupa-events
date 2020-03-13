@@ -1330,7 +1330,11 @@
         "start": "2019-04-18",
         "end": "2019-04-26"
       },
-      "china": null
+      "china": {
+        "title": "无法退让的信念、燃烧吧武士道",
+        "start": "2020-03-10",
+        "end": "2020-03-15"
+      }
     }
   },
   {
@@ -2310,7 +2314,7 @@
     }
   },
   {
-    "linkId": "A_Message_for_You",
+    "linkId": "Message_for_You",
     "meta": {
       "attribute": "happy"
     },
@@ -2331,7 +2335,11 @@
         "start": "2020-01-28",
         "end": "2020-02-04"
       },
-      "global": null,
+      "global": {
+        "title": "Message for You",
+        "start": "2020-03-11",
+        "end": "2020-03-17"
+      },
       "china": null
     }
   },
@@ -2433,7 +2441,11 @@
         "start": "2019-08-28",
         "end": "2019-09-05"
       },
-      "korea": null,
+      "korea": {
+        "title": "꽃피는 배움터, 그 한편에서",
+        "start": "2020-03-10",
+        "end": "2020-03-16"
+      },
       "global": null,
       "china": null
     }
@@ -3084,8 +3096,10 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "My_Own_Texture",
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "versus",
     "region": {
       "japan": {
