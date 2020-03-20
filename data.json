@@ -1364,7 +1364,11 @@
         "start": "2019-04-28",
         "end": "2019-05-07"
       },
-      "china": null
+      "china": {
+        "title": "堂堂正正！软绵吉祥物争夺赛",
+        "start": "2020-03-17",
+        "end": "2020-03-22"
+      }
     }
   },
   {
@@ -2368,7 +2372,11 @@
         "start": "2020-02-06",
         "end": "2020-02-20"
       },
-      "global": null,
+      "global": {
+        "title": "Backstage Pass 2",
+        "start": "2020-03-19",
+        "end": "2020-03-30"
+      },
       "china": null
     }
   },
@@ -2470,7 +2478,11 @@
         "start": "2019-09-07",
         "end": "2019-09-15"
       },
-      "korea": null,
+      "korea": {
+        "title": "지저인☆배송 대작전!",
+        "start": "2020-03-18",
+        "end": "2020-03-24"
+      },
       "global": null,
       "china": null
     }
@@ -2867,7 +2879,11 @@
         "start": "2019-10-31",
         "end": "2019-11-09"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "秋色 暖心的信籤",
+        "start": "2020-03-15",
+        "end": "2020-03-22"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3106,6 +3122,24 @@
         "title": "私模様テクスチャー",
         "start": "2020-03-08",
         "end": "2020-03-14"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Backstage_Pass_3",
+    "meta": {
+      "attribute": "powerful"
+    },
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "Backstage Pass 3",
+        "start": "2020-03-16",
+        "end": "2020-03-29"
       },
       "taiwan": null,
       "korea": null,
