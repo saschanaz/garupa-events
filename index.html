@@ -1,50 +1,42 @@
 <!DOCTYPE html>
-<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="뱅드림 (걸파) 각 서버 이벤트 자료를 목록으로 정리해 보여줍니다." />
+<title>BanG Dream! 걸즈 밴드 파티! 이벤트 목록</title>
+<link rel="stylesheet" href="static/index.css" />
+<link rel="stylesheet" href="https://unpkg.com/github-markdown-css@2.10.0/github-markdown.css" />
+<link rel="preload" href="static/data.json" as="fetch" />
+<script src="https://unpkg.com/domliner@1.2.9/lib/domliner.js"></script>
+<script src="static/index.js" type="module"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="뱅드림 (걸파) 각 서버 이벤트 자료를 목록으로 정리해 보여줍니다." />
-  <title>BanG Dream! 걸즈 밴드 파티! 이벤트 목록</title>
-  <link rel="stylesheet" href="static/index.css" />
-  <link rel="stylesheet" href="https://unpkg.com/github-markdown-css@2.10.0/github-markdown.css" />
-  <link rel="preload" href="static/data.json" as="fetch" />
-  <script src="https://unpkg.com/domliner@1.2.9/lib/domliner.js"></script>
-  <script src="static/index.js" type="module"></script>
-</head>
-
-<body>
-  <article class="markdown-body">
-    <h1><a href="https://github.com/saschanaz/garupa-events-kr">BanG Dream! 걸즈 밴드 파티! 이벤트 목록</a></h1>
-    <p>
-      비교 기준: <select id="baseSelect">
-        <option value="japan">일본</option>
-        <option value="taiwan">대만</option>
-        <option value="korea">한국</option>
-        <option value="global">글로벌</option>
-        <option value="china">중국</option>
-      </select>
-      비교 대상: <select id="targetSelect">
-        <option value="japan">일본</option>
-        <option value="taiwan">대만</option>
-        <option value="korea" selected>한국</option>
-        <option value="global">글로벌</option>
-        <option value="china">중국</option>
-      </select>
-    </p>
-    <table id="table">
-      <tr>
-        <th>순번</th>
-        <th>제목</th>
-        <th>종류</th>
-        <th>속성</th>
-        <th>뽑기</th>
-        <th id="baseHead">일본</th>
-        <th id="targetHead">한국</th>
-        <th>격차</th>
-      </tr>
-    </table>
-  </article>
-</body>
-
-</html>
+<article class="markdown-body">
+  <h1><a href="https://github.com/saschanaz/garupa-events-kr">BanG Dream! 걸즈 밴드 파티! 이벤트 목록</a></h1>
+  <p>
+    비교 기준: <select id="baseSelect">
+      <option value="japan">일본</option>
+      <option value="taiwan">대만</option>
+      <option value="korea">한국</option>
+      <option value="global">글로벌</option>
+      <option value="china">중국</option>
+    </select>
+    비교 대상: <select id="targetSelect">
+      <option value="japan">일본</option>
+      <option value="taiwan">대만</option>
+      <option value="korea" selected>한국</option>
+      <option value="global">글로벌</option>
+      <option value="china">중국</option>
+    </select>
+  </p>
+  <table id="table">
+    <tr>
+      <th>순번</th>
+      <th>제목</th>
+      <th>종류</th>
+      <th>속성</th>
+      <th>뽑기</th>
+      <th id="baseHead">일본</th>
+      <th id="targetHead">한국</th>
+      <th>격차</th>
+    </tr>
+  </table>
+</article>
