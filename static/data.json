@@ -3029,7 +3029,11 @@
         "end": "2019-12-08"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "산타가 우리 집에 오고 있어",
+        "start": "2020-10-07",
+        "end": "2020-10-14"
+      },
       "global": null,
       "china": null
     }
@@ -3047,7 +3051,11 @@
         "end": "2019-12-18"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "어린 날의 모습은 지금도 곁에",
+        "start": "2020-10-16",
+        "end": "2020-10-23"
+      },
       "global": null,
       "china": null
     }
@@ -3065,7 +3073,11 @@
         "end": "2019-12-29"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "두근두근☆토핑 데이즈",
+        "start": "2020-10-26",
+        "end": "2020-11-04"
+      },
       "global": null,
       "china": null
     }
@@ -3104,7 +3116,11 @@
         "end": "2020-01-19"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "길 잃은 장난감이 꾸는 꿈은",
+        "start": "2020-11-17",
+        "end": "2020-11-25"
+      },
       "global": null,
       "china": null
     }
@@ -3122,7 +3138,11 @@
         "end": "2020-01-29"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "니하오 ♪ 회유 스마일 맵",
+        "start": "2020-11-27",
+        "end": "2020-12-04"
+      },
       "global": null,
       "china": null
     }
