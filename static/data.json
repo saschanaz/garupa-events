@@ -3610,7 +3610,25 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "ONE_OF_US_(Event)",
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "ONE OF US",
+        "start": "2020-10-10",
+        "end": "2020-10-19"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": "Welcome_to_Open_School!",
     "meta": {
       "attribute": "happy"
     },
@@ -3629,7 +3647,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Happy_Lucky!_Magic_of_Smiles!",
     "meta": {
       "attribute": "powerful"
     },
@@ -3648,7 +3666,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Einsatz_of_a_New_Journey",
     "meta": {
       "attribute": "cool"
     },
@@ -3667,7 +3685,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "NO_LIMIT!!!",
     "meta": {
       "attribute": "pure"
     },
@@ -3686,7 +3704,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Prismatic_Duo",
     "meta": null,
     "type": "versus",
     "region": {
