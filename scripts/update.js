@@ -76,23 +76,23 @@ const events = info.NOTICE.filter(
 );
 
 for (const event of events.slice().reverse()) {
-  if (!data.some(d => d.region.japan.noticeUrl === event.linkUrl)) {
+  const existing = data.find(d => d.region.japan.noticeUrl === event.linkUrl);
+  if (existing && existing.meta.attribute) {
     console.log(`Already exists, skipping: ${event.linkUrl}`);
     continue;
   }
+  console.log(`Loading: ${event.linkUrl}`);
   const [, date] = event.linkUrl.match(/_(\d{6})_/);
   if (!date) {
     throw new Error(`Unexpected link URL format: ${event.linkUrl}`);
   }
   const year = "20" + date.slice(0, 2);
-  console.log(event.linkUrl);
   const html = await (
     await fetch(
       new URL(event.linkUrl, "https://web.star.craftegg.jp/information/")
     )
   ).text();
   const eventInfo = extractEventInfo(html, year);
-  eventInfo.noticeUrl = event.linkUrl;
 
   data.push({
     linkId: null,
@@ -102,7 +102,8 @@ for (const event of events.slice().reverse()) {
       japan: {
         title: eventInfo.title,
         start: eventInfo.start,
-        end: eventInfo.end
+        end: eventInfo.end,
+        noticeUrl: event.linkUrl
       },
       taiwan: null,
       korea: null,

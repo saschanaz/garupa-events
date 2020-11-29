@@ -1,0 +1,25 @@
+name: Update new events
+
+on:
+  workflow_dispatch:
+  schedule:
+    # https://crontab.guru/#5_8_*_*_*
+    - cron: "5 8 * * *"
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - run: npm ci
+      - run: npm run crawl
+
+      - uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

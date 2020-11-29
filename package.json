@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "crawl": "node scripts/crawl.js"
+    "update": "node scripts/update.js"
   },
   "repository": {
     "type": "git",
