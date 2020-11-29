@@ -180,7 +180,7 @@ function getDiffs(base, target) {
  */
 function createAttributeIcon(attr) {
   if (attr) {
-    return [el("img", { src: new URL(`./assets/${attr}.svg`, import.meta.url) })]
+    return [el("img", { class: "attribute", src: new URL(`./assets/${attr}.svg`, import.meta.url) })]
   }
 }
 

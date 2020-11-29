@@ -1,70 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
-   viewBox="0 0 6.3499999 6.3500002"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="pure.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="-0.51327305"
-     inkscape:cy="14.90419"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-290.64996)">
-    <circle
-       id="path10"
-       cx="3.175"
-       cy="293.82495"
-       style="stroke-width:0.26458332;fill:#00d500;fill-opacity:1"
-       r="2.6458333" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.23518507px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1.0583333,293.82497 c 1.3064151,0.18691 1.9581117,0.84342 2.1166666,2.11666 0.1191491,-1.26424 0.8910703,-1.90354 2.1166668,-2.11666 -1.2362079,-0.15813 -1.9419406,-0.93885 -2.1166668,-2.11667 -0.1748432,1.18184 -0.8193632,1.91524 -2.1166666,2.11667 z"
-       id="path12"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="208px" height="208px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2080000 2080000" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#44C527}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="pure">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="1040000" cy="1040000" r="1007725"/>
+  <path class="fil1" d="M1040000 0c574374,0 1040000,465626 1040000,1040000 0,574374 -465626,1040000 -1040000,1040000 -574374,0 -1040000,-465626 -1040000,-1040000 0,-574374 465626,-1040000 1040000,-1040000zm678923 361077c-173734,-173735 -413788,-281209 -678923,-281209 -265135,0 -505189,107474 -678923,281209 -173735,173734 -281209,413788 -281209,678923 0,265135 107474,505189 281209,678923 173734,173735 413788,281209 678923,281209 265135,0 505189,-107474 678923,-281209 173735,-173734 281209,-413788 281209,-678923 0,-265135 -107474,-505189 -281209,-678923z"/>
+  <path class="fil1" d="M301385 1040000c374201,69444 669159,364414 738615,738615 69456,-374201 364414,-669171 738615,-738615 -374201,-69444 -669159,-364414 -738615,-738615 -69456,374201 -364414,669171 -738615,738615z"/>
+ </g>
 </svg>

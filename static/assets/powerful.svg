@@ -1,76 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
-   viewBox="0 0 6.3499999 6.3500002"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="powerful.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="4.660862"
-     inkscape:cy="14.277852"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-290.64996)">
-    <circle
-       id="path10"
-       cx="3.175"
-       cy="293.82495"
-       style="stroke-width:0.26458332;fill:#ff0600;fill-opacity:1"
-       r="2.6458333" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458335px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3.175,295.94163 c -1.1511645,-0.009 -2.1062207,-1.25663 -2.1166667,-2.11667 0.1723212,0.38287 0.3067507,0.58409 0.7499576,0.66948 0.6083131,0.1172 1.5448283,-1.12023 1.039304,-2.80953 0.5483237,0.50128 1.3754264,1.43543 1.2848577,2.80954 0.613065,-0.0441 1.034371,-0.78068 0.7031854,-1.80371 1.1947125,1.81429 -0.5094735,3.2596 -1.660638,3.25089 z"
-       id="path4526"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="scscccs" />
-    <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458335;stroke-opacity:1"
-       id="path4528"
-       cx="3.1805074"
-       cy="295.10568"
-       r="0.43264255" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="208px" height="208px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2080000 2080000" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FF345A}
+    .fil2 {fill:white}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="power">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="1040000" cy="1040000" r="997961"/>
+  <path class="fil1" d="M1040000 0c574374,0 1040000,465626 1040000,1040000 0,574374 -465626,1040000 -1040000,1040000 -574374,0 -1040000,-465626 -1040000,-1040000 0,-574374 465626,-1040000 1040000,-1040000zm678923 361077c-173734,-173735 -413788,-281209 -678923,-281209 -265135,0 -505189,107474 -678923,281209 -173735,173734 -281209,413788 -281209,678923 0,265135 107474,505189 281209,678923 173734,173735 413788,281209 678923,281209 265135,0 505189,-107474 678923,-281209 173735,-173734 281209,-413788 281209,-678923 0,-265135 -107474,-505189 -281209,-678923z"/>
+  <path class="fil2" d="M1041474 1909591c-438893,495 -669407,-362091 -672473,-670621 -2677,-268697 108052,-468858 242648,-490803 -93595,171600 -60117,252058 -10967,298177 202814,-106082 259664,-514399 194147,-765560 363470,151305 475130,543030 641282,658464 90482,-56178 149761,-131047 149761,-244146 99550,67640 169984,318200 158004,559327 -15165,304911 -263509,654667 -702402,655162z"/>
+  <path class="fil0" d="M1040000 1831114c-173463,0 -259322,-123252 -259322,-268355 0,-163817 235915,-173097 175704,-354084 343211,112309 376854,297553 376854,355110 0,157544 -119773,267329 -293236,267329z"/>
+ </g>
 </svg>

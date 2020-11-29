@@ -1,70 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="24"
-   height="24"
-   viewBox="0 0 6.3499999 6.3500002"
-   version="1.1"
-   id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="cool.svg">
-  <defs
-     id="defs2" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="32"
-     inkscape:cx="10.028391"
-     inkscape:cy="12.080938"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-290.64996)"
-     style="display:inline">
-    <circle
-       id="path10"
-       cx="3.175"
-       cy="293.82495"
-       style="fill:#0000ff;fill-opacity:1;stroke-width:0.26458332"
-       r="2.6458333" />
-    <path
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25236493;stroke-opacity:1"
-       d="m 2.2949137,292.35389 a 1.7510302,1.7510302 0 0 0 -0.7399982,0.84259 1.7510302,1.7510302 0 0 0 0.3796178,1.90793 1.7510302,1.7510302 0 0 0 1.9079217,0.37962 1.7510302,1.7510302 0 0 0 1.0576288,-1.34406 1.586871,1.586871 0 0 1 -0.6138864,0.45358 1.586871,1.586871 0 0 1 -1.7296552,-0.34371 1.586871,1.586871 0 0 1 -0.343708,-1.72965 1.586871,1.586871 0 0 1 0.082079,-0.1663 z"
-       id="path4580"
-       inkscape:connector-curvature="0" />
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="208px" height="208px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 2080000 2080000" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#4057E3}
+    .fil2 {fill:white}
+    .fil1 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="cool">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="1040000" cy="1040000" r="994848"/>
+  <path class="fil1" d="M1040000 0c574374,0 1040000,465626 1040000,1040000 0,574374 -465626,1040000 -1040000,1040000 -574374,0 -1040000,-465626 -1040000,-1040000 0,-574374 465626,-1040000 1040000,-1040000zm678923 361077c-173734,-173735 -413788,-281209 -678923,-281209 -265135,0 -505189,107474 -678923,281209 -173735,173734 -281209,413788 -281209,678923 0,265135 107474,505189 281209,678923 173734,173735 413788,281209 678923,281209 265135,0 505189,-107474 678923,-281209 173735,-173734 281209,-413788 281209,-678923 0,-265135 -107474,-505189 -281209,-678923z"/>
+  <path class="fil2" d="M1040000 1798603c-418965,0 -758603,-339638 -758603,-758603 0,-418965 339638,-758603 758603,-758603 67263,0 132450,8785 194547,25223 -255289,21533 -455791,235538 -455791,496404 0,275159 223061,498220 498220,498220 260866,0 474871,-200502 496404,-455791 16438,62085 25223,127284 25223,194547 0,418965 -339638,758603 -758603,758603z"/>
+ </g>
 </svg>

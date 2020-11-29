@@ -33,6 +33,11 @@ select {
   color: #77a;
 }
 
+.attribute {
+  width: 24px;
+  height: 24px;
+}
+
 table {
   white-space: nowrap;
 }
