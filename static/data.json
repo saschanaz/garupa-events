@@ -3003,7 +3003,11 @@
         "start": "2019-11-20",
         "end": "2019-11-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "從零盛開的花",
+        "start": "2020-04-02",
+        "end": "2020-04-12"
+      },
       "korea": {
         "title": "제로에 피는 꽃",
         "start": "2020-04-13",
@@ -3028,7 +3032,11 @@
         "start": "2019-11-30",
         "end": "2019-12-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "聖誕老人要來我們家",
+        "start": "2020-04-15",
+        "end": "2020-04-24"
+      },
       "korea": {
         "title": "산타가 우리 집에 오고 있어",
         "start": "2020-10-07",
@@ -3050,7 +3058,11 @@
         "start": "2019-12-10",
         "end": "2019-12-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "幼時的身影 現在依然相伴",
+        "start": "2020-04-26",
+        "end": "2020-05-05"
+      },
       "korea": {
         "title": "어린 날의 모습은 지금도 곁에",
         "start": "2020-10-16",
@@ -3072,7 +3084,11 @@
         "start": "2019-12-20",
         "end": "2019-12-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "雀躍不已☆點綴配料日常",
+        "start": "2020-05-09",
+        "end": "2020-05-21"
+      },
       "korea": {
         "title": "두근두근☆토핑 데이즈",
         "start": "2020-10-26",
@@ -3097,7 +3113,11 @@
         "start": "2019-12-31",
         "end": "2020-01-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "祝賀新年 夢語",
+        "start": "2020-05-24",
+        "end": "2020-06-02"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3115,7 +3135,11 @@
         "start": "2020-01-10",
         "end": "2020-01-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "迷路的玩具 作的夢",
+        "start": "2020-06-04",
+        "end": "2020-06-14"
+      },
       "korea": {
         "title": "길 잃은 장난감이 꾸는 꿈은",
         "start": "2020-11-17",
@@ -3137,7 +3161,11 @@
         "start": "2020-01-21",
         "end": "2020-01-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "你好♪ 悠遊 歡笑的地圖",
+        "start": "2020-06-16",
+        "end": "2020-06-25"
+      },
       "korea": {
         "title": "니하오 ♪ 회유 스마일 맵",
         "start": "2020-11-27",
@@ -3159,7 +3187,11 @@
         "start": "2020-01-31",
         "end": "2020-02-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "只想給你 Sweet Heart Valentine♪",
+        "start": "2020-06-27",
+        "end": "2020-07-07"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3177,7 +3209,11 @@
         "start": "2020-02-10",
         "end": "2020-02-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "NOBLE・ROSE –歌唱的巔峰–",
+        "start": "2020-07-10",
+        "end": "2020-07-19"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3195,7 +3231,11 @@
         "start": "2020-02-20",
         "end": "2020-02-27"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Sunny Side Live ～某天在車站前～",
+        "start": "2020-07-22",
+        "end": "2020-07-31"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3213,7 +3253,11 @@
         "start": "2020-02-29",
         "end": "2020-03-06"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "馬不停蹄！回禮大作戰！",
+        "start": "2020-08-03",
+        "end": "2020-08-12"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3231,7 +3275,11 @@
         "start": "2020-03-08",
         "end": "2020-03-14"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "捕捉 全景寫真",
+        "start": "2020-08-15",
+        "end": "2020-08-24"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3252,7 +3300,11 @@
         "start": "2020-03-16",
         "end": "2020-03-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Backstage Pass 3",
+        "start": "2020-08-28",
+        "end": "2020-09-10"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3270,7 +3322,11 @@
         "start": "2020-03-31",
         "end": "2020-04-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "振臂高揮! Hello Happy 壘球比賽",
+        "start": "2020-09-12",
+        "end": "2020-09-18"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3288,7 +3344,11 @@
         "start": "2020-04-10",
         "end": "2020-04-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "滿開花樹下絢爛交響曲",
+        "start": "2020-10-09",
+        "end": "2020-10-16"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3306,7 +3366,11 @@
         "start": "2020-04-20",
         "end": "2020-04-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Play act! 試鏡會＊大挑戰",
+        "start": "2020-09-20",
+        "end": "2020-09-28"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3327,7 +3391,11 @@
         "start": "2020-04-30",
         "end": "2020-05-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "VIVA LA LIVE！",
+        "start": "2020-09-30",
+        "end": "2020-10-07"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3345,7 +3413,11 @@
         "start": "2020-05-10",
         "end": "2020-05-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Let's  無懈可擊精選！",
+        "start": "2020-10-18",
+        "end": "2020-10-26"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3363,7 +3435,11 @@
         "start": "2020-05-21",
         "end": "2020-05-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "潛熱，焦灼了天際",
+        "start": "2020-10-28",
+        "end": "2020-11-05"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3381,7 +3457,11 @@
         "start": "2020-05-31",
         "end": "2020-06-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Neo Fantasy Online-古代龍與新娘-",
+        "start": "2020-11-07",
+        "end": "2020-11-14"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3399,7 +3479,11 @@
         "start": "2020-06-10",
         "end": "2020-06-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "RAISE A SUILEN～揭簾而起～（前篇）",
+        "start": "2020-11-17",
+        "end": "2020-11-25"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -3417,7 +3501,11 @@
         "start": "2020-06-20",
         "end": "2020-06-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "嘆息在雨過天晴彼端",
+        "start": "2020-11-27",
+        "end": "2020-12-05"
+      },
       "korea": null,
       "global": null,
       "china": null
