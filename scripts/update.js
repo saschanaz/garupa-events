@@ -19,10 +19,14 @@ function extractEventAbstract(titleProse) {
   const [, typeJpn, title] = titleProse.match(titleRegex);
   const type = (() => {
     switch (typeJpn) {
-      case "チャレンジライブ": return "challenge";
-      case "対バンライブ": return "versus";
-      case "ライブトライ！": return "try";
-      case "ミッションライブ": return "mission";
+      case "チャレンジライブ":
+        return "challenge";
+      case "対バンライブ":
+        return "versus";
+      case "ライブトライ！":
+        return "try";
+      case "ミッションライブ":
+        return "mission";
       // normal is not a thing anymore
     }
     throw new Error("Couldn't detect the attribute");
@@ -51,10 +55,14 @@ function extractEventInfo(htmlStr, startYear) {
     const attributeRegex = /([^\s]+)タイプの全メンバー/;
     const [, attributeJpn] = htmlStr.match(attributeRegex);
     switch (attributeJpn) {
-      case "ピュア": return "pure";
-      case "クール": return "cool";
-      case "ハッピー": return "happy";
-      case "パワフル": return "powerful";
+      case "ピュア":
+        return "pure";
+      case "クール":
+        return "cool";
+      case "ハッピー":
+        return "happy";
+      case "パワフル":
+        return "powerful";
     }
     throw new Error("Couldn't detect the attribute");
   })();
@@ -65,7 +73,7 @@ function extractEventInfo(htmlStr, startYear) {
       "0"
     )}`,
     end: `${endYear}-${endMonth.padStart(2, "0")}-${endDay.padStart(2, "0")}`,
-    attribute
+    attribute,
   };
 }
 
@@ -111,15 +119,18 @@ for (const event of events.slice().reverse()) {
           title: abstract.title,
           start: eventInfo.start,
           end: eventInfo.end,
-          noticeUrl: event.linkUrl
+          noticeUrl: event.linkUrl,
         },
         taiwan: null,
         korea: null,
         global: null,
-        china: null
-      }
+        china: null,
+      },
     });
   }
 }
 
-await fs.writeFile(new URL("../static/data.json", import.meta.url), JSON.stringify(data, null, 2) + "\n");
+await fs.writeFile(
+  new URL("../static/data.json", import.meta.url),
+  JSON.stringify(data, null, 2) + "\n"
+);
