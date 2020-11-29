@@ -91,9 +91,12 @@ export default async function update() {
 
   const firstIndex = data.findIndex((d) => !d.region.global);
   for (const item of data.slice(firstIndex)) {
+    if (!item.linkId) {
+      break;
+    }
     const eventData = await updateFromWiki(item.linkId);
     if (!eventData.startDate) {
-      break;
+      continue;
     }
     item.linkId = eventData.wikiId;
     item.region.global = {

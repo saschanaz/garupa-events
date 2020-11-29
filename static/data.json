@@ -2837,7 +2837,7 @@
     }
   },
   {
-    "linkId": "Noble_Rose_-The_Guide_of_Darkness-",
+    "linkId": "Noble_Rose_-Guide_in_the_Darkness-",
     "meta": {
       "attribute": "powerful"
     },
@@ -2858,12 +2858,16 @@
         "start": "2020-07-17",
         "end": "2020-07-24"
       },
-      "global": null,
+      "global": {
+        "title": "Noble Rose -Guide in the Darkness-",
+        "start": "2020-08-30",
+        "end": "2020-09-08"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Run♪'_in_the_hallway",
+    "linkId": "Boppin'♪_Down_The_Hallway",
     "meta": {
       "attribute": "cool"
     },
@@ -2884,12 +2888,16 @@
         "start": "2020-07-27",
         "end": "2020-08-04"
       },
-      "global": null,
+      "global": {
+        "title": "Boppin'♪ Down The Hallway",
+        "start": "2020-09-10",
+        "end": "2020-09-18"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Dreams,_Reality,_and_Hundred_Songs",
+    "linkId": "Dreams,_Reality_and_A_Hundred_Poems",
     "meta": {
       "attribute": "pure"
     },
@@ -2910,7 +2918,11 @@
         "start": "2020-08-06",
         "end": "2020-08-14"
       },
-      "global": null,
+      "global": {
+        "title": "Dreams, Reality and A Hundred Poems",
+        "start": "2020-09-20",
+        "end": "2020-09-29"
+      },
       "china": null
     }
   },
@@ -2939,7 +2951,11 @@
         "start": "2020-08-17",
         "end": "2020-08-25"
       },
-      "global": null,
+      "global": {
+        "title": "Poppin' Halloween Parade♪",
+        "start": "2020-10-01",
+        "end": "2020-10-13"
+      },
       "china": null
     }
   },
@@ -2965,12 +2981,16 @@
         "start": "2020-08-27",
         "end": "2020-09-04"
       },
-      "global": null,
+      "global": {
+        "title": "Do It Ourselves!!",
+        "start": "2020-10-15",
+        "end": "2020-10-21"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Separating_Paths,_Connecting_Sky",
+    "linkId": "Separate_Paths_Under_One_Sky",
     "meta": {
       "attribute": "powerful"
     },
@@ -2991,12 +3011,16 @@
         "start": "2020-09-07",
         "end": "2020-09-16"
       },
-      "global": null,
+      "global": {
+        "title": "Separate Paths Under One Sky",
+        "start": "2020-10-23",
+        "end": "2020-10-29"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Heartful_Letter_In_Autumn",
+    "linkId": "Autumnal_Heartfelt_Letter",
     "meta": {
       "attribute": "cool"
     },
@@ -3017,12 +3041,16 @@
         "start": "2020-09-18",
         "end": "2020-09-25"
       },
-      "global": null,
+      "global": {
+        "title": "Autumnal Heartfelt Letter",
+        "start": "2020-10-31",
+        "end": "2020-11-06"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Straight_Toward_Your_Dream",
+    "linkId": "Devotedly_Toward_My_Dreams",
     "meta": {
       "attribute": "happy"
     },
@@ -3043,12 +3071,16 @@
         "start": "2020-09-28",
         "end": "2020-10-05"
       },
-      "global": null,
+      "global": {
+        "title": "Devotedly Toward My Dreams",
+        "start": "2020-11-08",
+        "end": "2020-11-18"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Blooming_Flowers_in_Zero",
+    "linkId": "Blooming_in_ZERO",
     "meta": {
       "attribute": "cool"
     },
@@ -3069,12 +3101,16 @@
         "start": "2020-04-13",
         "end": "2020-04-22"
       },
-      "global": null,
+      "global": {
+        "title": "Blooming in ZERO",
+        "start": "2020-11-20",
+        "end": "2020-11-27"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Here_Comes_Santa",
+    "linkId": "Santa's_on_his_way",
     "meta": {
       "attribute": "pure",
       "dreamFestival": {
@@ -3098,7 +3134,11 @@
         "start": "2020-10-07",
         "end": "2020-10-14"
       },
-      "global": null,
+      "global": {
+        "title": "Santa's on his way",
+        "start": "2020-11-30",
+        "end": "2020-12-07"
+      },
       "china": null
     }
   },
