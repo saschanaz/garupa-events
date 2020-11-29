@@ -3687,9 +3687,7 @@
   },
   {
     "linkId": null,
-    "meta": {
-      "attribute": null
-    },
+    "meta": null,
     "type": "versus",
     "region": {
       "japan": {

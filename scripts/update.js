@@ -79,9 +79,11 @@ const events = info.NOTICE.filter(
 
 for (const event of events.slice().reverse()) {
   const abstract = extractEventAbstract(event.title);
-  const existing = data.find(d => d.region.japan.title === abstract.title);
-  if (existing && (existing.meta.attribute || abstract.isPreNotice)) {
-    console.log(`Already exists, skipping: [${abstract.title}](${event.linkUrl})`);
+  const existing = data.find((d) => d.region.japan.title === abstract.title);
+  if (existing && (existing.meta || abstract.isPreNotice)) {
+    console.log(
+      `Already exists, skipping: [${abstract.title}](${event.linkUrl})`
+    );
     continue;
   }
   const [, date] = event.linkUrl.match(/_(\d{6})_/);
@@ -97,12 +99,12 @@ for (const event of events.slice().reverse()) {
 
   const eventInfo = extractEventInfo(html, year);
   if (existing) {
-    existing.meta.attribute = eventInfo.attribute;
+    existing.meta = { attribute: eventInfo.attribute };
     existing.region.japan.noticeUrl = event.linkUrl;
   } else {
     data.push({
       linkId: null,
-      meta: { attribute: eventInfo.attribute },
+      meta: eventInfo.attribute ? { attribute: eventInfo.attribute } : null,
       type: abstract.type,
       region: {
         japan: {
