@@ -1,0 +1,115 @@
+import fetch from "node-fetch";
+import { promises as fs } from "fs";
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+/**
+ * @param {string} url
+ */
+async function fetchAsJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(res.statusText);
+  }
+  return await res.json();
+}
+
+/**
+ * @param {string} htmlStr
+ */
+function extractEventInfo(htmlStr, startYear) {
+  const titleRegex = /<h1>(?:次回、)?(.+)イベント「(.+)」/;
+  const [, typeJpn, title] = htmlStr.match(titleRegex);
+  const type = (() => {
+    switch (typeJpn) {
+      case "チャレンジライブ": return "challenge";
+      case "対バンライブ": return "versus";
+      case "ライブトライ！": return "try";
+      case "ミッションライブ": return "mission";
+      // normal is not a thing anymore
+    }
+    throw new Error("Couldn't detect the attribute");
+  })();
+
+  const timeRangeRegex = /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (\d\d?)月(\d\d?)日/;
+  const [, startMonth, startDay, endMonth, endDay] = htmlStr.match(
+    timeRangeRegex
+  );
+  if (!startMonth) {
+    throw new Error("Could not detect the event time range");
+  }
+  const endYear = endMonth < startMonth ? startYear + 1 : startYear;
+
+  const attribute = (() => {
+    if (htmlStr.includes("次回、")) {
+      return null; // pre-event notice lacks the attribute
+    }
+    const attributeRegex = /([^\s]+)タイプの全メンバー/;
+    const [, attributeJpn] = htmlStr.match(attributeRegex);
+    switch (attributeJpn) {
+      case "ピュア": return "pure";
+      case "クール": return "cool";
+      case "ハッピー": return "happy";
+      case "パワフル": return "powerful";
+    }
+    throw new Error("Couldn't detect the attribute");
+  })();
+
+  return {
+    title,
+    type,
+    start: `${startYear}-${startMonth.padStart(2, "0")}-${startDay.padStart(
+      2,
+      "0"
+    )}`,
+    end: `${endYear}-${endMonth.padStart(2, "0")}-${endDay.padStart(2, "0")}`,
+    attribute
+  };
+}
+
+const data = require("../static/data.json");
+
+const info = await fetchAsJson("https://api.star.craftegg.jp/api/information");
+
+const events = info.NOTICE.filter(
+  (notice) => notice.informationType === "EVENT"
+);
+
+for (const event of events.slice().reverse()) {
+  if (!data.some(d => d.region.japan.noticeUrl === event.linkUrl)) {
+    console.log(`Already exists, skipping: ${event.linkUrl}`);
+    continue;
+  }
+  const [, date] = event.linkUrl.match(/_(\d{6})_/);
+  if (!date) {
+    throw new Error(`Unexpected link URL format: ${event.linkUrl}`);
+  }
+  const year = "20" + date.slice(0, 2);
+  console.log(event.linkUrl);
+  const html = await (
+    await fetch(
+      new URL(event.linkUrl, "https://web.star.craftegg.jp/information/")
+    )
+  ).text();
+  const eventInfo = extractEventInfo(html, year);
+  eventInfo.noticeUrl = event.linkUrl;
+
+  data.push({
+    linkId: null,
+    meta: { attribute: eventInfo.attribute },
+    type: eventInfo.type,
+    region: {
+      japan: {
+        title: eventInfo.title,
+        start: eventInfo.start,
+        end: eventInfo.end
+      },
+      taiwan: null,
+      korea: null,
+      global: null,
+      china: null
+    }
+  });
+}
+
+await fs.writeFile(new URL("../static/data.json", import.meta.url), JSON.stringify(data, null, 2) + "\n");
