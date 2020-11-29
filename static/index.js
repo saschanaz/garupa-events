@@ -195,7 +195,7 @@ function createGachaIcons({ dreamFestival }) {
   return [el("a", {
     title: l10n.ko.gacha.dreamFestival,
     ...dreamFestival.linkId ? {
-      href: `${baseLinkUrl}${dreamFestival.linkId}`
+      href: `${baseLinkUrl}${encodeURI(dreamFestival.linkId)}`
     } : undefined,
     class: "gacha dream-festival",
     target: "_blank"
