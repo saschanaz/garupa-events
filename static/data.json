@@ -3588,5 +3588,100 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "happy"
+    },
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "Welcome to Open School！",
+        "start": "2020-10-21",
+        "end": "2020-10-29",
+        "noticeUrl": "event_201021_Ilmfni.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "powerful"
+    },
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "ハッピーラッキー！EGAOのMAHO！",
+        "start": "2020-10-31",
+        "end": "2020-11-08",
+        "noticeUrl": "event_201031_mEHjcF.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "新たな旅立ちのアインザッツ",
+        "start": "2020-11-10",
+        "end": "2020-11-18",
+        "noticeUrl": "event_201110_QL4eB5.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "pure"
+    },
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "NO LIMIT!!!",
+        "start": "2020-11-20",
+        "end": "2020-11-28",
+        "noticeUrl": "event_201120_k2q6lB.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": null
+    },
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "プリズマティック・デュオ",
+        "start": "2020-11-30",
+        "end": "2020-12-09",
+        "noticeUrl": "next_event_201129_CxXaPN.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
