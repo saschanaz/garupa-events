@@ -2385,7 +2385,7 @@
     }
   },
   {
-    "linkId": "FULL_BLOOMING_Shower!",
+    "linkId": "Dance,_FULL_BLOOMING!",
     "meta": {
       "attribute": "cool"
     },
@@ -2406,12 +2406,16 @@
         "start": "2020-02-22",
         "end": "2020-02-29"
       },
-      "global": null,
+      "global": {
+        "title": "Dance, FULL BLOOMING!",
+        "start": "2020-04-03",
+        "end": "2020-04-05"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Turning_Seasons,_the_Sky_of_Beginnings",
+    "linkId": "Cycling_Seasons,_Fresh_Skies",
     "meta": {
       "attribute": "powerful"
     },
@@ -2432,12 +2436,16 @@
         "start": "2020-03-02",
         "end": "2020-03-08"
       },
-      "global": null,
+      "global": {
+        "title": "Cycling Seasons, Fresh Skies",
+        "start": "2020-04-00",
+        "end": "2020-04-01"
+      },
       "china": null
     }
   },
   {
-    "linkId": "At_That_Corner_of_The_Blooming_Schoolhouse",
+    "linkId": "School_of_Flowers_Away_in_a_Corner",
     "meta": {
       "attribute": "happy"
     },
@@ -2458,12 +2466,16 @@
         "start": "2020-03-10",
         "end": "2020-03-16"
       },
-      "global": null,
+      "global": {
+        "title": "School of Flowers Away in a Corner",
+        "start": "2020-04-03",
+        "end": "2020-04-02"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Mole_Man☆Delivery_Strategy",
+    "linkId": "The_Mole_Person☆Transport_Mission!",
     "meta": {
       "attribute": "pure",
       "dreamFestival": {
@@ -2487,12 +2499,16 @@
         "start": "2020-03-18",
         "end": "2020-03-24"
       },
-      "global": null,
+      "global": {
+        "title": "The Mole Person☆Transport Mission!",
+        "start": "2020-04-04",
+        "end": "2020-05-05"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Piercing_the_Darkness,_A_Blue_Rose's_Pride",
+    "linkId": "Determined_Darkness,_Blue_Rose_Pride",
     "meta": {
       "attribute": "cool"
     },
@@ -2513,12 +2529,16 @@
         "start": "2020-03-26",
         "end": "2020-04-01"
       },
-      "global": null,
+      "global": {
+        "title": "Determined Darkness, Blue Rose Pride",
+        "start": "2020-05-00",
+        "end": "2020-05-02"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Move_Out!_Smile_Patrol_Squad!",
+    "linkId": "Smile_Patrol!_Reporting_for_Duty!!",
     "meta": {
       "attribute": "happy"
     },
@@ -2539,7 +2559,11 @@
         "start": "2020-04-03",
         "end": "2020-04-11"
       },
-      "global": null,
+      "global": {
+        "title": "Smile Patrol! Reporting for Duty!!",
+        "start": "2020-05-04",
+        "end": "2020-05-05"
+      },
       "china": null
     }
   },
@@ -2565,12 +2589,16 @@
         "start": "2020-04-24",
         "end": "2020-05-01"
       },
-      "global": null,
+      "global": {
+        "title": "Flowery June Bride",
+        "start": "2020-05-00",
+        "end": "2020-06-02"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Noble_Rose_-Take_the_Flower-",
+    "linkId": "Noble_Rose_-Bearing_Flowers-",
     "meta": {
       "attribute": "cool"
     },
@@ -2591,12 +2619,16 @@
         "start": "2020-05-04",
         "end": "2020-05-11"
       },
-      "global": null,
+      "global": {
+        "title": "Noble Rose -Bearing Flowers-",
+        "start": "2020-06-04",
+        "end": "2020-06-04"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Band_Girls_Of_The_Dead",
+    "linkId": "Band_Girls_of_the_Dead",
     "meta": {
       "attribute": "pure"
     },
@@ -2617,12 +2649,16 @@
         "start": "2020-05-13",
         "end": "2020-05-20"
       },
-      "global": null,
+      "global": {
+        "title": "Band Girls of the Dead",
+        "start": "2020-06-06",
+        "end": "2020-06-01"
+      },
       "china": null
     }
   },
   {
-    "linkId": "How_To_Spend_a_Precious_Day",
+    "linkId": "How_to_Spend_a_Special_Day",
     "meta": {
       "attribute": "cool"
     },
@@ -2643,7 +2679,11 @@
         "start": "2020-05-22",
         "end": "2020-05-29"
       },
-      "global": null,
+      "global": {
+        "title": "How to Spend a Special Day",
+        "start": "2020-07-03",
+        "end": "2020-07-05"
+      },
       "china": null
     }
   },
@@ -2669,7 +2709,11 @@
         "start": "2020-06-01",
         "end": "2020-06-08"
       },
-      "global": null,
+      "global": {
+        "title": "Hopeful Session",
+        "start": "2020-07-00",
+        "end": "2020-07-01"
+      },
       "china": null
     }
   },
@@ -2695,7 +2739,11 @@
         "start": "2020-06-10",
         "end": "2020-06-17"
       },
-      "global": null,
+      "global": {
+        "title": "STAND BY YOU!",
+        "start": "2020-07-03",
+        "end": "2020-07-03"
+      },
       "china": null
     }
   },
@@ -2724,7 +2772,11 @@
         "start": "2020-06-19",
         "end": "2020-06-26"
       },
-      "global": null,
+      "global": {
+        "title": "Our Own Summer Vacation",
+        "start": "2020-07-05",
+        "end": "2020-08-05"
+      },
       "china": null
     }
   },
@@ -2750,7 +2802,11 @@
         "start": "2020-06-29",
         "end": "2020-07-06"
       },
-      "global": null,
+      "global": {
+        "title": "Summer, Slow Summer",
+        "start": "2020-08-00",
+        "end": "2020-08-02"
+      },
       "china": null
     }
   },
