@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
 
   createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows);
 
-  table.tBodies[0].append(...rows);
+  table.tBodies[0].append(...rows.slice().reverse());
 }));
 
 /**
