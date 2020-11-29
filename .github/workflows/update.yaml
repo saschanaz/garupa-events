@@ -17,7 +17,7 @@ jobs:
           node-version: '14'
 
       - run: npm ci
-      - run: npm run crawl
+      - run: npm run update
 
       - uses: ad-m/github-push-action@master
         with:
