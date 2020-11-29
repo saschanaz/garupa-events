@@ -59,8 +59,8 @@ async function getDate(htmlStr, rowTitle) {
   const parsed = new Date(dateMatch[1]);
   const year = parsed.getUTCFullYear().toString().padStart(4, "0");
   const month = (parsed.getUTCMonth() + 1).toString().padStart(2, "0");
-  const day = parsed.getUTCDay().toString().padStart(2, "0");
-  return `${year}-${month}-${day}`;
+  const date = parsed.getUTCDate().toString().padStart(2, "0");
+  return `${year}-${month}-${date}`;
 }
 
 /**

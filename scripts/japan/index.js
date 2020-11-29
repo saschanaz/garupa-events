@@ -40,7 +40,7 @@ function extractEventAbstract(titleProse) {
  */
 function extractEventInfo(htmlStr, startYear) {
   const timeRangeRegex = /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (\d\d?)月(\d\d?)日/;
-  const [, startMonth, startDay, endMonth, endDay] = htmlStr.match(
+  const [, startMonth, startDate, endMonth, endDate] = htmlStr.match(
     timeRangeRegex
   );
   if (!startMonth) {
@@ -68,11 +68,11 @@ function extractEventInfo(htmlStr, startYear) {
   })();
 
   return {
-    start: `${startYear}-${startMonth.padStart(2, "0")}-${startDay.padStart(
+    start: `${startYear}-${startMonth.padStart(2, "0")}-${startDate.padStart(
       2,
       "0"
     )}`,
-    end: `${endYear}-${endMonth.padStart(2, "0")}-${endDay.padStart(2, "0")}`,
+    end: `${endYear}-${endMonth.padStart(2, "0")}-${endDate.padStart(2, "0")}`,
     attribute,
   };
 }
