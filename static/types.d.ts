@@ -41,3 +41,7 @@ interface Document {
 }
 
 type IteratorParameter<T> = T extends Iterable<infer X> ? X : null;
+
+interface ImportMeta {
+  url: string;
+}

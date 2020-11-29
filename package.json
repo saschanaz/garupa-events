@@ -1,0 +1,22 @@
+{
+  "name": "garupa-events",
+  "version": "1.0.0",
+  "description": "* https://twitter.com/bang_dream_gbp\r * https://web.star.craftegg.jp/information/\r * https://gameo.jp/bang-dream/category/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saschanaz/garupa-events.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saschanaz/garupa-events/issues"
+  },
+  "homepage": "https://github.com/saschanaz/garupa-events#readme",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}

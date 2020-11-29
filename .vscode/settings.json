@@ -6,5 +6,6 @@
       ],
       "url": "/schemas/data.schema.json"
     }
-  ]
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

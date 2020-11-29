@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
   nameHeads(baseArea, targetArea);
   attachChangeListener();
 
-  const res = await fetch("data.json");
+  const res = await fetch(new URL("data.json", import.meta.url).toString());
   /** @type {Schema[]} */
   const data = await res.json();
 
@@ -180,7 +180,7 @@ function getDiffs(base, target) {
  */
 function createAttributeIcon(attr) {
   if (attr) {
-    return [el("img", { src: `./assets/${attr}.svg` })]
+    return [el("img", { src: new URL(`./assets/${attr}.svg`, import.meta.url) })]
   }
 }
 
@@ -307,9 +307,9 @@ function* yieldEventData(data, base, target) {
 }
 
 /**
- * 
- * @param {string} date 
- * @param {number} diff 
+ *
+ * @param {string} date
+ * @param {number} diff
  */
 function addDate(date, diff) {
   const newDate = new Date(parseDate(date) + diff * 1000 * 3600 * 24 + 1000 * 3600 * 9);
@@ -320,9 +320,9 @@ function addDate(date, diff) {
 }
 
 /**
- * 
- * @param {number} num 
- * @param {number} length 
+ *
+ * @param {number} num
+ * @param {number} length
  */
 function padZero(num, length) {
   const str = num.toString();
