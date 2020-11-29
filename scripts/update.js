@@ -14,12 +14,9 @@ async function fetchAsJson(url) {
   return await res.json();
 }
 
-/**
- * @param {string} htmlStr
- */
-function extractEventInfo(htmlStr, startYear) {
-  const titleRegex = /<h1>(?:次回、)?(.+)イベント「(.+)」/;
-  const [, typeJpn, title] = htmlStr.match(titleRegex);
+function extractEventAbstract(titleProse) {
+  const titleRegex = /(?:次回、)?(.+)イベント「(.+)」/;
+  const [, typeJpn, title] = titleProse.match(titleRegex);
   const type = (() => {
     switch (typeJpn) {
       case "チャレンジライブ": return "challenge";
@@ -30,7 +27,14 @@ function extractEventInfo(htmlStr, startYear) {
     }
     throw new Error("Couldn't detect the attribute");
   })();
+  const isPreNotice = titleProse.includes("次回、");
+  return { title, type, isPreNotice };
+}
 
+/**
+ * @param {string} htmlStr
+ */
+function extractEventInfo(htmlStr, startYear) {
   const timeRangeRegex = /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (\d\d?)月(\d\d?)日/;
   const [, startMonth, startDay, endMonth, endDay] = htmlStr.match(
     timeRangeRegex
@@ -56,8 +60,6 @@ function extractEventInfo(htmlStr, startYear) {
   })();
 
   return {
-    title,
-    type,
     start: `${startYear}-${startMonth.padStart(2, "0")}-${startDay.padStart(
       2,
       "0"
@@ -76,12 +78,12 @@ const events = info.NOTICE.filter(
 );
 
 for (const event of events.slice().reverse()) {
-  const existing = data.find(d => d.region.japan.noticeUrl === event.linkUrl);
-  if (existing && existing.meta.attribute) {
-    console.log(`Already exists, skipping: ${event.linkUrl}`);
+  const abstract = extractEventAbstract(event.title);
+  const existing = data.find(d => d.region.japan.title === abstract.title);
+  if (existing && (existing.meta.attribute || abstract.isPreNotice)) {
+    console.log(`Already exists, skipping: [${abstract.title}](${event.linkUrl})`);
     continue;
   }
-  console.log(`Loading: ${event.linkUrl}`);
   const [, date] = event.linkUrl.match(/_(\d{6})_/);
   if (!date) {
     throw new Error(`Unexpected link URL format: ${event.linkUrl}`);
@@ -92,25 +94,30 @@ for (const event of events.slice().reverse()) {
       new URL(event.linkUrl, "https://web.star.craftegg.jp/information/")
     )
   ).text();
-  const eventInfo = extractEventInfo(html, year);
 
-  data.push({
-    linkId: null,
-    meta: { attribute: eventInfo.attribute },
-    type: eventInfo.type,
-    region: {
-      japan: {
-        title: eventInfo.title,
-        start: eventInfo.start,
-        end: eventInfo.end,
-        noticeUrl: event.linkUrl
-      },
-      taiwan: null,
-      korea: null,
-      global: null,
-      china: null
-    }
-  });
+  const eventInfo = extractEventInfo(html, year);
+  if (existing) {
+    existing.meta.attribute = eventInfo.attribute;
+    existing.region.japan.noticeUrl = event.linkUrl;
+  } else {
+    data.push({
+      linkId: null,
+      meta: { attribute: eventInfo.attribute },
+      type: abstract.type,
+      region: {
+        japan: {
+          title: abstract.title,
+          start: eventInfo.start,
+          end: eventInfo.end,
+          noticeUrl: event.linkUrl
+        },
+        taiwan: null,
+        korea: null,
+        global: null,
+        china: null
+      }
+    });
+  }
 }
 
 await fs.writeFile(new URL("../static/data.json", import.meta.url), JSON.stringify(data, null, 2) + "\n");
