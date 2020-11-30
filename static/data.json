@@ -4029,14 +4029,16 @@
   },
   {
     "linkId": "Prismatic_Duo",
-    "meta": null,
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "プリズマティック・デュオ",
         "start": "2020-11-30",
         "end": "2020-12-09",
-        "noticeUrl": "next_event_201129_CxXaPN.html"
+        "noticeUrl": "event_201130_E3l4sH.html"
       },
       "taiwan": null,
       "korea": null,
