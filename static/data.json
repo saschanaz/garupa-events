@@ -3283,7 +3283,7 @@
     }
   },
   {
-    "linkId": "Nostalgic_Childhood_Memories",
+    "linkId": "Shadows_of_Days_Past_Remain",
     "meta": {
       "attribute": "happy"
     },
@@ -3304,7 +3304,11 @@
         "start": "2020-10-16",
         "end": "2020-10-23"
       },
-      "global": null,
+      "global": {
+        "title": "Shadows of Days Past Remain",
+        "start": "2020-12-09",
+        "end": "2020-12-17"
+      },
       "china": null
     }
   },
