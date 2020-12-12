@@ -4049,5 +4049,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "TITLE IDOL",
+        "start": "2020-12-13",
+        "end": "2020-12-20",
+        "noticeUrl": "next_event_201212_VHetgh.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]

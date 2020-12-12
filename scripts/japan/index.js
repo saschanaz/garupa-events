@@ -15,7 +15,7 @@ async function fetchAsJson(url) {
 }
 
 function extractEventAbstract(titleProse) {
-  const titleRegex = /(?:次回、)?(.+)イベント「(.+)」/;
+  const titleRegex = /(?:次回、)?(.+)イベント(?:『.+)?「(.+)」/;
   const [, typeJpn, title] = titleProse.match(titleRegex);
   const type = (() => {
     switch (typeJpn) {
