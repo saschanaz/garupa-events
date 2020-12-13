@@ -14,6 +14,9 @@ async function fetchAsJson(url) {
   return await res.json();
 }
 
+/**
+ * @param {string} titleProse
+ */
 function extractEventAbstract(titleProse) {
   const titleRegex = /(?:次回、)?(.+)イベント(?:『.+)?「(.+)」/;
   const [, typeJpn, title] = titleProse.match(titleRegex);
@@ -80,13 +83,24 @@ function extractEventInfo(htmlStr, startYear) {
 export default async function update() {
   const data = require("../../static/data.json");
 
+  /**
+   * @type {BandoriInformations}
+   *
+   * @typedef {object} BandoriInformations
+   * @property {BandoriInformation[]} NOTICE
+   * @property {BandoriInformation[]} TOPIC
+   *
+   * @typedef {object} BandoriInformation
+   * @property {string} title
+   */
   const info = await fetchAsJson(
     "https://api.star.craftegg.jp/api/information"
   );
 
   const events = info.NOTICE.filter(
-    (notice) => notice.informationType === "EVENT"
+    notice => notice.informationType === "EVENT"
   );
+  events.push(...info.TOPIC.filter(topic => topic.title.includes("イベント")));
 
   for (const event of events.slice().reverse()) {
     const abstract = extractEventAbstract(event.title);

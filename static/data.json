@@ -4052,14 +4052,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "TITLE IDOL",
         "start": "2020-12-13",
         "end": "2020-12-20",
-        "noticeUrl": "next_event_201212_VHetgh.html"
+        "noticeUrl": "event_201213_7EQZG8.html"
       },
       "taiwan": null,
       "korea": null,
