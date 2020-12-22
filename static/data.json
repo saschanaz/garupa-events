@@ -4072,5 +4072,24 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "pure"
+    },
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "レッド・イグニッション",
+        "start": "2020-12-22",
+        "end": "2020-12-29",
+        "noticeUrl": "event_201222_P2wtMz.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
