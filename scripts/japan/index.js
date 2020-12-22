@@ -100,7 +100,9 @@ export default async function update() {
   const events = info.NOTICE.filter(
     notice => notice.informationType === "EVENT"
   );
-  events.push(...info.TOPIC.filter(topic => topic.title.includes("イベント")));
+  if (info.TOPIC) {
+    events.push(...info.TOPIC.filter(topic => topic.title.includes("イベント")));
+  }
 
   for (const event of events.slice().reverse()) {
     const abstract = extractEventAbstract(event.title);
