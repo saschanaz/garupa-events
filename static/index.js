@@ -279,6 +279,22 @@ function createRowBeforeTargetArea(event, diff) {
 }
 
 /**
+ * @param {Schema} schema
+ * @param {keyof Schema["region"]} target
+ */
+function getNoticeUrl(schema, target) {
+  const id = schema.region[target]?.noticeId;
+  if (!id) {
+    return;
+  }
+  switch (target) {
+    case "japan":
+      return `https://web.star.craftegg.jp/information/${id}`;
+  }
+  throw new Error(`noticeId not supported for ${target}`);
+}
+
+/**
  * @param {Schema[]} data
  * @param {keyof Schema["region"]} base
  * @param {keyof Schema["region"]} target
@@ -292,9 +308,13 @@ function* yieldEventData(data, base, target) {
     }
     const diffs = targetRegion && getDiffs(baseRegion, targetRegion);
 
+    const externalLink = schema.linkId
+      ? `${baseLinkUrl}${schema.linkId}`
+      : (getNoticeUrl(schema, target) ?? getNoticeUrl(schema, base));
+
     yield {
       index,
-      externalLink: schema.linkId && `${baseLinkUrl}${schema.linkId}`,
+      externalLink,
       meta: schema.meta,
       type: schema.type,
       baseLang: lang[base],

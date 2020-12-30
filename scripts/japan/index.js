@@ -127,7 +127,7 @@ export default async function update() {
     const eventInfo = extractEventInfo(html, year);
     if (existing) {
       existing.meta = { attribute: eventInfo.attribute };
-      existing.region.japan.noticeUrl = event.linkUrl;
+      existing.region.japan.noticeId = event.linkUrl;
     } else {
       data.push({
         linkId: null,
@@ -138,7 +138,7 @@ export default async function update() {
             title: abstract.title,
             start: eventInfo.start,
             end: eventInfo.end,
-            noticeUrl: event.linkUrl,
+            noticeId: event.linkUrl,
           },
           taiwan: null,
           korea: null,

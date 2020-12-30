@@ -4010,7 +4010,7 @@
         "title": "Welcome to Open School！",
         "start": "2020-10-21",
         "end": "2020-10-29",
-        "noticeUrl": "event_201021_Ilmfni.html"
+        "noticeId": "event_201021_Ilmfni.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4029,7 +4029,7 @@
         "title": "ハッピーラッキー！EGAOのMAHO！",
         "start": "2020-10-31",
         "end": "2020-11-08",
-        "noticeUrl": "event_201031_mEHjcF.html"
+        "noticeId": "event_201031_mEHjcF.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4048,7 +4048,7 @@
         "title": "新たな旅立ちのアインザッツ",
         "start": "2020-11-10",
         "end": "2020-11-18",
-        "noticeUrl": "event_201110_QL4eB5.html"
+        "noticeId": "event_201110_QL4eB5.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4067,7 +4067,7 @@
         "title": "NO LIMIT!!!",
         "start": "2020-11-20",
         "end": "2020-11-28",
-        "noticeUrl": "event_201120_k2q6lB.html"
+        "noticeId": "event_201120_k2q6lB.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4086,7 +4086,7 @@
         "title": "プリズマティック・デュオ",
         "start": "2020-11-30",
         "end": "2020-12-09",
-        "noticeUrl": "event_201130_E3l4sH.html"
+        "noticeId": "event_201130_E3l4sH.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4105,7 +4105,7 @@
         "title": "TITLE IDOL",
         "start": "2020-12-13",
         "end": "2020-12-20",
-        "noticeUrl": "event_201213_7EQZG8.html"
+        "noticeId": "event_201213_7EQZG8.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4124,7 +4124,7 @@
         "title": "レッド・イグニッション",
         "start": "2020-12-22",
         "end": "2020-12-29",
-        "noticeUrl": "event_201222_P2wtMz.html"
+        "noticeId": "event_201222_P2wtMz.html"
       },
       "taiwan": null,
       "korea": null,
@@ -4141,7 +4141,7 @@
         "title": "ようこそお参りくださいましたっ！",
         "start": "2020-12-31",
         "end": "2021-01-08",
-        "noticeUrl": "next_event_201230_1TLInb.html"
+        "noticeId": "next_event_201230_1TLInb.html"
       },
       "taiwan": null,
       "korea": null,

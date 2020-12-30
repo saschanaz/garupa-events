@@ -3,6 +3,7 @@ declare var table: HTMLTableElement;
 
 interface Region extends Duration {
   title: string;
+  noticeId?: string;
 }
 
 interface Duration {
