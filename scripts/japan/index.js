@@ -49,7 +49,7 @@ function extractEventInfo(htmlStr, startYear) {
   if (!startMonth) {
     throw new Error("Could not detect the event time range");
   }
-  const endYear = endMonth < startMonth ? startYear + 1 : startYear;
+  const endYear = endMonth < startMonth ? Number(startYear) + 1 : startYear;
 
   const attribute = (() => {
     if (htmlStr.includes("次回、")) {
