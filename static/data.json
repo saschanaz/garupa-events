@@ -3394,7 +3394,7 @@
     }
   },
   {
-    "linkId": "Ni_Hao♪_Smile-Mapped_Excursion",
+    "linkId": "Ni_Hao♪_Touring_the_Smile_Map",
     "meta": {
       "attribute": "powerful"
     },
@@ -3436,7 +3436,11 @@
         "start": "2020-06-27",
         "end": "2020-07-07"
       },
-      "korea": null,
+      "korea": {
+        "title": "너에게 닿기를, 스위트 하트 발렌타인♪",
+        "start": "2020-12-07",
+        "end": "2020-12-15"
+      },
       "global": null,
       "china": null
     }
@@ -3458,7 +3462,11 @@
         "start": "2020-07-10",
         "end": "2020-07-19"
       },
-      "korea": null,
+      "korea": {
+        "title": "노블・로즈 -노래, 다다르고-",
+        "start": "2020-12-17",
+        "end": "2020-12-25"
+      },
       "global": null,
       "china": null
     }
