@@ -4134,7 +4134,11 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "dreamFestival": {
+        "linkId": "2021_New_Years_Dream_Festival"
+      }
+    },
     "type": "try",
     "region": {
       "japan": {
