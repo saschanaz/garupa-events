@@ -20,9 +20,9 @@
 
 ### Taiwan
 
-* https://www.facebook.com/BanGDreamTW
+* https://www.facebook.com/BanGDreamTW (Search by "活動日期")
 * http://www.mobimon.com.tw/bang-dream/news.aspx
 
 ### China
 
-* https://game.bilibili.com/bangdream/ (Add ztNN to the URL, like [zt09](https://game.bilibili.com/bangdream/zt09))
+* https://game.bilibili.com/bangdream/
