@@ -3363,7 +3363,7 @@
     }
   },
   {
-    "linkId": "A_Wild_New_Year's_Celebration",
+    "linkId": "Happy_New-Year_Dreams",
     "meta": {
       "attribute": "pure",
       "dreamFestival": {
@@ -3383,7 +3383,11 @@
         "end": "2020-06-02"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Happy New-Year Dreams",
+        "start": "2020-12-31",
+        "end": "2021-01-08"
+      },
       "china": null
     }
   },
