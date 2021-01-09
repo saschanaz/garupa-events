@@ -4141,7 +4141,8 @@
     "meta": {
       "dreamFestival": {
         "linkId": "2021_New_Years_Dream_Festival"
-      }
+      },
+      "attribute": "cool"
     },
     "type": "try",
     "region": {
@@ -4149,7 +4150,7 @@
         "title": "ようこそお参りくださいましたっ！",
         "start": "2020-12-31",
         "end": "2021-01-08",
-        "noticeId": "next_event_201230_1TLInb.html"
+        "noticeId": "event_201231_i688eE.html"
       },
       "taiwan": null,
       "korea": null,

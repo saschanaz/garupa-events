@@ -107,7 +107,7 @@ export default async function update() {
   for (const event of events.slice().reverse()) {
     const abstract = extractEventAbstract(event.title);
     const existing = data.find((d) => d.region.japan.title === abstract.title);
-    if (existing && (existing.meta || abstract.isPreNotice)) {
+    if (existing && (existing.meta?.attribute || abstract.isPreNotice)) {
       console.log(
         `Already exists, skipping: [${abstract.title}](${event.linkUrl})`
       );
