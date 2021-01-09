@@ -4156,5 +4156,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "二人三脚のすゝめ",
+        "start": "2021-01-10",
+        "end": "2021-01-19",
+        "noticeId": "next_event_210109_30uR81.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
