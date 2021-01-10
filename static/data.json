@@ -4160,14 +4160,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "二人三脚のすゝめ",
         "start": "2021-01-10",
         "end": "2021-01-19",
-        "noticeId": "next_event_210109_30uR81.html"
+        "noticeId": "event_210110_l2k9l1.html"
       },
       "taiwan": null,
       "korea": null,
