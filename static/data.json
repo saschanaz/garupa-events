@@ -3392,7 +3392,7 @@
     }
   },
   {
-    "linkId": "The_Dream_Of_A_Lost_Toy",
+    "linkId": "A_Lost_Toy's_Dream",
     "meta": {
       "attribute": "cool"
     },
@@ -3413,7 +3413,11 @@
         "start": "2020-11-17",
         "end": "2020-11-25"
       },
-      "global": null,
+      "global": {
+        "title": "A Lost Toy's Dream",
+        "start": "2021-01-10",
+        "end": "2021-01-19"
+      },
       "china": null
     }
   },
