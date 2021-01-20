@@ -4180,5 +4180,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "テリブル・ホラー・ナイト",
+        "start": "2021-01-21",
+        "end": "2021-01-29",
+        "noticeId": "next_event_210120_z5VzAH.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
