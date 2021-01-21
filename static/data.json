@@ -3443,7 +3443,11 @@
         "start": "2020-11-27",
         "end": "2020-12-04"
       },
-      "global": null,
+      "global": {
+        "title": "Ni Hao♪ Touring the Smile Map",
+        "start": "2021-01-21",
+        "end": "2021-01-29"
+      },
       "china": null
     }
   },
@@ -4183,14 +4187,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "テリブル・ホラー・ナイト",
         "start": "2021-01-21",
         "end": "2021-01-29",
-        "noticeId": "next_event_210120_z5VzAH.html"
+        "noticeId": "event_210121_DrobSS.html"
       },
       "taiwan": null,
       "korea": null,
