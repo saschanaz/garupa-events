@@ -3452,7 +3452,7 @@
     }
   },
   {
-    "linkId": "Sweetheart Valentine For You♪",
+    "linkId": "Sending_You_a_Sweetheart_Valentine♪",
     "meta": {
       "attribute": "happy"
     },
@@ -3473,7 +3473,11 @@
         "start": "2020-12-07",
         "end": "2020-12-15"
       },
-      "global": null,
+      "global": {
+        "title": "Sending You a Sweetheart Valentine♪",
+        "start": "2021-01-31",
+        "end": "2021-02-08"
+      },
       "china": null
     }
   },
