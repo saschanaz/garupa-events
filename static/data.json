@@ -4207,5 +4207,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "バレンタインは一日にしてならず",
+        "start": "2021-01-31",
+        "end": "2021-02-08",
+        "noticeId": "next_event_210130_ydS9GU.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
