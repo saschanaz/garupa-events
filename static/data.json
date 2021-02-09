@@ -3482,7 +3482,7 @@
     }
   },
   {
-    "linkId": "Noble_Rose_-A_Song_To_Reach-",
+    "linkId": "Noble_Rose_-A_Song,_an_Extreme-",
     "meta": {
       "attribute": "powerful"
     },
@@ -3503,7 +3503,11 @@
         "start": "2020-12-17",
         "end": "2020-12-25"
       },
-      "global": null,
+      "global": {
+        "title": "Noble Rose -A Song, an Extreme-",
+        "start": "2020-02-10",
+        "end": "2020-02-17"
+      },
       "china": null
     }
   },
@@ -4220,6 +4224,23 @@
         "start": "2021-01-31",
         "end": "2021-02-08",
         "noticeId": "event_210131_WnMX31.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "にこにこねくと！",
+        "start": "2021-02-10",
+        "end": "2021-02-17",
+        "noticeId": "next_event_210209_HgQalZ.html"
       },
       "taiwan": null,
       "korea": null,

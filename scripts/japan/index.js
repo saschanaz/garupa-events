@@ -105,6 +105,9 @@ export default async function update() {
   }
 
   for (const event of events.slice().reverse()) {
+    if (event.title.includes("先行公開")) {
+      continue;
+    }
     const abstract = extractEventAbstract(event.title);
     const existing = data.find((d) => d.region.japan.title === abstract.title);
     if (existing && (existing.meta?.attribute || abstract.isPreNotice)) {
