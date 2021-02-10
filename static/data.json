@@ -4233,14 +4233,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "にこにこねくと！",
         "start": "2021-02-10",
         "end": "2021-02-17",
-        "noticeId": "next_event_210209_HgQalZ.html"
+        "noticeId": "event_210210_M2yA6r.html"
       },
       "taiwan": null,
       "korea": null,
