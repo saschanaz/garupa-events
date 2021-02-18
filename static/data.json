@@ -3512,7 +3512,7 @@
     }
   },
   {
-    "linkId": "Sunny-side_Live_~A_Day_In_Front_Of_The_Station~",
+    "linkId": "Sunny_Side_Live_~Days_to_Remember~",
     "meta": {
       "attribute": "happy"
     },
@@ -3529,7 +3529,11 @@
         "end": "2020-07-31"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Sunny Side Live ~Days to Remember~",
+        "start": "2021-02-19",
+        "end": "2021-02-26"
+      },
       "china": null
     }
   },
@@ -4243,6 +4247,23 @@
         "start": "2021-02-10",
         "end": "2021-02-17",
         "noticeId": "event_210210_M2yA6r.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "From the Past",
+        "start": "2021-02-19",
+        "end": "2021-02-26",
+        "noticeId": "next_event_210218_TwDT0y.html"
       },
       "taiwan": null,
       "korea": null,
