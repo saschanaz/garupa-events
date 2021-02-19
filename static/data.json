@@ -4256,14 +4256,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "From the Past",
         "start": "2021-02-19",
         "end": "2021-02-26",
-        "noticeId": "next_event_210218_TwDT0y.html"
+        "noticeId": "event_210219_R8RzNQ.html"
       },
       "taiwan": null,
       "korea": null,
