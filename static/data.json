@@ -4272,5 +4272,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "ゆめいろ♪パステルファンロード",
+        "start": "2021-02-28",
+        "end": "2021-03-05",
+        "noticeId": "next_event_210227_E0jg3E.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
