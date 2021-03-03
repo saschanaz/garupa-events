@@ -3538,7 +3538,7 @@
     }
   },
   {
-    "linkId": "Non-stop!_Favor_Returning_Mission!",
+    "linkId": "Non-Stop!_Return_Mission!",
     "meta": {
       "attribute": "pure"
     },
@@ -3555,7 +3555,11 @@
         "end": "2020-08-12"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Non-Stop! Return Mission!",
+        "start": "2021-02-28",
+        "end": "2021-03-08"
+      },
       "china": null
     }
   },
