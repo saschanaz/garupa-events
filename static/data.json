@@ -3581,7 +3581,11 @@
         "end": "2020-08-24"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "My Own Texture",
+        "start": "2020-03-10",
+        "end": "2020-03-18"
+      },
       "china": null
     }
   },
