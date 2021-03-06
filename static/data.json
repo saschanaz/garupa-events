@@ -4299,5 +4299,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "mission",
+    "region": {
+      "japan": {
+        "title": "バディ×バディ",
+        "start": "2021-03-07",
+        "end": "2021-03-14",
+        "noticeId": "next_event_210306_tR7rl3.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
