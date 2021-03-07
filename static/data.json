@@ -4302,14 +4302,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "バディ×バディ",
         "start": "2021-03-07",
         "end": "2021-03-14",
-        "noticeId": "next_event_210306_tR7rl3.html"
+        "noticeId": "event_210307_tOO1Bw.html"
       },
       "taiwan": null,
       "korea": null,
