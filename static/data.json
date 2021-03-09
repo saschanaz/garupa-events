@@ -3564,7 +3564,7 @@
     }
   },
   {
-    "linkId": "My_Own_Texture",
+    "linkId": "My_Design,_My_Texture",
     "meta": {
       "attribute": "cool"
     },
@@ -3582,7 +3582,7 @@
       },
       "korea": null,
       "global": {
-        "title": "My Own Texture",
+        "title": "My Design, My Texture",
         "start": "2020-03-10",
         "end": "2020-03-18"
       },
