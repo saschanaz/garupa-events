@@ -4318,5 +4318,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "Backstage Pass 4",
+        "start": "2021-03-16",
+        "end": "2021-03-29",
+        "noticeId": "event_210315_A3HAoP.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
