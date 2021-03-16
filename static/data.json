@@ -4321,14 +4321,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "Backstage Pass 4",
         "start": "2021-03-16",
         "end": "2021-03-29",
-        "noticeId": "event_210315_A3HAoP.html"
+        "noticeId": "event_210316_6itwDQ.html"
       },
       "taiwan": null,
       "korea": null,
