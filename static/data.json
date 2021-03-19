@@ -3610,7 +3610,11 @@
         "end": "2020-09-10"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Backstage Pass 3",
+        "start": "2021-03-20",
+        "end": "2021-03-29"
+      },
       "china": null
     }
   },
