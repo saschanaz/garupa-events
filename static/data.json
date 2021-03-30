@@ -3619,7 +3619,7 @@
     }
   },
   {
-    "linkId": "Full_Swing!_Hello_Happy_Softball",
+    "linkId": "Full_Swing!_Hello,_Happy_Softball",
     "meta": {
       "attribute": "cool"
     },
@@ -3636,7 +3636,11 @@
         "end": "2020-09-18"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Full Swing! Hello, Happy Softball",
+        "start": "2021-03-31",
+        "end": "2021-04-08"
+      },
       "china": null
     }
   },
@@ -4335,6 +4339,23 @@
         "start": "2021-03-16",
         "end": "2021-03-29",
         "noticeId": "event_210316_6itwDQ.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "さくら色ストロール",
+        "start": "2021-03-31",
+        "end": "2021-04-07",
+        "noticeId": "next_event_210331_Xg2IRI.html"
       },
       "taiwan": null,
       "korea": null,
