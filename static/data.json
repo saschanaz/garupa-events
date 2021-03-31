@@ -4348,14 +4348,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "さくら色ストロール",
         "start": "2021-03-31",
         "end": "2021-04-07",
-        "noticeId": "next_event_210331_Xg2IRI.html"
+        "noticeId": "event_210331_m7WqNR.html"
       },
       "taiwan": null,
       "korea": null,
