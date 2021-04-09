@@ -4367,14 +4367,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "Live Beyond!!",
         "start": "2021-04-09",
         "end": "2021-04-18",
-        "noticeId": "next_event_210408_3wxFKf.html"
+        "noticeId": "event_210409_x4bQyq.html"
       },
       "taiwan": null,
       "korea": null,
