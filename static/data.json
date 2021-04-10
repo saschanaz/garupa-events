@@ -3645,7 +3645,7 @@
     }
   },
   {
-    "linkId": "Luminary_Sakura_Symphony",
+    "linkId": "Blossoming_Symphony",
     "meta": {
       "attribute": "powerful"
     },
@@ -3662,7 +3662,11 @@
         "end": "2020-10-16"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Blossoming Symphony",
+        "start": "2021-04-10",
+        "end": "2021-04-19"
+      },
       "china": null
     }
   },
