@@ -4390,14 +4390,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "調和と変化のアナリーゼ",
         "start": "2021-04-20",
         "end": "2021-04-28",
-        "noticeId": "next_event_210419_I93i2x.html"
+        "noticeId": "event_210420_IUYc7i.html"
       },
       "taiwan": null,
       "korea": null,
