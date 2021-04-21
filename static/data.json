@@ -3671,7 +3671,7 @@
     }
   },
   {
-    "linkId": "Play_Act!_Challenge*Audition",
+    "linkId": "Play_act!_Challenge*Audition",
     "meta": {
       "attribute": "pure"
     },
@@ -3688,7 +3688,11 @@
         "end": "2020-09-28"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Play act! Challenge*Audition",
+        "start": "2021-04-21",
+        "end": "2021-04-28"
+      },
       "china": null
     }
   },
