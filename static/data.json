@@ -3717,12 +3717,16 @@
         "end": "2020-10-07"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "VIVA LA LIVE!",
+        "start": "2021-04-30",
+        "end": "2021-05-10"
+      },
       "china": null
     }
   },
   {
-    "linkId": "Let's_Perfect_Collection!",
+    "linkId": "Let's_Perfect_Our_Collection!",
     "meta": {
       "attribute": "pure"
     },
@@ -3739,7 +3743,11 @@
         "end": "2020-10-26"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Let's Perfect Our Collection!",
+        "start": "2021-05-12",
+        "end": "2021-05-19"
+      },
       "china": null
     }
   },
@@ -4404,6 +4412,23 @@
         "start": "2021-04-20",
         "end": "2021-04-28",
         "noticeId": "event_210420_IUYc7i.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "とまどい、迷い、抱きしめたまま",
+        "start": "2021-04-30",
+        "end": "2021-05-09",
+        "noticeId": "next_event_210429_iURrJ1.html"
       },
       "taiwan": null,
       "korea": null,
