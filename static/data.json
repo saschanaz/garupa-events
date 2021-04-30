@@ -4421,14 +4421,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "とまどい、迷い、抱きしめたまま",
         "start": "2021-04-30",
         "end": "2021-05-09",
-        "noticeId": "next_event_210429_iURrJ1.html"
+        "noticeId": "event_210430_ZWtuL0.html"
       },
       "taiwan": null,
       "korea": null,
