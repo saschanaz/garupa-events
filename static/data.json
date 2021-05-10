@@ -4437,5 +4437,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "リトルローズ・ハーモニー",
+        "start": "2021-05-11",
+        "end": "2021-05-19",
+        "noticeId": "next_event_210510_Z1PqTS.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
