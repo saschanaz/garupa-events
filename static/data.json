@@ -3752,7 +3752,7 @@
     }
   },
   {
-    "linkId": "Latent_Heat,_Burning_Sky",
+    "linkId": "Dormant_Heat_Scorching_the_Sky",
     "meta": {
       "attribute": "happy"
     },
@@ -3769,7 +3769,11 @@
         "end": "2020-11-05"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Dormant Heat Scorching the Sky",
+        "start": "2021-05-21",
+        "end": "2021-05-28"
+      },
       "china": null
     }
   },
@@ -4459,14 +4463,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "outside/inside",
         "start": "2021-05-21",
         "end": "2021-05-29",
-        "noticeId": "next_event_210520_71X5mA.html"
+        "noticeId": "event_210521_03O0s9.html"
       },
       "taiwan": null,
       "korea": null,
