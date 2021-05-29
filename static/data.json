@@ -3778,7 +3778,7 @@
     }
   },
   {
-    "linkId": "Neo_Fantasy_Online_-Ancient_Dragon_Bride-",
+    "linkId": "Neo_Fantasy_Online_-Wedding_Day_Dragon-",
     "meta": {
       "attribute": "pure"
     },
@@ -3795,7 +3795,11 @@
         "end": "2020-11-14"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "Neo Fantasy Online -Wedding Day Dragon-",
+        "start": "2021-05-30",
+        "end": "2021-06-09"
+      },
       "china": null
     }
   },
