@@ -116,7 +116,7 @@ export default async function update() {
       );
       continue;
     }
-    const [, date] = event.linkUrl.match(/_(\d{6})_/);
+    const [, date] = event.linkUrl.match(/_(\d{6,})_/);
     if (!date) {
       throw new Error(`Unexpected link URL format: ${event.linkUrl}`);
     }
