@@ -4486,14 +4486,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "あたらよものがたり",
         "start": "2021-05-31",
         "end": "2021-06-08",
-        "noticeId": "next_event_2105230_GFQf2t.html"
+        "noticeId": "event_210531_LQ8mp0.html"
       },
       "taiwan": null,
       "korea": null,
