@@ -4502,5 +4502,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "challenge",
+    "region": {
+      "japan": {
+        "title": "はぐみとハッピーダイナソー",
+        "start": "2021-06-10",
+        "end": "2021-06-18",
+        "noticeId": "next_event_210609_2TCy8w.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
