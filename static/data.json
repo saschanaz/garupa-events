@@ -3804,7 +3804,7 @@
     }
   },
   {
-    "linkId": "RAISE_A_SUILEN_~Raise_The_Curtain~_(Part_One)",
+    "linkId": "RAISE_A_SUILEN_~Raise_the_Curtain~_Pt._1",
     "meta": {
       "attribute": "cool"
     },
@@ -3821,7 +3821,11 @@
         "end": "2020-11-25"
       },
       "korea": null,
-      "global": null,
+      "global": {
+        "title": "RAISE A SUILEN ~Raise the Curtain~ Pt. 1",
+        "start": "2021-06-11",
+        "end": "2021-06-17"
+      },
       "china": null
     }
   },
