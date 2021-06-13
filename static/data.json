@@ -3386,7 +3386,11 @@
         "start": "2020-05-24",
         "end": "2020-06-02"
       },
-      "korea": null,
+      "korea": {
+        "title": "새해를 축하하는 꿈 이야기",
+        "start": "2020-11-06",
+        "end": "2020-11-15"
+      },
       "global": {
         "title": "Happy New-Year Dreams",
         "start": "2020-12-31",
@@ -3532,7 +3536,11 @@
         "start": "2020-07-22",
         "end": "2020-07-31"
       },
-      "korea": null,
+      "korea": {
+        "title": "써니 사이드 라이브 ~어느 날의 역 앞~",
+        "start": "2020-12-28",
+        "end": "2021-01-06"
+      },
       "global": {
         "title": "Sunny Side Live ~Days to Remember~",
         "start": "2021-02-19",
@@ -3558,7 +3566,11 @@
         "start": "2020-08-03",
         "end": "2020-08-12"
       },
-      "korea": null,
+      "korea": {
+        "title": "논스톱! 답례 미션!",
+        "start": "2021-01-08",
+        "end": "2021-01-17"
+      },
       "global": {
         "title": "Non-Stop! Return Mission!",
         "start": "2021-02-28",
@@ -3584,7 +3596,11 @@
         "start": "2020-08-15",
         "end": "2020-08-24"
       },
-      "korea": null,
+      "korea": {
+        "title": "내 모습 텍스처",
+        "start": "2021-01-19",
+        "end": "2021-01-27"
+      },
       "global": {
         "title": "My Design, My Texture",
         "start": "2020-03-10",
@@ -3613,7 +3629,11 @@
         "start": "2020-08-28",
         "end": "2020-09-10"
       },
-      "korea": null,
+      "korea": {
+        "title": "Backstage Pass 3",
+        "start": "2021-01-29",
+        "end": "2021-02-12"
+      },
       "global": {
         "title": "Backstage Pass 3",
         "start": "2021-03-20",
@@ -3639,7 +3659,11 @@
         "start": "2020-09-12",
         "end": "2020-09-18"
       },
-      "korea": null,
+      "korea": {
+        "title": "풀 스윙! 헬로해피 소프트볼!",
+        "start": "2021-02-15",
+        "end": "2021-02-23"
+      },
       "global": {
         "title": "Full Swing! Hello, Happy Softball",
         "start": "2021-03-31",
@@ -3665,7 +3689,11 @@
         "start": "2020-10-09",
         "end": "2020-10-16"
       },
-      "korea": null,
+      "korea": {
+        "title": "풀 스윙! 헬로해피 소프트볼!",
+        "start": "2021-02-25",
+        "end": "2021-03-05"
+      },
       "global": {
         "title": "Blossoming Symphony",
         "start": "2021-04-10",
@@ -3691,7 +3719,11 @@
         "start": "2020-09-20",
         "end": "2020-09-28"
       },
-      "korea": null,
+      "korea": {
+        "title": "play act! 챌린지 오디션",
+        "start": "2021-03-08",
+        "end": "2021-03-16"
+      },
       "global": {
         "title": "Play act! Challenge*Audition",
         "start": "2021-04-21",
@@ -3720,7 +3752,11 @@
         "start": "2020-09-30",
         "end": "2020-10-07"
       },
-      "korea": null,
+      "korea": {
+        "title": "VIVA LA LIVE！",
+        "start": "2021-03-18",
+        "end": "2021-03-26"
+      },
       "global": {
         "title": "VIVA LA LIVE!",
         "start": "2021-04-30",
@@ -3746,7 +3782,11 @@
         "start": "2020-10-18",
         "end": "2020-10-26"
       },
-      "korea": null,
+      "korea": {
+        "title": "Let's 퍼펙트 콜렉션!",
+        "start": "2021-03-29",
+        "end": "2021-04-07"
+      },
       "global": {
         "title": "Let's Perfect Our Collection!",
         "start": "2021-05-12",
@@ -3772,7 +3812,11 @@
         "start": "2020-10-28",
         "end": "2020-11-05"
       },
-      "korea": null,
+      "korea": {
+        "title": "잠열, 하늘을 태우고",
+        "start": "2021-04-09",
+        "end": "2021-04-16"
+      },
       "global": {
         "title": "Dormant Heat Scorching the Sky",
         "start": "2021-05-21",
@@ -3798,7 +3842,11 @@
         "start": "2020-11-07",
         "end": "2020-11-14"
       },
-      "korea": null,
+      "korea": {
+        "title": "Neo Fantasy Online -고룡과 신부-",
+        "start": "2021-04-19",
+        "end": "2021-04-27"
+      },
       "global": {
         "title": "Neo Fantasy Online -Wedding Day Dragon-",
         "start": "2021-05-30",
@@ -3824,7 +3872,11 @@
         "start": "2020-11-17",
         "end": "2020-11-25"
       },
-      "korea": null,
+      "korea": {
+        "title": "RAISE A SUILEN ~수렴을 올려라~ <전편>",
+        "start": "2021-04-29",
+        "end": "2021-05-07"
+      },
       "global": {
         "title": "RAISE A SUILEN ~Raise the Curtain~ Pt. 1",
         "start": "2021-06-11",
@@ -3850,7 +3902,11 @@
         "start": "2020-11-27",
         "end": "2020-12-05"
       },
-      "korea": null,
+      "korea": {
+        "title": "한숨은 비가 그친 너머로",
+        "start": "2021-05-10",
+        "end": "2021-05-18"
+      },
       "global": null,
       "china": null
     }
@@ -3868,7 +3924,11 @@
         "end": "2020-07-09"
       },
       "taiwan": null,
-      "korea": null,
+      "korea": {
+        "title": "어떤 밴드의 스포츠 페스티벌☆",
+        "start": "2021-05-20",
+        "end": "2021-05-28"
+      },
       "global": null,
       "china": null
     }
@@ -3890,7 +3950,11 @@
         "start": "2020-12-07",
         "end": "2020-12-15"
       },
-      "korea": null,
+      "korea": {
+        "title": "날갯짓을 위한 에튀드",
+        "start": "2021-05-31",
+        "end": "2021-06-08"
+      },
       "global": null,
       "china": null
     }
@@ -3912,7 +3976,11 @@
         "start": "2020-12-17",
         "end": "2020-12-25"
       },
-      "korea": null,
+      "korea": {
+        "title": "헬로해피표 싱글벙글 여름방학",
+        "start": "2021-06-10",
+        "end": "2021-06-18"
+      },
       "global": null,
       "china": null
     }
