@@ -11,7 +11,7 @@
 ### Korea
 
 * [https://twitter.com/bangdreamparty_](https://twitter.com/bangdreamparty_)
-* https://playgame.kakao.com/bangdream/boards/0Fb5xxIpq
+* https://cafe.daum.net/bangdream/Bywd
 
 ### Global
 
