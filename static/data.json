@@ -4015,7 +4015,11 @@
         "start": "2020-06-30",
         "end": "2020-07-09"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "某樂團的運動祭☆",
+        "start": "2021-02-07",
+        "end": "2021-02-13"
+      },
       "korea": {
         "title": "어떤 밴드의 스포츠 페스티벌☆",
         "start": "2021-05-20",
@@ -4114,7 +4118,11 @@
         "start": "2020-08-11",
         "end": "2020-08-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "凜冽薰香風的樂章",
+        "start": "2020-01-06",
+        "end": "2021-01-14"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4132,7 +4140,11 @@
         "start": "2020-08-21",
         "end": "2020-08-29"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "深深的海中 捎來訊息",
+        "start": "2020-01-16",
+        "end": "2021-01-24"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4150,7 +4162,11 @@
         "start": "2020-08-31",
         "end": "2020-09-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "RAISE A SUILEN～揭簾而起～（後篇）",
+        "start": "2020-01-26",
+        "end": "2021-02-04"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4168,7 +4184,11 @@
         "start": "2020-09-10",
         "end": "2020-09-18"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Brighter brighter",
+        "start": "2021-02-19",
+        "end": "2021-02-28"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4186,7 +4206,11 @@
         "start": "2020-09-20",
         "end": "2020-09-28"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "滿盈於我心的溫暖悸動是",
+        "start": "2021-03-02",
+        "end": "2021-03-11"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4207,7 +4231,11 @@
         "start": "2020-09-30",
         "end": "2020-10-08"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Have a good HALLOWEEN！！",
+        "start": "2021-03-13",
+        "end": "2021-03-21"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4225,7 +4253,11 @@
         "start": "2020-10-10",
         "end": "2020-10-19"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "ONE OF US",
+        "start": "2021-03-23",
+        "end": "2021-03-31"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4244,7 +4276,11 @@
         "end": "2020-10-29",
         "noticeId": "event_201021_Ilmfni.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Welcome to Open School！",
+        "start": "2021-04-02",
+        "end": "2021-04-11"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4282,7 +4318,11 @@
         "end": "2020-11-18",
         "noticeId": "event_201110_QL4eB5.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "全新旅途的Einsatz",
+        "start": "2021-04-13",
+        "end": "2021-04-22"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4301,7 +4341,12 @@
         "end": "2020-11-28",
         "noticeId": "event_201120_k2q6lB.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "NO LIMIT!!!",
+        "start": "2021-04-24",
+        "end": "2021-05-04",
+        "noticeId": "event_201120_k2q6lB.html"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4320,7 +4365,11 @@
         "end": "2020-12-09",
         "noticeId": "event_201130_E3l4sH.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "Prismatic・重奏",
+        "start": "2021-05-06",
+        "end": "2021-05-15"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4339,7 +4388,11 @@
         "end": "2020-12-20",
         "noticeId": "event_201213_7EQZG8.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "TITLE IDOL",
+        "start": "2021-05-17",
+        "end": "2021-05-26"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4358,7 +4411,11 @@
         "end": "2020-12-29",
         "noticeId": "event_201222_P2wtMz.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "RED・IGNITION",
+        "start": "2021-05-28",
+        "end": "2021-06-06"
+      },
       "korea": null,
       "global": null,
       "china": null
@@ -4380,7 +4437,11 @@
         "end": "2021-01-08",
         "noticeId": "event_201231_i688eE.html"
       },
-      "taiwan": null,
+      "taiwan": {
+        "title": "歡迎蒞臨 感謝您前來參拜！",
+        "start": "2021-06-06",
+        "end": "2021-06-17"
+      },
       "korea": null,
       "global": null,
       "china": null
