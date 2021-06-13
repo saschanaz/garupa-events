@@ -2967,7 +2967,7 @@
     }
   },
   {
-    "linkId": "A_Summer_Evening,_Flowers_Adrift_the_Water's_Surface",
+    "linkId": "A_Summer's_Night,_Poems_Across_the_Water",
     "meta": {
       "attribute": "pure"
     },
@@ -2988,7 +2988,11 @@
         "start": "2020-07-08",
         "end": "2020-07-15"
       },
-      "global": null,
+      "global": {
+        "title": "A Summer's Night, Poems Across the Water",
+        "start": "2020-08-20",
+        "end": "2020-08-28"
+      },
       "china": null
     }
   },
@@ -3830,7 +3834,7 @@
     }
   },
   {
-    "linkId": "A_Sigh_Beyond_The_Rain",
+    "linkId": "A_Sigh_Beyond_the_Rain",
     "meta": {
       "attribute": "powerful"
     },
@@ -4223,7 +4227,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Three-Legged_Race",
     "meta": {
       "attribute": "happy"
     },
@@ -4242,7 +4246,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Terrible_Horror_Night",
     "meta": {
       "attribute": "powerful"
     },
@@ -4261,7 +4265,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Valentine's_Day_is_Not_Just_A_Single_Day",
     "meta": {
       "attribute": "cool"
     },
@@ -4280,7 +4284,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Smiling_and_Connecting!",
     "meta": {
       "attribute": "pure"
     },
@@ -4299,7 +4303,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "From_the_Past",
     "meta": {
       "attribute": "happy"
     },
@@ -4318,7 +4322,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Dreamy♪Pastel_Fan_Road",
     "meta": {
       "attribute": "cool"
     },
@@ -4337,7 +4341,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Buddy×Buddy",
     "meta": {
       "attribute": "powerful"
     },
@@ -4356,7 +4360,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Backstage_Pass_4",
     "meta": {
       "attribute": "pure"
     },
@@ -4375,7 +4379,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Cherry_Blossom-Colored_Stroll",
     "meta": {
       "attribute": "happy"
     },
@@ -4394,7 +4398,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Live_Beyond!!_(Event)",
     "meta": {
       "attribute": "powerful"
     },
@@ -4413,7 +4417,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "An_Analysis_of_Harmony_and_Variation",
     "meta": {
       "attribute": "pure"
     },
@@ -4432,7 +4436,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Embracing_Your_Confused_and_Lost_Self",
     "meta": {
       "attribute": "cool"
     },
@@ -4451,7 +4455,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Little_Rose_Harmony",
     "meta": {
       "attribute": "powerful"
     },
@@ -4470,7 +4474,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Outside/inside",
     "meta": {
       "attribute": "cool"
     },
@@ -4489,7 +4493,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "A_Regrettable_Tale",
     "meta": {
       "attribute": "powerful"
     },
@@ -4508,7 +4512,7 @@
     }
   },
   {
-    "linkId": null,
+    "linkId": "Hagumi_and_the_Happy_Dinosaur",
     "meta": {
       "attribute": "happy"
     },

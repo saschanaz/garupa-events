@@ -1,3 +1,5 @@
+/// <reference path="../../static/types.d.ts" />
+
 import fetch from "node-fetch";
 import { promises as fs } from "fs";
 import { createRequire } from "module";
@@ -38,7 +40,7 @@ async function checkRedirect(htmlStr) {
  * @param {string} wikiId
  */
 async function fetchFromWiki(wikiId) {
-  return fetchAsText(`https://bandori.fandom.com/wiki/${encodeURI(wikiId)}`);
+  return fetchAsText(`https://bandori.fandom.com/wiki/${encodeURIComponent(wikiId)}`);
 }
 
 async function getTitle(htmlStr) {
@@ -66,7 +68,7 @@ async function getDate(htmlStr, rowTitle) {
 /**
  * @param {string} wikiId
  */
-async function updateFromWiki(wikiId) {
+async function extractFromWiki(wikiId) {
   let html = await fetchFromWiki(wikiId);
   while (true) {
     const redirectId = await checkRedirect(html);
@@ -86,25 +88,61 @@ async function updateFromWiki(wikiId) {
   return { wikiId, title };
 }
 
-export default async function update() {
-  const data = require("../../static/data.json");
-
-  const firstIndex = data.findIndex((d) => !d.region.global);
-  for (const item of data.slice(firstIndex)) {
+/**
+ * @param {Schema[]} data
+ */
+async function tryUpdatingData(data) {
+  const noGlobal = data.filter((d) => !d.region.global);
+  for (const item of noGlobal) {
     if (!item.linkId) {
       break;
     }
-    const eventData = await updateFromWiki(item.linkId);
-    if (!eventData.startDate) {
-      continue;
-    }
+    const eventData = await extractFromWiki(item.linkId);
     item.linkId = eventData.wikiId;
+    if (!eventData.startDate) {
+      break;
+    }
     item.region.global = {
       title: eventData.title,
       start: eventData.startDate,
       end: eventData.endDate
     };
   }
+}
+
+/**
+ * @param {string} prevLinkId
+ */
+async function getNextLinkId(prevLinkId) {
+  const html = await fetchFromWiki(prevLinkId);
+  const regex = /href="\/wiki\/([^"]+)" title=".+">Next Event →<\/a>/;
+  const match = html.match(regex);
+  if (match) {
+    return decodeURIComponent(match[1]);
+  }
+}
+
+/**
+ * @param {Schema[]} data
+ */
+async function tryGettingLinkId(data) {
+  const firstIndex = data.findIndex((d) => !d.linkId);
+  if (firstIndex === -1) {
+    return;
+  }
+  for (const [i, item] of data.slice(firstIndex).entries()) {
+    const next = await getNextLinkId(data[firstIndex + i - 1].linkId);
+    if (next) {
+      item.linkId = next;
+    }
+  }
+}
+
+export default async function update() {
+  const data = require("../../static/data.json");
+
+  await tryUpdatingData(data);
+  await tryGettingLinkId(data);
 
   await fs.writeFile(
     new URL("../../static/data.json", import.meta.url),
