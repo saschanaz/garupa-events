@@ -366,7 +366,7 @@ function diffDate({ start, end }) {
 }
 
 /**
- * @param {string?} externalLink
+ * @param {string | undefined} externalLink
  * @param {(string | Node)[]} children
  */
 function wrapAnchor(externalLink, children) {
