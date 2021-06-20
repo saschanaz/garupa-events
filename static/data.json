@@ -4750,5 +4750,24 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "try",
+    "region": {
+      "japan": {
+        "title": "これがアイドルのSAGA！",
+        "start": "2021-06-20",
+        "end": "2021-06-28",
+        "noticeId": "event_210620_WdOpK9.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
