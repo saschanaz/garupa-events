@@ -80,7 +80,10 @@ async function extractFromWiki(wikiId) {
   }
 
   const title = await getTitle(html);
-  if (html.includes("Event Start (WW)")) {
+  if (
+    html.includes("Event Start (WW)") &&
+    !html.includes("run of this event are estimated.")
+  ) {
     const startDate = await getDate(html, "Event Start \\(WW\\)");
     const endDate = await getDate(html, "Event End \\(WW\\)");
     return { wikiId, title, startDate, endDate };
