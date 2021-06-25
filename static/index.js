@@ -1,12 +1,14 @@
+/* global DOMLiner, table */
+
 const { element: el } = DOMLiner;
 
 const lang = {
-  "japan": "ja",
-  "taiwan": "zh-tw",
-  "korea": "ko",
-  "global": "en",
-  "china": "zh-cn"
-}
+  japan: "ja",
+  taiwan: "zh-tw",
+  korea: "ko",
+  global: "en",
+  china: "zh-cn",
+};
 
 const l10n = {
   ko: {
@@ -15,18 +17,18 @@ const l10n = {
       challenge: "챌린지",
       versus: "합동",
       try: "트라이",
-      mission: "미션"
+      mission: "미션",
     },
     gacha: {
       dreamFestival: "드림 페스티벌",
-      dreamFestivalShort: "드페"
-    }
-  }
+      dreamFestivalShort: "드페",
+    },
+  },
 };
 
 const baseLinkUrl = "https://bandori.fandom.com/wiki/";
 
-document.addEventListener("DOMContentLoaded", (async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const { baseArea, targetArea } = getComparisonAreas();
   showSelection(baseArea, targetArea);
   nameHeads(baseArea, targetArea);
@@ -36,7 +38,11 @@ document.addEventListener("DOMContentLoaded", (async () => {
   /** @type {Schema[]} */
   const data = await res.json();
 
-  let { lastTargetItem, rows } = createRowsAfterTargetArea(data, baseArea, targetArea);
+  let { lastTargetItem, rows } = createRowsAfterTargetArea(
+    data,
+    baseArea,
+    targetArea
+  );
 
   if (!lastTargetItem) {
     throw new Error("No last event");
@@ -45,7 +51,7 @@ document.addEventListener("DOMContentLoaded", (async () => {
   createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows);
 
   table.tBodies[0].append(...rows.slice().reverse());
-}));
+});
 
 /**
  * @param {Schema[]} data
@@ -61,7 +67,10 @@ function createRowsAfterTargetArea(data, baseArea, targetArea) {
   for (const event of yieldEventData(data, baseArea, targetArea)) {
     const { index, targetRegion } = event;
     if (targetRegion) {
-      if (!lastTargetItem || diffDate({ start: lastTargetItem.start, end: targetRegion.start }) > 0) {
+      if (
+        !lastTargetItem ||
+        diffDate({ start: lastTargetItem.start, end: targetRegion.start }) > 0
+      ) {
         lastTargetItem = targetRegion;
       }
       rows[index] = createRowAfterTargetArea(event);
@@ -77,22 +86,33 @@ function createRowsAfterTargetArea(data, baseArea, targetArea) {
  * @param {Region} lastTargetItem
  * @param {HTMLTableRowElement[]} rows
  */
-function createRowsBeforeTargetArea(data, baseArea, targetArea, lastTargetItem, rows) {
+function createRowsBeforeTargetArea(
+  data,
+  baseArea,
+  targetArea,
+  lastTargetItem,
+  rows
+) {
   for (const event of yieldEventData(data, baseArea, targetArea)) {
     const { index, targetRegion, baseRegion } = event;
-    const previousBaseItem = data[index - 1] && data[index - 1].region[baseArea];
+    const previousBaseItem =
+      data[index - 1] && data[index - 1].region[baseArea];
     if (!targetRegion && previousBaseItem && lastTargetItem) {
-      const blank = diffDate({ start: previousBaseItem.end, end: baseRegion.start });
+      const blank = diffDate({
+        start: previousBaseItem.end,
+        end: baseRegion.start,
+      });
       const duration = diffDate(baseRegion);
       /** @type {Region} */
       const newTargetItem = {
         title: baseRegion.title,
         start: addDate(lastTargetItem.end, blank),
-        end: addDate(lastTargetItem.end, blank + duration)
+        end: addDate(lastTargetItem.end, blank + duration),
       };
 
       const lastDiff = getDiffs(baseRegion, newTargetItem);
-      const prediction = lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
+      const prediction =
+        lastDiff.diff + lastDiff.durationTarget - lastDiff.durationBase;
       rows[index] = createRowBeforeTargetArea(event, prediction);
 
       lastTargetItem = newTargetItem;
@@ -149,7 +169,7 @@ function nameHeads(base, target) {
 function nameHead(name) {
   /** @type {HTMLSelectElement} */
   const baseSelect = document.getElementById("baseSelect");
-  const option = [...baseSelect.options].find(o => o.value === name);
+  const option = [...baseSelect.options].find((o) => o.value === name);
   if (!option) {
     throw new Error("Unknown value");
   }
@@ -158,8 +178,12 @@ function nameHead(name) {
 
 function getComparisonAreas() {
   const params = new URLSearchParams(location.search);
-  const baseArea = /** @type {keyof Schema["region"]} */ (params.get("base") || "japan");
-  const targetArea = /** @type {keyof Schema["region"]} */ (params.get("target") || "korea");
+  const baseArea = /** @type {keyof Schema["region"]} */ (
+    params.get("base") || "japan"
+  );
+  const targetArea = /** @type {keyof Schema["region"]} */ (
+    params.get("target") || "korea"
+  );
   return { baseArea, targetArea };
 }
 
@@ -180,7 +204,12 @@ function getDiffs(base, target) {
  */
 function createAttributeIcon(attr) {
   if (attr) {
-    return [el("img", { class: "attribute", src: new URL(`./assets/${attr}.svg`, import.meta.url) })]
+    return [
+      el("img", {
+        class: "attribute",
+        src: new URL(`./assets/${attr}.svg`, import.meta.url),
+      }),
+    ];
   }
 }
 
@@ -192,21 +221,30 @@ function createGachaIcons({ dreamFestival }) {
     return;
   }
 
-  return [el("a", {
-    title: l10n.ko.gacha.dreamFestival,
-    ...dreamFestival.linkId ? {
-      href: `${baseLinkUrl}${encodeURI(dreamFestival.linkId)}`
-    } : undefined,
-    class: "gacha dream-festival",
-    target: "_blank"
-  }, l10n.ko.gacha.dreamFestivalShort)];
+  return [
+    el(
+      "a",
+      {
+        title: l10n.ko.gacha.dreamFestival,
+        ...(dreamFestival.linkId
+          ? {
+              href: `${baseLinkUrl}${encodeURI(dreamFestival.linkId)}`,
+            }
+          : undefined),
+        class: "gacha dream-festival",
+        target: "_blank",
+      },
+      l10n.ko.gacha.dreamFestivalShort
+    ),
+  ];
 }
 
 /**
  * @param {IteratorParameter<ReturnType<typeof yieldEventData>>} event
  */
 function createRowAfterTargetArea(event) {
-  const { baseRegion, targetRegion, baseLang, targetLang, index, diffs, meta } = event;
+  const { baseRegion, targetRegion, baseLang, targetLang, index, diffs, meta } =
+    event;
   if (!targetRegion) {
     throw new Error("Target region data is required");
   }
@@ -218,23 +256,23 @@ function createRowAfterTargetArea(event) {
     el("td", undefined, [
       wrapAnchor(event.externalLink, [
         el("span", { lang: targetLang }, targetRegion.title),
-        el("span", { class: "original", lang: baseLang }, baseRegion.title)
-      ])]
-    ),
+        el("span", { class: "original", lang: baseLang }, baseRegion.title),
+      ]),
+    ]),
     el("td", undefined, l10n.ko.type[event.type]),
     el("td", undefined, meta && createAttributeIcon(meta.attribute)),
     el("td", undefined, meta && createGachaIcons(meta)),
     el("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
-      `(${diffs.durationBase}일간)`
+      `(${diffs.durationBase}일간)`,
     ]),
     el("td", decorateByDuration(diffs), [
       targetRegion.start,
       document.createElement("br"),
-      `(${diffs.durationTarget}일간)`
+      `(${diffs.durationTarget}일간)`,
     ]),
-    el("td", undefined, `${diffs.diff}일`)
+    el("td", undefined, `${diffs.diff}일`),
   ]);
 }
 
@@ -261,7 +299,7 @@ function createRowBeforeTargetArea(event, diff) {
   return el("tr", { class: "prediction" }, [
     el("td", undefined, `${index + 1}`),
     el("td", { lang: baseLang }, [
-      wrapAnchor(externalLink, [baseRegion.title])
+      wrapAnchor(externalLink, [baseRegion.title]),
     ]),
     el("td", undefined, l10n.ko.type[event.type]),
     el("td", undefined, meta && createAttributeIcon(meta.attribute)),
@@ -269,12 +307,10 @@ function createRowBeforeTargetArea(event, diff) {
     el("td", undefined, [
       baseRegion.start,
       document.createElement("br"),
-      `(${durationJp}일간)`
+      `(${durationJp}일간)`,
     ]),
-    el("td", undefined, [
-      addDate(baseRegion.start, diff) + "?"
-    ]),
-    el("td", undefined, `${diff}일?`)
+    el("td", undefined, [addDate(baseRegion.start, diff) + "?"]),
+    el("td", undefined, `${diff}일?`),
   ]);
 }
 
@@ -310,7 +346,7 @@ function* yieldEventData(data, base, target) {
 
     const externalLink = schema.linkId
       ? `${baseLinkUrl}${schema.linkId}`
-      : (getNoticeUrl(schema, target) ?? getNoticeUrl(schema, base));
+      : getNoticeUrl(schema, target) ?? getNoticeUrl(schema, base);
 
     yield {
       index,
@@ -321,7 +357,7 @@ function* yieldEventData(data, base, target) {
       targetLang: lang[target],
       baseRegion,
       targetRegion,
-      diffs
+      diffs,
     };
   }
 }
@@ -332,7 +368,9 @@ function* yieldEventData(data, base, target) {
  * @param {number} diff
  */
 function addDate(date, diff) {
-  const newDate = new Date(parseDate(date) + diff * 1000 * 3600 * 24 + 1000 * 3600 * 9);
+  const newDate = new Date(
+    parseDate(date) + diff * 1000 * 3600 * 24 + 1000 * 3600 * 9
+  );
   const yyyy = newDate.getUTCFullYear();
   const mm = padZero(newDate.getUTCMonth() + 1, 2);
   const dd = padZero(newDate.getUTCDate(), 2);
@@ -354,7 +392,7 @@ function padZero(num, length) {
  * @return milliseconds
  */
 function parseDate(str) {
-  return Date.parse(`${str}T00:00+09:00`)
+  return Date.parse(`${str}T00:00+09:00`);
 }
 
 /**

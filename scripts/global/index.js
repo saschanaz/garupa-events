@@ -40,7 +40,9 @@ async function checkRedirect(htmlStr) {
  * @param {string} wikiId
  */
 async function fetchFromWiki(wikiId) {
-  return fetchAsText(`https://bandori.fandom.com/wiki/${encodeURIComponent(wikiId)}`);
+  return fetchAsText(
+    `https://bandori.fandom.com/wiki/${encodeURIComponent(wikiId)}`
+  );
 }
 
 async function getTitle(htmlStr) {
@@ -53,7 +55,9 @@ async function getTitle(htmlStr) {
 }
 
 async function getDate(htmlStr, rowTitle) {
-  const dateRegex = new RegExp(`${rowTitle}[^A-Z]+">(\\w+ \\d\\d?, \\d{4} \\d{2}:\\d{2} UTC)`);
+  const dateRegex = new RegExp(
+    `${rowTitle}[^A-Z]+">(\\w+ \\d\\d?, \\d{4} \\d{2}:\\d{2} UTC)`
+  );
   const dateMatch = htmlStr.match(dateRegex);
   if (!dateMatch) {
     throw new Error("Cannot detect the date!");
@@ -108,7 +112,7 @@ async function tryUpdatingData(data) {
     item.region.global = {
       title: eventData.title,
       start: eventData.startDate,
-      end: eventData.endDate
+      end: eventData.endDate,
     };
   }
 }

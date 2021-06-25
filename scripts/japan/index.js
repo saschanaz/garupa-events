@@ -42,10 +42,10 @@ function extractEventAbstract(titleProse) {
  * @param {string} htmlStr
  */
 function extractEventInfo(htmlStr, startYear) {
-  const timeRangeRegex = /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (?:\d{4}年)?(\d\d?)月(\d\d?)日/;
-  const [, startMonth, startDate, endMonth, endDate] = htmlStr.match(
-    timeRangeRegex
-  );
+  const timeRangeRegex =
+    /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (?:\d{4}年)?(\d\d?)月(\d\d?)日/;
+  const [, startMonth, startDate, endMonth, endDate] =
+    htmlStr.match(timeRangeRegex);
   if (!startMonth) {
     throw new Error("Could not detect the event time range");
   }
@@ -98,10 +98,12 @@ export default async function update() {
   );
 
   const events = info.NOTICE.filter(
-    notice => notice.informationType === "EVENT"
+    (notice) => notice.informationType === "EVENT"
   );
   if (info.TOPIC) {
-    events.push(...info.TOPIC.filter(topic => topic.title.includes("イベント")));
+    events.push(
+      ...info.TOPIC.filter((topic) => topic.title.includes("イベント"))
+    );
   }
 
   for (const event of events.slice().reverse()) {
