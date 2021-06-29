@@ -4769,5 +4769,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "風と海のラグタイム",
+        "start": "2021-06-30",
+        "end": "2021-07-09",
+        "noticeId": "next_event_210629_eKNy12.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
