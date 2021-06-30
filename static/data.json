@@ -4771,15 +4771,17 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "The_Wind_and_Sea's_Ragtime",
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "風と海のラグタイム",
         "start": "2021-06-30",
         "end": "2021-07-09",
-        "noticeId": "next_event_210629_eKNy12.html"
+        "noticeId": "event_210630_S3tEE4.html"
       },
       "taiwan": null,
       "korea": null,
