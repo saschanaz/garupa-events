@@ -1,6 +1,7 @@
-/* global DOMLiner, table */
+/* global table */
 
-const { element: el } = DOMLiner;
+// @ts-ignore
+import { element as el } from "https://unpkg.com/domliner@2.0.0/lib/domliner.js";
 
 const lang = {
   japan: "ja",
