@@ -42,11 +42,11 @@ table {
   white-space: nowrap;
 }
 
-table tr {
+tr {
   border-top: none !important;
 }
 
-table tr:nth-child(2n) {
+tr:nth-child(2n) {
   background-color: #f0f2f6 !important;
 }
 
@@ -106,21 +106,15 @@ th, td {
     color: revert !important;
   }
 
-  @supports not (color: revert) {
-    .markdown-body {
-      color: rgba(249, 249, 250, 0.8) !important;
-    }
-  }
-
   table {
     background: transparent !important;
   }
 
-  table tr {
+  tr {
     background-color: transparent !important;
   }
 
-  table tr:nth-child(2n) {
+  tr:nth-child(2n) {
     background-color: rgb(29, 29, 29) !important;
   }
 
