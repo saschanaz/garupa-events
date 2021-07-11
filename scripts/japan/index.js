@@ -43,7 +43,7 @@ function extractEventAbstract(titleProse) {
  */
 function extractEventInfo(htmlStr, startYear) {
   const timeRangeRegex =
-    /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 ～ (?:\d{4}年)?(\d\d?)月(\d\d?)日/;
+    /開催期間】<br>\s+(\d\d?)月(\d\d?)日\d+時 [～〜] (?:\d{4}年)?(\d\d?)月(\d\d?)日/;
   const [, startMonth, startDate, endMonth, endDate] =
     htmlStr.match(timeRangeRegex);
   if (!startMonth) {
