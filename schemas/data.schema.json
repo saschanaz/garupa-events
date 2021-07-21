@@ -89,7 +89,7 @@
         "examples": [
           "normal"
         ],
-        "enum": ["normal", "challenge", "versus", "try", "mission"]
+        "enum": ["normal", "challenge", "versus", "try", "mission", "team"]
       },
       "region": {
         "$id": "#/items/properties/region",

@@ -18,7 +18,7 @@ async function fetchAsJson(url) {
  * @param {string} titleProse
  */
 function extractEventAbstract(titleProse) {
-  const titleRegex = /(?:次回、)?(.+)イベント(?:『.+)?「(.+)」/;
+  const titleRegex = /(?:次回、)?(?:新イベント形式の)?(.+)イベント(?:『.+)?「(.+)」/;
   const [, typeJpn, title] = titleProse.match(titleRegex);
   const type = (() => {
     switch (typeJpn) {
@@ -30,9 +30,10 @@ function extractEventAbstract(titleProse) {
         return "try";
       case "ミッションライブ":
         return "mission";
-      // normal is not a thing anymore
+      case "チームライブフェス":
+        return "team";
     }
-    throw new Error("Couldn't detect the attribute");
+    throw new Error("Couldn't detect the type");
   })();
   const isPreNotice = titleProse.includes("次回、");
   return { title, type, isPreNotice };

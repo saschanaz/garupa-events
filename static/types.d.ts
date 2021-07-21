@@ -21,7 +21,7 @@ interface Meta {
 interface Schema {
   linkId: string | null;
   meta: Meta | null;
-  type: "normal" | "challenge" | "versus" | "try" | "mission",
+  type: "normal" | "challenge" | "versus" | "try" | "mission" | "team",
   region: {
     japan: Region;
     taiwan: Region | null;
