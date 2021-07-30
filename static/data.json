@@ -4826,5 +4826,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": "Feel_x_Heat_x_Beat!",
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "Feel×Heat×Beat!",
+        "start": "2021-07-31",
+        "end": "2021-08-09",
+        "noticeId": "nextevent_210730_iJ8V3Z.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
