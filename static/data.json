@@ -4829,14 +4829,16 @@
   },
   {
     "linkId": "Feel_x_Heat_x_Beat!",
-    "meta": null,
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "Feel×Heat×Beat!",
         "start": "2021-07-31",
         "end": "2021-08-09",
-        "noticeId": "nextevent_210730_iJ8V3Z.html"
+        "noticeId": "nextevent_210731_iJ8V3Z.html"
       },
       "taiwan": null,
       "korea": null,
