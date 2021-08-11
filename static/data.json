@@ -4848,14 +4848,16 @@
   },
   {
     "linkId": "Girls_be_ambitious!",
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "challenge",
     "region": {
       "japan": {
         "title": "ガールズ・ビー・アンビシャス！",
         "start": "2021-08-11",
         "end": "2021-08-20",
-        "noticeId": "nextevent_210810_Jg3Aex.html"
+        "noticeId": "event_210811_C5zHKf.html"
       },
       "taiwan": null,
       "korea": null,
