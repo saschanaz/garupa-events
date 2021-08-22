@@ -4867,14 +4867,16 @@
   },
   {
     "linkId": "Stargazing_and_The_Summer's_Sound",
-    "meta": null,
+    "meta": {
+      "attribute": "cool"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "見上げた星とサマー・サウンド",
         "start": "2021-08-22",
         "end": "2021-08-29",
-        "noticeId": "event_210821_He72qDug.html"
+        "noticeId": "event_210822_V6yxfpnz.html"
       },
       "taiwan": null,
       "korea": null,
