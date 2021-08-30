@@ -4883,5 +4883,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "versus",
+    "region": {
+      "japan": {
+        "title": "西陽に染まるバンドワゴン",
+        "start": "2021-08-31",
+        "end": "2021-09-08",
+        "noticeId": "event_210830_b4Gx5V.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
