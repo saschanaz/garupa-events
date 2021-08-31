@@ -4885,15 +4885,17 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "Sunset-Dyed_Bandwagon",
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "versus",
     "region": {
       "japan": {
         "title": "西陽に染まるバンドワゴン",
         "start": "2021-08-31",
         "end": "2021-09-08",
-        "noticeId": "event_210830_b4Gx5V.html"
+        "noticeId": "event_210831_Ni4BGa.html"
       },
       "taiwan": null,
       "korea": null,
