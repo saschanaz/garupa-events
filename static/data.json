@@ -4904,15 +4904,17 @@
     }
   },
   {
-    "linkId": null,
-    "meta": null,
+    "linkId": "The_Espoir_That_Shines_When_the_Curtains_Rise",
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "幕開けに輝くエスポワール",
         "start": "2021-09-10",
         "end": "2021-09-18",
-        "noticeId": "event_210909_fF2iYm.html"
+        "noticeId": "event_210910_S9wiVa.html"
       },
       "taiwan": null,
       "korea": null,
