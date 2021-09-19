@@ -4921,5 +4921,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": "The_Future_Will_Surely_Be_Rosy!",
+    "meta": null,
+    "type": "team",
+    "region": {
+      "japan": {
+        "title": "未来はきっと薔薇色で！",
+        "start": "2021-09-20",
+        "end": "2021-09-28",
+        "noticeId": "event_pre_210919_h5TrkZ.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
