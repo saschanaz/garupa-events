@@ -4924,14 +4924,16 @@
   },
   {
     "linkId": "The_Future_Will_Surely_Be_Rosy!",
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "team",
     "region": {
       "japan": {
         "title": "未来はきっと薔薇色で！",
         "start": "2021-09-20",
         "end": "2021-09-28",
-        "noticeId": "event_pre_210919_h5TrkZ.html"
+        "noticeId": "event_210919_T3gwnr.html"
       },
       "taiwan": null,
       "korea": null,
