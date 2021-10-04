@@ -19,7 +19,8 @@ const l10n = {
       versus: "합동",
       try: "트라이",
       mission: "미션",
-      team: "팀"
+      team: "팀",
+      medley: "메들리",
     },
     gacha: {
       dreamFestival: "드림 페스티벌",
