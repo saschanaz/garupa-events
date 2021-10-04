@@ -32,8 +32,10 @@ function extractEventAbstract(titleProse) {
         return "mission";
       case "チームライブフェス":
         return "team";
+      case "メドレーライブ":
+        return "medley";
     }
-    throw new Error("Couldn't detect the type");
+    throw new Error(`Couldn't detect the type: ${typeJpn}`);
   })();
   const isPreNotice = titleProse.includes("次回、");
   return { title, type, isPreNotice };

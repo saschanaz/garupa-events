@@ -4940,5 +4940,24 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": "Let's_Screeeeam!",
+    "meta": {
+      "attribute": "cool"
+    },
+    "type": "medley",
+    "region": {
+      "japan": {
+        "title": "Let's Screeeeam！",
+        "start": "2021-09-30",
+        "end": "2022-10-08",
+        "noticeId": "event_210930_tdb9103kd.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
