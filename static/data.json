@@ -4962,14 +4962,16 @@
   },
   {
     "linkId": "Fly_with_the_night_(Event)",
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "mission",
     "region": {
       "japan": {
         "title": "fly with the night",
         "start": "2021-10-10",
         "end": "2021-10-18",
-        "noticeId": "event_211010_Mkfo341.html"
+        "noticeId": "event_211010_LODmfe2m.html"
       },
       "taiwan": null,
       "korea": null,
