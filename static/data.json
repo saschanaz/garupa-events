@@ -4981,14 +4981,16 @@
   },
   {
     "linkId": "Even_If_You_Are_Reborn_A_Hundred_Times",
-    "meta": null,
+    "meta": {
+      "attribute": "powerful"
+    },
     "type": "challenge",
     "region": {
       "japan": {
         "title": "１００回生まれ変わっても",
         "start": "2021-10-20",
         "end": "2021-10-29",
-        "noticeId": "event_211019_TUIOC9876.html"
+        "noticeId": "event_211020_O0Pvrm60.html"
       },
       "taiwan": null,
       "korea": null,
