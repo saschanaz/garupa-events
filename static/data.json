@@ -5000,14 +5000,16 @@
   },
   {
     "linkId": "Warrior＊Idol_Pure-Hearted_Legend",
-    "meta": null,
+    "meta": {
+      "attribute": "happy"
+    },
     "type": "medley",
     "region": {
       "japan": {
         "title": "モノノフ＊アイドル純情伝",
         "start": "2021-10-31",
         "end": "2021-11-08",
-        "noticeId": "event_211030_grmoo30s23.html"
+        "noticeId": "event_211031_M1Oo2w4.html"
       },
       "taiwan": null,
       "korea": null,
