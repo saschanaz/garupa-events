@@ -5019,14 +5019,16 @@
   },
   {
     "linkId": null,
-    "meta": null,
+    "meta": {
+      "attribute": "pure"
+    },
     "type": "try",
     "region": {
       "japan": {
         "title": "How My Heart Sings!",
         "start": "2021-11-10",
         "end": "2021-11-18",
-        "noticeId": "event_211109_ei203odiw.html"
+        "noticeId": "event_211110_vowo20d.html"
       },
       "taiwan": null,
       "korea": null,
