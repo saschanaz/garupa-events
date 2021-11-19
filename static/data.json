@@ -5035,5 +5035,22 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": null,
+    "type": "team",
+    "region": {
+      "japan": {
+        "title": "スクリブル・イン・ザ・ブルー",
+        "start": "2021-11-20",
+        "end": "2021-11-28",
+        "noticeId": "event_211119_mis02jd0.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
