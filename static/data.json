@@ -5054,5 +5054,24 @@
       "global": null,
       "china": null
     }
+  },
+  {
+    "linkId": null,
+    "meta": {
+      "attribute": "happy"
+    },
+    "type": "medley",
+    "region": {
+      "japan": {
+        "title": "聖夜に集うSnow Rose",
+        "start": "2021-11-30",
+        "end": "2021-12-09",
+        "noticeId": "event_211130_Bi92d0.html"
+      },
+      "taiwan": null,
+      "korea": null,
+      "global": null,
+      "china": null
+    }
   }
 ]
